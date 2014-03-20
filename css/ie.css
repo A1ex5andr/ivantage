@@ -1,0 +1,114 @@
+.advSearch-container .col input {
+    width: 180px;
+    height: 27px;
+    outline: 1px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+}
+
+.quotes table tbody tr:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe5ff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-8 */
+     background: #bfe5ff; /* Old browsers */
+}
+
+footer,
+.quotes table tr,
+.gradient {
+   filter: none;
+}
+
+.navi ul li a {
+    z-index: 9;
+    position: relative;
+ }
+.advSearch,
+.advSearch-container .col input,
+.advSearch-control .srch  {
+    z-index: 90;
+    position: relative;
+ }
+
+ .search input,
+ .navi ul li a,
+ .advSearch-container .col input,
+ .advSearch-control .srch {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    behavior: url(js/ie/PIE.htc);
+}
+ .mess-quote,
+ .mess-help,
+ .mess-tasks,
+ .carrBl,
+ .carrBl .carrBl-item {
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    behavior: url(js/ie/PIE.htc);
+}
+
+.carrBl-item:hover .hov {
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    behavior: url(js/ie/PIE.htc);
+}
+.dialog-action .email  {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    behavior: url(js/ie/PIE.htc);
+}
+
+.carAcc {
+
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    behavior: url(js/ie/PIE.htc);
+}
+
+.quotes table tbody tr:hover {
+     background: #bfe5ff; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JmZTVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhMGQ4ZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #bfe5ff 0%, #a0d8ef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfe5ff), color-stop(100%,#a0d8ef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #bfe5ff 0%,#a0d8ef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #bfe5ff 0%,#a0d8ef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #bfe5ff 0%,#a0d8ef 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #bfe5ff 0%,#a0d8ef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe5ff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-8 */
+
+    -webkit-box-shadow: 0 2px 12px 0px #9E9E9E;
+    box-shadow: 0 2px 12px 0px #9E9E9E;
+    display: block;
+    width: 878px;
+    border: 1px solid #BEBEBE;
+    margin-left: -12px;
+    margin-top: -2px;
+    padding-left: 10px;
+    float: left;
+     -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    behavior: url(js/ie/PIE.htc);
+}
+.popUp {
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
+
+.contorlForm span {
+    margin: 2px 24px 0 0;
+    behavior: url(js/ie/PIE.htc);
+    -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+    border-radius: 8px;
+}
