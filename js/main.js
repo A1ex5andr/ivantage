@@ -15,9 +15,7 @@ jQuery(document).ready(function($) {
     })
 
     //custom arrow for select drop list
-    $(function() {
-        $("#formList").selectbox();
-    });
+
 
     //popup controls show/hide
     // function hidePopUp() {

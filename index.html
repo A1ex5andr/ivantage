@@ -23,8 +23,6 @@
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script type="text/javascript" src="js/selectivizr-min.js"></script>
     <![endif]-->
-
-
   </head>
   <body>
 
@@ -504,20 +502,26 @@
           <h2>Please choose your action</h2>
 
         <form action="">
-        <p>
-          <input type="radio" name="color" value="#0000ff" id="print"/>
-          <label for="print" class="print"></label>
-          <span>Download and Print</span>
-        </p>
-        <p>
-          <input type="radio" name="color" value="#00ffff" id="mail"/>
-          <label for="mail" class="mail"></label>
-          <span>Email to <input type="text" class="email"></span>
-        </p>
 
-        <p>
+        <div class="actionItem">
+          <div class="actionItem-el">
+            <input type="radio" name="color" value="#0000ff" id="print"/>
+            <label for="print" class="print"></label>
+          </div>
+          <span>Download and Print</span>
+        </div>
+
+        <div class="actionItem">
+          <div class="actionItem-el">
+            <input type="radio" name="color" value="#00ffff" id="mail"/>
+            <label for="mail" class="mail"></label>
+          </div>
+          <span>Email to</span>
+          <input type="text" class="email">
+        </div>
+
+        <div class="actionItem">
           <span class="formType">Form type
-            <!-- <span class="formType-select"> -->
               <select name="" id="formList">
                 <option value="">Admitted </option>
                 <option value="">opt 1</option>
@@ -525,9 +529,8 @@
                 <option value="">opt 3</option>
                 <option value="">opt 4</option>
               </select>
-           <!--  </span> -->
           </span>
-        </p>
+        </div>
 
         </form>
         </section>
@@ -544,7 +547,6 @@
     <script src="js/jquery_1_10_2.js"></script>
 
     <!-- Main JS  -->
-    <script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
   </body>

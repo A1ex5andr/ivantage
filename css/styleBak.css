@@ -1099,9 +1099,6 @@ body {
     padding-left: 10px;
     border-radius: 6px;
 }
-.quotes table tbody tr:hover td {
-    border-bottom: 1px solid transparent;
-}
 
 .quotes table tbody tr:hover .copyDel * {
     visibility: visible;
@@ -1527,13 +1524,12 @@ footer {
 }
 
 .dialog {
-    width: 778px;
-    height: 402px;
-    display: block;
-    margin: 150px auto;
-    background: #fff;
-    padding: 4px;
-    border-radius: 4px;
+width: 778px;
+height: 402px;
+display: block;
+margin: 150px auto;
+background: #fff;
+padding: 4px;
 }
 
 .dialog h1 {
@@ -1570,7 +1566,7 @@ footer {
 
 .dialog-action  {
     margin: 0 5px;
-    padding: 0;
+    padding: 0 20px 0 0;
 
 }
 .dialog-action h2 {
@@ -1616,6 +1612,22 @@ z-index: -1;
 }
 
 
+.dialog-action p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+}
+.dialog-action p > span {
+    color: #6e6e6f;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    top: -12px;
+}
 .dialog-action .email {
     width: 240px;
     height: 33px;
@@ -1624,10 +1636,8 @@ z-index: -1;
     margin: 0 0 0 50px;
     padding: 0 10px;
     border: 1px solid #CFCFCF;
-    position: absolute;
+    position: relative;
     z-index: 9999;
-    top: -4px;
-    left: 100px;
 }
 .dialog-action .email:focus {
     border: 1px solid #8abbdc;
@@ -1636,34 +1646,162 @@ z-index: -1;
     margin: 0 0 0 51px;
     top: -40px;
 }
-
-.dialog-action .actionItem {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    display: block;
-    box-sizing: border-box;
-}
-.dialog-action .actionItem > span {
-    color: #6e6e6f;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
+.dialog-action .formType-select {
     display: inline-block;
+    overflow: hidden!important;
+    z-index: 1;
+    position: absolute;
+    height: 33px;
+    width: 261px;
+    border-radius: 8px;
+    top: -8px;
+    left: 107px;
+    border: 1px solid #CFCFCF;
+}
+
+.dialog-action .formType-select select,
+.dialog-action .formType .formList{
+    width: 288px;
+    height: 33px;
+    border-radius: 8px;
+    outline: 0;
+    padding: 0 20px;
+    border: 0;
+    margin-left: -10px;
+    z-index: 111;
     position: relative;
-    top: 4px;
-    float: left;
 }
 
-.actionItem {
-    display: block;
-    clear: both;
-}
-.actionItem-el {
-    display: block;
-    float: left;
-}
+/*.formType-select span {
+    background: url('../img/select.png') no-repeat;
+    width: 13px;
+    height: 8px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+}*/
 
+.sbHolder{
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 33px;
+    border-radius: 8px;
+    outline: 0;
+    margin: 20px 0 0 36px;
+    padding: 0 10px;
+    border: 1px solid #CFCFCF;
+    top: 11px;
+}
+.sbHolder:focus .sbSelector{
+
+}
+.sbSelector{
+    display: block;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 10px;
+    top: 0;
+    width: 260px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+    color: #7b7b7b;
+    outline: none;
+    text-decoration: none;
+}
+.sbToggle{
+    background: url('../img/select.png') no-repeat;
+    display: block;
+    height: 30px;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 20px;
+}
+/*.sbToggle:hover{
+    background: url(select-icons.png) 0 -167px no-repeat;
+}*/
+.sbToggleOpen{
+    background: url('../img/selectUp.png') no-repeat;
+
+}
+/*.sbToggleOpen:hover{
+    background: url(select-icons.png) 0 -66px no-repeat;
+}*/
+.sbHolderDisabled{
+    background-color: #3C3C3C;
+    border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+
+}
+.sbHolderDisabled .sbToggle{
+
+}
+.sbOptions{
+    background-color: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    list-style: none;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 33px!important;
+    width: 250px;
+    z-index: 1;
+    overflow-y: auto;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.sbOptions li{
+    padding: 0 7px;
+}
+.sbOptions a{
+
+    display: block;
+    outline: none;
+    padding: 7px 0 7px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+    color: #A5A5A5;
+    text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+    color: #7b7b7b;
+}
+.sbOptions li.last a{
+    border-bottom: none;
+}
+.sbOptions .sbDisabled{
+    border-bottom: dotted 1px #515151;
+    color: #999;
+    display: block;
+    padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+    border-bottom: dotted 1px #515151;
+    color: #7b7b7b;
+    display: block;
+    font-weight: bold;
+    padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+    padding-left: 17px;
+}
 
 /* buttons */
 .contorlForm {
@@ -1673,33 +1811,25 @@ z-index: -1;
 
 .contorlForm span {
     float: right;
-    width: 102px;
-    height: 43px;
+    width: 110px;
+    height: 51px;
     background: #0b77c2;
     padding: 0;
     text-align: center;
-    margin: 16px 2px 0 0;
+    margin: 16px 24px 0 0;
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
-    border: 3px solid #0b77c2;
 }
 .contorlForm span h5 {
     margin: 0;
-    padding-top: 13px;
-    font-size: 17px;
-    letter-spacing: 1px;
+    padding-top: 16px;
+    font-size: 16px;
 }
 
 .contorlForm .cntrl-cancel {
     color: #0b77c2;
     background: transparent;
-    margin-right: 10px;
-    border-color: transparent;
-}
-.contorlForm .cntrl-confirm:hover {
-    background: #fff;
-    color: #0b77c2;
 }
 
 
@@ -1774,4 +1904,4 @@ z-index: -1;
     }
 }
 
-/*-----  End of Responsive up to 1024  ------
+/*-----  End of Responsive up to 1024  ------*/
