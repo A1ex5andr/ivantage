@@ -16,14 +16,30 @@ jQuery(document).ready(function($) {
         // Toggle the slide based on its visibility
         if (container.is(":visible")) {
             // Hide - slide up.
+            $('.canc').css('display', 'none');
+            $('.srch').css('display', 'none');
             container.slideUp(1000);
-            $('.canc').slideToggle('fast');
-            $('.srch').slideToggle('fast');
         } else {
             // Show - slide down.
             container.slideDown(1000, function() {
-                $('.canc').slideToggle('fast');
-                $('.srch').slideToggle('fast');
+                $('.canc').css('display', 'inline-block');
+                $('.srch').css('display', 'inline-block');
+
+                // $(document).click(function() {
+                //     if (container.is(":visible")) {
+                //         container.fadeOut(300);
+                //     } else {
+                //         e.stopPropagation();
+                //         console.log('its stoped');
+                //     }
+                // });
+                // $(document).click(function(event) {
+                //     if ($(event.target).parents().index(container) == -1) {
+                //         if (container.is(":visible")) {
+                //             container.hide()
+                //         }
+                //     }
+                // })
             });
         }
     };
@@ -31,10 +47,24 @@ jQuery(document).ready(function($) {
     //run slide on AdvSearch button
     $(".advSearch-btn").click(function() {
         slideAdvancedSearch();
+        //hide if clicked out of advanced search box
+        // $(document).click(function() {
+        //     if (!$(event.target).parents().is(container) && !$(event.target).is($('.advSearch-btn'))) {
+        //         $('.canc').css('display', 'none');
+        //         $('.srch').css('display', 'none');
+        //         container.slideUp(1000);
+        //     }
+        // });
     });
     //run slide on Cancel button
     $('.canc').click(function(event) {
         slideAdvancedSearch();
+    });
+
+    // Modified Date sort arrow
+    var sortArrow = $('.sortArrow');
+    sortArrow.click(function(event) {
+        $(this).toggleClass('up');
     });
 
 
