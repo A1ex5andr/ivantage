@@ -70,6 +70,11 @@ jQuery(document).ready(function($) {
 
     //custom arrow for select drop list
     $('#formList').customSelect();
+    /* Home Info Forms*/
+    $('#form_01').customSelect();
+    $('#form_02').customSelect();
+    $('#form_03').customSelect();
+    $('#form_04').customSelect();
 
 
     //popup controls show/hide

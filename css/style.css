@@ -628,6 +628,10 @@ body {
     width: 300px;
     float: right;
 }
+/* z-index for main block */
+.main.container {
+    z-index: 9998;
+}
 
 /* navigation */
 .navi {
@@ -1815,6 +1819,462 @@ span.customSelect {
 /*-----  End of popUp dialog box  ------*/
 
 
+/*============================================
+=            Characteristics page            =
+============================================*/
+
+.chars {
+    /*padding: 20px 20px 0 50px;*/
+    padding: 20px 50px 0 70px;
+}
+
+.chars header h2 {
+    color: #0b77c2;
+    font-size: 40px;
+    font-weight: 100;
+    float: left;
+}
+
+/* nav */
+.chars header nav {
+    float: left;
+    position: relative;
+    top: 37px;
+    left: -16px;
+}
+.chars header nav ul {
+    list-style: none;
+}
+.chars header nav ul li {
+    display: inline-block;
+}
+.chars header nav ul li a {
+    padding: 0;
+    color: #0b77c2;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 3px;
+    font-size: 14px;
+    vertical-align: top;
+line-height: 20px;
+}
+.chars header nav ul li:hover a {
+    text-decoration: underline;
+}
+.chars header nav ul li span {
+    display: inline-block;
+    height: 17px;
+    width: 20px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.charsMail {
+    background: url('../img/chars_mail.png') no-repeat;
+}
+.charsDet {
+    background: url('../img/chars_det.png') no-repeat;
+}
+.charsTask {
+    background: url('../img/chars_task.png') no-repeat;
+}
+.charsEdit {
+    background: url('../img/chars_edit.png') no-repeat;
+}
+.charsNotice {
+    background: url('../img/chars_notice.png') no-repeat;
+}
+
+/* wizard */
+.wizard {
+    display: block;
+    clear: both;
+    height: 60px;
+    position: relative;
+}
+
+.wizard a {
+    color: #6e6e6f;
+    background-size: 100% 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 68px;
+    position: relative;
+}
+.wizBar_1 {
+    background-image: url(../img/wiz/wizard_01.png);
+    width: 110px;
+}
+.wizBar_2 {
+    background-image: url(../img/wiz/wizard_02.png);
+    width: 116px;
+}
+.wizBar_3 {
+    background-image: url(../img/wiz/wizard_03.png);
+    width: 100px;
+}
+.wizBar_4 {
+    background-image: url(../img/wiz/wizard_04.png);
+    width: 95px;
+}
+.wizBar_5 {
+    background-image: url(../img/wiz/wizard_05.png);
+    width: 95px;
+    text-indent: -9px;
+}
+.wizBar_6 {
+    background-image: url(../img/wiz/wizard_06.png);
+    width: 111px;
+    text-indent: -23px;
+}
+.wizBar_7 {
+    background-image: url(../img/wiz/wizard_07.png);
+    width: 151px;
+}
+
+.wizard a.past {
+    color: #0b77c2;
+}
+.wizard a.wizBar_1.past span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background:  #0b77c2;
+    top: 31px;
+    left: 46px;
+}
+.wizard a.wizBar_2.past span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background:  #0b77c2;
+    top: 31px;
+    left: 49px;
+}
+.wizard a.wizBar_3.past span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background:  #0b77c2;
+    top: 31px;
+    left: 39px;
+    z-index: 111;
+}
+/*.wizard a:not(.active):hover span {
+    background: #C54040;
+    z-index: 99;
+}*/
+/*.wizard a span {
+    display: inline-block!important;
+position: absolute!important;
+background: url(../img/wiz/activeWiz.png) no-repeat!important;
+}*/
+
+.wizard a.active {
+    color: #0b77c2;
+    font-weight: bold;
+}
+.wizard a.wizBar_4.active span {
+    display: inline-block;
+    position: absolute;
+    background-image: url(../img/wiz/activeWiz.png);
+    width: 66px;
+    height: 68px;
+    left: 14px;
+    z-index: 99;
+}
+
+.wizard .wizBar-line {
+    position: absolute;
+    height: 3px;
+    width: 360px;
+    background: #0b77c2;
+    top: 39px;
+    left: 14px;
+    z-index: 10;
+}
+/* Required Information */
+.reqInfo {
+    background-image: url(../img/reqInfo.png);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+
+/* Home Characteristics */
+.homeChars {
+    position: relative;
+    clear: both;
+    margin-bottom: 40px
+}
+
+.homeChars header h1 {
+    font-size: 30px;
+        color: #0b77c2;
+    font-weight: 100;
+    float: left;
+    margin-bottom: 0;
+}
+.homeChars header h3 {
+    font-size: 12px;
+    color: #0b77c2;
+    font-weight: 100;
+    float: left;
+    position: relative;
+    top: 23px;
+    left: 30px;
+}
+.homeChars header h4 {
+    font-size: 14px;
+    color: #0b77c2;
+    font-weight: 100;
+    position: relative;
+    top: 17px;
+    font-weight: bold;
+    float: right;
+}
+
+/* homeInfo */
+.homeInfo {
+    clear: both;
+    width: 100%;
+    background: #f7f7f8;
+    border: 1px solid #e4e5e6;
+    border-radius: 4px;
+}
+.homeInfo>h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b77c2;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.homeInfo-wrapper {
+    background: #f0f0f1;
+    border-radius: 4px;
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+    overflow: auto;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+/* home info pictures and map links */
+.map {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.map img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 570px;
+    height: 390px;
+}
+.map a {
+    float: right;
+    color: #6e6e6f;
+    font-size: 14px;
+    text-decoration: none;
+    padding-right: 25px;
+    margin-bottom: 20px;
+}
+.map a:hover {
+    text-decoration: underline;
+}
+/* home info forms */
+.formWrap {
+        width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.formWrap .formType {
+    color: #6e6e6f;
+    font-size: 14px;
+    margin-left: 37px!important;
+    position: relative;
+    margin: 2px 0;
+    padding-bottom: 1px;
+    display: block;
+    clear: both;
+}
+.formWrap .formType .hasCustomSelect{
+    right: 30px;
+}
+.formWrap .formType span.customSelect {
+    color: #A7A7A7;
+}
+
+.formWrap .formType .reqInfo {
+    position: absolute;
+    top: 12px;
+    left: 254px;
+}
+
+.formWrap .formType h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 100;
+    display: block;
+    width: 236px;
+    vertical-align: top;
+    line-height: 21px;
+    float: left;
+}
+
+.dateDiv {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.formType-date {
+     background: #fff;
+    color: #555;
+    width: 70px;
+    height: 31px;
+    border-radius: 8px;
+    outline: 0;
+    margin: 0 0 0 33px;
+    padding: 0px 10px;
+    border: 1px solid #CFCFCF;
+    z-index: 9999;
+    line-height: 31px;
+}
+
+.formType-year {
+    background: #fff;
+    color: #555;
+    width: auto;
+    height: 31px;
+    border-radius: 8px;
+    outline: 0;
+    margin: 0;
+    padding: 0px 2px;
+    border: 1px solid #CFCFCF;
+    z-index: 9999;
+    line-height: 31px;
+}
+
+.radioBlWrap {
+    display: inline-block;
+    margin-left: 18px;
+    position: relative;
+    top: 4px;
+}
+
+.formType-radio {
+    display: inline-block;
+    position: relative;
+}
+.formType-checkbox {
+    float: left;
+    display: inline-block;
+    clear: both;
+}
+.formType-radio input[type="radio"],
+.formType-checkbox input[type="checkbox"] {
+    position: relative;
+    top: -12px;
+    left: 22px;
+    z-index: -1;
+}
+.formType .radioLable {
+    position: relative;
+    top: -7px;
+}
+.formType .checkboxLable {
+    line-height: 26px;
+}
+.formType-radio label {
+    background: url('../img/radioDef.png') no-repeat;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+}
+.formType-radio input[type="radio"]:checked+label {
+    background: url('../img/radioCh.png') no-repeat;
+}
+.formType-checkbox label {
+    background: url('../img/cheDef.png') no-repeat;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+}
+.formType-checkbox input[type="checkbox"]:checked+label {
+    background: url('../img/cheCh.png') no-repeat;
+}
+
+.formType .formType-dist {
+    background: #fff;
+    color: #555;
+    width: 90px;
+    height: 31px;
+    border-radius: 8px;
+    outline: 0;
+    margin: 0;
+    padding: 0px 10px;
+    border: 1px solid #CFCFCF;
+    z-index: 9999;
+    line-height: 31px;
+}
+
+.formType .distWrap {
+    display: inline-block;
+    margin-left: 35px;
+}
+.formType .checkboxBlWrap {
+    margin-left: 24px;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+/* save */
+.chars-bottomControl .saveLate,
+.chars-bottomControl .goBack {
+    float: right;
+    color: #0b77c2;
+    text-align: center;
+    margin: 33px 19px 0 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chars-bottomControl .saveCont {
+    float: right;
+}
+
+.chars-bottomControl .goBack {
+    float: left;
+}
+
+/* legel notice */
+.charRules {
+    padding: 210px 20px 0 20px;
+    word-spacing: 7px;
+}
+
+/*-----  End of Characteristics page  ------*/
+
+
+
+
 /*=============================================
 =            Responsive up to 1024            =
 =============================================*/
@@ -1822,6 +2282,9 @@ span.customSelect {
 @media (max-width: 1024px){
     .container {
         width: 890px;
+    }
+    .navi ul li {
+        z-index: 9999;
     }
     .right-side {
         width: 872px;
@@ -1879,6 +2342,50 @@ span.customSelect {
     .carrBl .carrBl-item {
         margin: 0 30px;
     }
+    /* home chars*/
+    .map img {
+        width: 400px;
+        height: 270px;
+    }
+    .formWrap .formType h4 {
+        width: 188px;
+    }
+    .formWrap .formType .hasCustomSelect {
+        right: 16px;
+        width: 160px!important;
+    }
+    .customSelect.customSelect {
+        background: #fff url('../img/select.png') 138px center no-repeat;
+        color: #555;
+        width: 140px;
+        height: 33px;
+        border-radius: 8px;
+        outline: 0;
+        margin: 0 0 0 33px;
+        padding: 0 10px;
+        border: 1px solid #CFCFCF;
+        z-index: 9999;
+        line-height: 31px;
+    }
+    .customSelect.customSelectOpen {
+        background: #fff url('../img/selectUp.png') 138px center no-repeat;
+    }
+    .formWrap .formType .reqInfo {
+        left: 205px;
+    }
+    .formType-year {
+        width: 91px;
+    }
+    .formType-date {
+        width: 30px;
+    }
+    .formType .formType-dist {
+        width: 56px;
+    }
+    .mess-quote.saveCont {
+        clear: none;
+    }
 }
 
-/*-----  End of Responsive up to 1024  ------
+/*-----  End of Responsive up to 1024  ------ */
+
