@@ -975,6 +975,7 @@ body {
     background: transparent;
     color: #0b77c2;
     outline: 0;
+    display: none;
 }
 .advSearch-control .srch {
     padding-left: 30px;
@@ -986,6 +987,7 @@ body {
     padding: 0;
     border-radius: 4px;
     margin-left: 30px;
+    display: none;
 }
 
 
@@ -1632,10 +1634,6 @@ z-index: -1;
 .dialog-action .email:focus {
     border: 1px solid #8abbdc;
 }
-.dialog-action .formType {
-    margin: 0 0 0 51px;
-    top: -40px;
-}
 
 .dialog-action .actionItem {
     position: relative;
@@ -1662,6 +1660,63 @@ z-index: -1;
 .actionItem-el {
     display: block;
     float: left;
+}
+
+/*select dropdown*/
+.formType {
+    margin-left: 47px!important;
+}
+
+#formList {
+    height: 35px!important;
+    margin-left: 34px;
+}
+#formList option {
+    /*width: 262px;*/
+}
+.customSelectInner {
+    width: auto!important;
+}
+.customSelectInner {
+    border: 0!important;
+    outline: 0!important;
+}
+span.customSelect {
+/*    font:12px sans-serif;
+    background:#fff url('http://i48.tinypic.com/2u7rpec.png') right center no-repeat;
+    border:1px solid #ddd;
+    color:#555;
+    padding:7px 9px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px 2px;
+    width:175px;
+
+    width: 240px;
+    height: 33px;
+    border-radius: 8px;
+    outline: 0;
+    margin: 0 0 0 50px;
+    padding: 0 10px;
+    border: 1px solid #CFCFCF;
+
+    z-index: 9999;
+*/
+    background: #fff url('../img/select.png') 238px center no-repeat;
+    color: #555;
+    width: 240px;
+    height: 33px;
+    border-radius: 8px;
+    outline: 0;
+    margin: 0 0 0 33px;
+    padding: 0 10px;
+    border: 1px solid #CFCFCF;
+    z-index: 9999;
+    line-height: 31px;
+}
+
+.customSelect.customSelectOpen {
+    background: #fff url('../img/selectUp.png') 238px center no-repeat;
 }
 
 
@@ -1696,6 +1751,9 @@ z-index: -1;
     background: transparent;
     margin-right: 10px;
     border-color: transparent;
+}
+.contorlForm .cntrl-cancel:hover {
+    text-decoration: underline;
 }
 .contorlForm .cntrl-confirm:hover {
     background: #fff;
