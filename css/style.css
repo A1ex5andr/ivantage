@@ -71,18 +71,7 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/**
- * Address `font-family` inconsistency between `textarea` and other form
- * elements.
- */
 
-html,
-button,
-input,
-select,
-textarea {
-    font-family: sans-serif;
-}
 
 /**
  * Address margins handled incorrectly in IE 6/7.
@@ -544,8 +533,13 @@ table {
     src: url("../font/myriadpro-bold.eot?#iefix") format("embedded-opentype"), url("../font/myriadpro-bold.woff") format("woff"), url("../font/myriadpro-bold.ttf") format("truetype"), url("../font/myriadpro-bold.svg#MyriadProBold") format("svg");
 }
 
-body {
-    font-family: Helvetica, Arial, Calibri, sans-serif;
+body,
+html,
+button,
+input,
+select,
+textarea  {
+    font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -577,6 +571,8 @@ body {
 
 .head .head-logo {
     padding: 9px 12px;
+    float: left;
+    display: block;
 }
 .head .head-title {
     display: inline-block;
@@ -598,7 +594,7 @@ body {
     text-align: right;
 }
 .head .head-client .hello {
-    padding: 16px 16px 0 0;
+    padding: 16px 9px 0 0;
 }
 .head .head-client a {
     color: #89bee7;
@@ -606,6 +602,7 @@ body {
 }
 .head .head-client a:hover {
     color: #9fd3f9;
+    text-decoration: underline;
 }
 .head .head-client .chat {
     background: url('../img/chat_but.png') no-repeat;
@@ -672,19 +669,20 @@ body {
     padding: 10px 0 0 0;
 }
 .navi ul li h2 {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
     text-align: center;
     display: block;
     color: #fff;
+    line-height: 15px;
 }
 .navi ul li.active h2 {
     font-size: 16px;
     padding-top: 10px;
 }
 .navi ul .navi-more:hover  h2 {
-    font-size: 12px;
+    font-size: 16px;
     padding-top: 0;
 }
 
@@ -805,7 +803,7 @@ body {
     border-bottom: 1px solid #933aa0;
 }
 .navi-more .drop li a {
-    font-size: 12px;
+    font-size: 13px;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -873,11 +871,22 @@ body {
     background: #ebecec;
     border-radius: 4px;
     outline: 0;
-    border: 2px solid #dfdfe0;
+    font-weight: 100;
     padding: 0 0 0 10px;
-    font-size: 26px;
+    font-size: 29px;
+    border: 1px solid #d4d4d4;
+    -webkit-box-shadow: inset 1px 1px 0 0 #c3c3c5;
+    box-shadow: inset 1px 1px 0 0 #c3c3c5;
 }
- .search span {
+
+ .search ::-webkit-input-placeholder,
+ .search :-moz-placeholder,
+ .search ::-moz-placeholder,
+ .search :-ms-input-placeholder {
+   color: #a4a5a6;
+}
+
+ .search .mag {
     display: block;
     height: 34px;
     width: 38px;
@@ -886,6 +895,13 @@ body {
     right: 7px;
     top: 7px;
  }
+ .search input[type="text"]:focus,
+ .search input[type="text"]:hover  {
+    background: #dbdbdc;
+}
+/* .search input[type="text"]:focus ~ */.search:hover .mag  {
+    background: url('../img/magHov.png') no-repeat;
+}
 
  /* advanced search */
  .advSearch {
@@ -896,9 +912,12 @@ body {
     color: #0b77c2;
     z-index: 99;
     position: relative;
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
  }
+ .advSearch .advSearch-btn:hover  {
+    text-decoration: underline;
+}
  .advSearch {
     padding: 10px;
 /*    background: #e3e4e5;
@@ -927,10 +946,10 @@ body {
 }
 .advSearch-container .col h3 {
     color: #0b77c2;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
     padding: 2px 19px;
-    font-weight: 100;
+    font-weight: bold;
 }
 .advSearch-container .col label {
     clear: both;
@@ -953,7 +972,7 @@ body {
     padding: 0;
     display: inline-block;
     width: 70px;
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 20px;
     color: #6e6e6f;
     padding-bottom: 10px;
@@ -973,8 +992,10 @@ body {
 
 .advSearch-control {
     position: absolute;
-    right: 30px;
-    bottom: 16px;
+    right: 27px;
+    top: 221px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
 }
 .advSearch-control .canc {
     border: 0;
@@ -982,18 +1003,21 @@ body {
     color: #0b77c2;
     outline: 0;
     display: none;
+    height: 34px;
+    width: 82px;
 }
 .advSearch-control .srch {
     padding-left: 30px;
     background: #0b77c2;
     color: #fff;
     border: 0;
-    height: 30px;
-    width: 80px;
+    height: 34px;
+    width: 82px;
     padding: 0;
     border-radius: 4px;
     margin-left: 30px;
     display: none;
+
 }
 
 
@@ -1007,6 +1031,8 @@ body {
     float: right;
     text-decoration: none;
     padding: 10px;
+    font-size: 14px;
+    font-family: Arial;
 }
 .quotes > a:hover {
     text-decoration: underline;
@@ -1022,7 +1048,7 @@ body {
     background: #f7f7f8;
     width: 100%;
     height: 100%;
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     table-layout: fixed;
 }
@@ -1031,26 +1057,23 @@ body {
     text-align: left;
     padding: 10px;
 }
-        .quotes table .col1{
-            width: 0;
-        }
         .quotes table .col2{
-            width: 120px;
+            width: 132px;
         }
         .quotes table .col3{
-            width: 160px;
+            width: 162px;
         }
         .quotes table .col4{
-            width: 150px;
+            width: 152px;
         }
         .quotes table .col5{
             width: 118px;
         }
         .quotes table .col6{
-            width: 80px;
+            width: 82px;
         }
         .quotes table .col7{
-            width: 82px;
+            width: 84px;
         }
 
 .quotes table tr {
@@ -1164,7 +1187,7 @@ body {
     margin: 0;
     padding: 20px 0 10px 16px;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .mess-cent  h3 {
@@ -1178,8 +1201,8 @@ body {
     color: #0b77c2;
     margin: 0;
     padding-left: 16px;
-    font-weight: 800;
-    font-size: 24px;
+    font-weight: 100;
+    font-size: 28px;
     line-height: 22px;
     letter-spacing: 1px;
 }
@@ -1321,7 +1344,7 @@ body {
     text-decoration: underline;
 }
 .mess-tasks  p  {
-    font-size: 13px;
+    font-size: 14px;
     margin: 0;
     padding: 0 0 0 9px;
     color: #6e6e6f;
@@ -1398,11 +1421,11 @@ body {
     border-radius: 6px;
     margin: 0;
     position: relative;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .carrBl-item span {
     display: block;
@@ -1411,28 +1434,28 @@ body {
     margin: 0 auto;
     margin-top: 24px;
     background-position: center center;
-     -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .carrBl-item .hov{
-width: 144px;
-height: 104px;
+    width: 144px;
+    height: 104px;
     position: absolute;
-top: -4px;
-left: -4px;
+    top: -4px;
+    left: -4px;
     border: 4px solid #fff;
     z-index: 9999;
     background: #e1e2e4;
     border-radius: 14px;
-     -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .carrBl-item:hover .hov{
     width: 200px;
@@ -1683,6 +1706,8 @@ z-index: -1;
     z-index: 9999;
     top: -4px;
     left: 100px;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
 }
 .dialog-action .email:focus {
     border: 1px solid #8abbdc;
@@ -1722,7 +1747,11 @@ z-index: -1;
 
 #formList {
     height: 35px!important;
-    margin-left: 34px;
+    z-index: 111;
+    left: 103px;
+    position: absolute;
+    top: -4px;
+    z-index: 11;
 }
 #formList option {
     /*width: 262px;*/
@@ -1734,6 +1763,27 @@ z-index: -1;
     border: 0!important;
     outline: 0!important;
 }
+
+.dialog span.customSelect {
+    background: #fff url('../img/select.png') 238px center no-repeat;
+    color: #555;
+    width: 240px;
+    height: 33px;
+    border-radius: 8px;
+    outline: 0;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid #CFCFCF;
+    z-index: 9999;
+    line-height: 31px;
+    left: 103px;
+    position: absolute;
+    top: -4px;
+    z-index: 1;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
+}
+
 span.customSelect {
 /*    font:12px sans-serif;
     background:#fff url('http://i48.tinypic.com/2u7rpec.png') right center no-repeat;
@@ -1766,6 +1816,8 @@ span.customSelect {
     border: 1px solid #CFCFCF;
     z-index: 9999;
     line-height: 31px;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
 }
 
 .customSelect.customSelectOpen {
@@ -2146,7 +2198,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
 .formType-date {
      background: #fff;
     color: #555;
-    width: 70px;
+    width: 64px;
     height: 31px;
     border-radius: 8px;
     outline: 0;
@@ -2155,6 +2207,8 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     border: 1px solid #CFCFCF;
     z-index: 9999;
     line-height: 31px;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
 }
 
 .formType-year {
@@ -2169,6 +2223,8 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     border: 1px solid #CFCFCF;
     z-index: 9999;
     line-height: 31px;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
 }
 
 .radioBlWrap {
@@ -2223,7 +2279,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
 .formType .formType-dist {
     background: #fff;
     color: #555;
-    width: 90px;
+    width: 38%;
     height: 31px;
     border-radius: 8px;
     outline: 0;
@@ -2232,11 +2288,14 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     border: 1px solid #CFCFCF;
     z-index: 9999;
     line-height: 31px;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
 }
 
 .formType .distWrap {
     display: inline-block;
     margin-left: 35px;
+    width: 50%;
 }
 .formType .checkboxBlWrap {
     margin-left: 24px;

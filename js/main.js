@@ -18,28 +18,12 @@ jQuery(document).ready(function($) {
             // Hide - slide up.
             $('.canc').css('display', 'none');
             $('.srch').css('display', 'none');
-            container.slideUp(1000);
+            container.slideUp(300);
         } else {
             // Show - slide down.
-            container.slideDown(1000, function() {
+            container.slideDown(300, function() {
                 $('.canc').css('display', 'inline-block');
                 $('.srch').css('display', 'inline-block');
-
-                // $(document).click(function() {
-                //     if (container.is(":visible")) {
-                //         container.fadeOut(300);
-                //     } else {
-                //         e.stopPropagation();
-                //         console.log('its stoped');
-                //     }
-                // });
-                // $(document).click(function(event) {
-                //     if ($(event.target).parents().index(container) == -1) {
-                //         if (container.is(":visible")) {
-                //             container.hide()
-                //         }
-                //     }
-                // })
             });
         }
     };
@@ -47,14 +31,6 @@ jQuery(document).ready(function($) {
     //run slide on AdvSearch button
     $(".advSearch-btn").click(function() {
         slideAdvancedSearch();
-        //hide if clicked out of advanced search box
-        // $(document).click(function() {
-        //     if (!$(event.target).parents().is(container) && !$(event.target).is($('.advSearch-btn'))) {
-        //         $('.canc').css('display', 'none');
-        //         $('.srch').css('display', 'none');
-        //         container.slideUp(1000);
-        //     }
-        // });
     });
     //run slide on Cancel button
     $('.canc').click(function(event) {
@@ -65,6 +41,14 @@ jQuery(document).ready(function($) {
     var sortArrow = $('.sortArrow');
     sortArrow.click(function(event) {
         $(this).toggleClass('up');
+    });
+
+    //hide if clicked out of advanced search box
+    $(document).click(function(e) {
+        if ($(e.target).parents('.advSearch').first().length == 0)
+            container.fadeOut(300);
+        $('.canc').css('display', 'none');
+        $('.srch').css('display', 'none');
     });
 
 
