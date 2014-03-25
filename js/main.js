@@ -45,10 +45,10 @@ jQuery(document).ready(function($) {
 
     //hide if clicked out of advanced search box
     $(document).click(function(e) {
-        if ($(e.target).parents('.advSearch').first().length == 0)
-            container.fadeOut(300);
-        $('.canc').css('display', 'none');
-        $('.srch').css('display', 'none');
+        if ($(e.target).parents('.advSearch').first().length == 0) {
+            //container.fadeOut(300);
+            slideAdvancedSearch();
+        }
     });
 
 
