@@ -38,17 +38,16 @@ jQuery(document).ready(function($) {
     });
 
     // Modified Date sort arrow
-    var sortArrow = $('.sortArrow');
+    var sortArrow = $('.tableSorter');
     sortArrow.click(function(event) {
-        $(this).toggleClass('up');
+        $('.sortArrow').toggleClass('up');
     });
 
     //hide if clicked out of advanced search box
     $(document).click(function(e) {
-        if ($(e.target).parents('.advSearch').first().length == 0) {
-            //container.fadeOut(300);
+        if ($(e.target).parents('.advSearch').first().length == 0 && container.is(":visible"))
+        //container.fadeOut(300);
             slideAdvancedSearch();
-        }
     });
 
 

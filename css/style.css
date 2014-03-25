@@ -1156,7 +1156,9 @@ textarea  {
     width: 12px;
     background: url('../img/arr_bl.png') no-repeat;
     cursor: pointer;
-
+}
+.tableSorter {
+    cursor: pointer;
 }
 .quotes table .col2 .sortArrow.up {
     background: url('../img/arr_bl_up.jpg') no-repeat;
