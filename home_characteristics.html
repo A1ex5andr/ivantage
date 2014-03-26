@@ -197,7 +197,7 @@
         <div class="homeInfo">
             <h3>Home Information</h3>
 
-            <div class="homeInfo-wrapper">
+            <div class="homeInfo-wrapper clearfix">
 
               <div class="map">
                 <img src="img/map_1.png" alt="">
@@ -212,38 +212,51 @@
 
 
               <div class="formWrap clearfix">
-                
+
                 <div class="formBlock">
-                  <div class="formBlock-title">Dwelling Occupancy</div>
-                  <div class="formBlock-input inputDropdown">Owner - Primary</div> 
+                  <div class="formBlock-title">
+                     Dwelling Occupancy
+                    <span class="formBlock-reqInfo"></span>
+                  </div>
+                  <div class="formBlock-input inputDropdown">
+                    <div class="newTarget">Owner - Primary</div>
+                    <span class="inputDropdown-arrow"></span>
+                    <ul class="inputDropdownList">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <!-- remove all form -->
-                <form action="" class="">
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Construction Date
+                  </div>
+                  <div class="formBlock-input inputResponsive">
+                        <input class="inpitResp-50" type="text" placeholder="50%">
+                         <input class="inpitResp-50" type="text" placeholder="50%">
+                  </div>
+                </div>
 
-                  <span class="formType">
-                    <h4>Dwelling Occupancy</h4>
-                    <span class="reqInfo"></span>
-                    <select name="" id="form_01" >
-                      <option value="">Owner - Primary </option>
-                      <option value="">opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1</option>
-                      <option value="">opt 2</option>
-                      <option value="">opt 3</option>
-                      <option value="">opt 4</option>
-                    </select>
-                </span>
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Construction Date
+                    <span class="formBlock-reqInfo"></span>
+                  </div>
+                  <div class="formBlock-input inputResponsive">
+                        <input class="inpitResp-date" type="text" placeholder="1">
+                         <span class="dateDiv">&#47;</span>
+                         <input class="inpitResp-year" type="text" placeholder="2005">
+                  </div>
+                </div>
 
-                <span class="formType">
-                    <h4>Construction Date</h4>
-                    <span class="reqInfo"></span>
-                    <input class="formType-date" type="text" placeholder="1">
-                    <span class="dateDiv">&#47;</span>
-                    <input class="formType-year" type="text" placeholder="2005">
-                </span>
-
-                <span class="formType">
-                    <h4>Is the home under construction?</h4>
-
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                    Is the home under construction?
+                  </div>
                     <div class="radioBlWrap">
                         <div class="formType-radio">
                           <input type="radio" name="homeState" value="#1" id="homeState">
@@ -254,46 +267,48 @@
                           <label for="homeState2" class="homeState2"></label>
                       </div><span class="radioLable">No</span>
                     </div>
-                </span>
+                  </div>
 
-                <span class="formType">
-                    <h4>Type of Foundation</h4>
-                    <span class="reqInfo"></span>
-                    <select name="" id="form_02" >
-                      <option value="">Slab </option>
-                      <option value="">opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1</option>
-                      <option value="">opt 2</option>
-                      <option value="">opt 3</option>
-                      <option value="">opt 4</option>
-                    </select>
-                </span>
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Dwelling Occupancy
+                    <span class="formBlock-reqInfo"></span>
+                  </div>
+                  <div class="formBlock-input inputDropdown">
+                    <div class="newTarget">Owner - Primary</div>
+                    <span class="inputDropdown-arrow"></span>
+                    <ul class="inputDropdownList">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                    </ul>
+                  </div>
+                </div>
 
-                <span class="formType">
-                    <h4>Construction Type</h4>
-                    <span class="reqInfo"></span>
-                    <select name="" id="form_03" >
-                      <option value="">Frame </option>
-                      <option value="">opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1</option>
-                      <option value="">opt 2</option>
-                      <option value="">opt 3</option>
-                      <option value="">opt 4</option>
-                    </select>
-                </span>
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Dwelling Occupancy
+                  </div>
+                  <div class="formBlock-input inputDropdown">
+                    <div class="newTarget">Owner - Primary</div>
+                    <span class="inputDropdown-arrow"></span>
+                    <ul class="inputDropdownList">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                    </ul>
+                  </div>
+                </div>
 
-                <span class="formType">
-                    <h4>Roof Shape</h4>
-                    <select name="" id="form_04" >
-                      <option value="">A. Flat </option>
-                      <option value="">opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1</option>
-                      <option value="">opt 2</option>
-                      <option value="">opt 3</option>
-                      <option value="">opt 4</option>
-                    </select>
-                </span>
-
-                <span class="formType">
-                    <h4>Is the home located inside city limits?</h4>
-                    <span class="reqInfo"></span>
+                <!-- Left Block -->
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                    Is the home under construction?
+                  </div>
                     <div class="radioBlWrap">
                         <div class="formType-radio">
                           <input type="radio" name="location" value="#1" id="location">
@@ -304,49 +319,33 @@
                           <label for="location2" class="location2"></label>
                       </div><span class="radioLable">No</span>
                     </div>
-                </span>
+                  </div>
 
-                <span class="formType">
-                    <h4>Distance to Coast</h4>
-                    <span class="reqInfo"></span>
-                    <div class="distWrap">
-                      <input class="formType-dist" type="text" placeholder="10">
-                      <input class="formType-dist" type="text" placeholder="Feet">
-                    </div>
-                </span>
-
-                </form>
               </div>
+
               <div class="formWrap clearfix">
-                <form action="">
 
-                  <span class="formType">
-                    <h4>Is there a swimming pool on the premises?</h4>
-                    <span class="reqInfo"></span>
-                    <div class="radioBlWrap">
-                        <div class="formType-radio">
-                          <input type="radio" name="pool" value="#1" id="pool">
-                          <label for="pool" class="pool"></label>
-                      </div><span class="radioLable">Yes</span>
-                      <div class="formType-radio">
-                          <input type="radio" name="pool" value="#1" id="pool2">
-                          <label for="pool2" class="pool2"></label>
-                      </div><span class="radioLable">No</span>
-                    </div>
-                </span>
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Dwelling Occupancy
+                  </div>
+                  <div class="formBlock-input inputDropdown">
+                    <div class="newTarget">Owner - Primary</div>
+                    <span class="inputDropdown-arrow"></span>
+                    <ul class="inputDropdownList">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                    </ul>
+                  </div>
+                </div>
 
-                <span class="formType">
-                    <h4>Distance to Coast</h4>
-                    <span class="reqInfo"></span>
-                    <div class="distWrap">
-                      <input class="formType-dist" type="text" placeholder="10">
-                      <input class="formType-dist" type="text" placeholder="Feet">
-                    </div>
-                </span>
-
-                 <span class="formType">
-                    <h4>Do you have any of the following protective devices</h4>
-                    <span class="reqInfo"></span>
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                    Do you have any of the following protective devices
+                  </div>
                     <div class="checkboxBlWrap">
                         <div class="formType-checkbox">
                           <input type="checkbox" name="protection" value="#1" id="prot">
@@ -369,34 +368,99 @@
                           <span class="checkboxLable">Sprinkler System</span>
                       </div>
                     </div>
-                </span>
+                  </div>
 
-                 <span class="formType">
-                    <h4>Construction Date</h4>
-                    <span class="reqInfo"></span>
-                    <input class="formType-date" type="text" placeholder="1">
-                    <span class="dateDiv">&#47;</span>
-                    <input class="formType-year" type="text" placeholder="2005">
-                </span>
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Dwelling Occupancy
+                  </div>
+                  <div class="formBlock-input inputDropdown">
+                    <div class="newTarget">Owner - Primary</div>
+                    <span class="inputDropdown-arrow"></span>
+                    <ul class="inputDropdownList">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                    </ul>
+                  </div>
+                </div>
 
-                <span class="formType">
-                    <h4>Is the swimming pool fenced?</h4>
+                 <div class="formBlock">
+                  <div class="formBlock-title">
+                    Do you have any of the following protective devices
+                    in your home? If yes, please select those that apply
+                  </div>
 
-                    <div class="radioBlWrap">
-                        <div class="formType-radio">
-                          <input type="radio" name="fence" value="#1" id="fence">
-                          <label for="fence" class="fence"></label>
-                      </div><span class="radioLable">Yes</span>
-                      <div class="formType-radio">
-                          <input type="radio" name="fence" value="#1" id="fence2">
-                          <label for="fence2" class="fence2"></label>
-                      </div><span class="radioLable">No</span>
+                  <div class="formBlock-setOfChecks">
+
+                      <div class="radioSet">
+                        <div class="setOfchkecks-title">
+                            Smoke Detector
+                            <span class="formBlock-reqInfo"></span>
+                        </div>
+
+                        <div class="setOfchkecks-Wrap">
+                            <div class="formType-radio">
+                              <input type="radio" name="locationPlus" value="#1" id="locationPlus">
+                              <label for="locationPlus" class="locationPlus"></label>
+                          </div><span class="radioLable">Yes</span>
+                          <div class="formType-radio">
+                              <input type="radio" name="locationPlus" value="#1" id="locationPlus2">
+                              <label for="locationPlus2" class="locationPlus2"></label>
+                          </div><span class="radioLable">No</span>
+                        </div>
+                      </div>
+
+                      <div class="setOfchkecks-inputSmall">
+                         <div class="setOfchkecks-title">
+                            Smoke Detector
+                        </div>
+                        <div class="formBlock-input inputDropdown setOfchkecks-input">
+                          <div class="newTarget">Owner - Primary</div>
+                          <span class="inputDropdown-arrow"></span>
+                          <ul class="inputDropdownList">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <div class="checkboxBlWrap setOfchkecks-chBox">
+                          <div class="formType-checkbox">
+                            <span class="checkboxLable">Smoke Detector </span>
+                            <input type="checkbox" name="exprotection" value="#1" id="exprot">
+                            <label for="exprot" class="exprot"></label>
+                        </div>
+                        <div class="formType-checkbox">
+                            <span class="checkboxLable">Fire Detection</span>
+                            <input type="checkbox" name="exprotection" value="#1" id="exprot2">
+                            <label for="exprot2" class="exprot2"></label>
+                        </div>
+                        <div class="formType-checkbox">
+                            <span class="checkboxLable">Burglar Alarm</span>
+                            <input type="checkbox" name="exprotection" value="#1" id="exprot3">
+                            <label for="exprot3" class="exprot3"></label>
+                        </div>
+                        <div class="formType-checkbox">
+                            <span class="checkboxLable">Sprinkler System</span>
+                            <input type="checkbox" name="exprotection" value="#1" id="exprot4">
+                            <label for="exprot4" class="exprot4"></label>
+                        </div>
+                      </div>
                     </div>
-                </span>
+                  </div>
 
 
 
-                </form>
+
+
+
               </div>
 
 
@@ -413,7 +477,7 @@
       <div class="chars-bottomControl">
           <a href="" class="goBack">&#60; Back</a>
           <div class="mess-quote saveCont">
-            <a href="" class="">Save &amp; Continue <span></span></a>
+            <a href="" class="">Save &amp; Continue &#62;</a>
             <span class="quote-shad"></span>
           </div>
           <a href="" class="saveLate">Save for Later</a>
@@ -468,7 +532,7 @@
         <section class="dialog-action">
           <h2>Please choose your action</h2>
 
-        <form action="">
+        <div class="dialogForm">
 
         <div class="actionItem">
           <div class="actionItem-el">
@@ -488,18 +552,27 @@
         </div>
 
         <div class="actionItem">
-          <span class="formType">Form type
-              <select name="" id="formList">
-                <option value="">Admitted </option>
-                <option value="">opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1 opt 1</option>
-                <option value="">opt 2</option>
-                <option value="">opt 3</option>
-                <option value="">opt 4</option>
-              </select>
-          </span>
-        </div>
+                <div class="formBlock">
+                  <div class="actionItem-el-title">
+                     Form Type
+                  </div>
+                  <div class="formBlock-input inputDropdown actionItem-elDropdown">
+                    <div class="newTarget">Owner - Primary</div>
+                    <span class="inputDropdown-arrow"></span>
+                    <ul class="inputDropdownList">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
 
-        </form>
+         </div>
+
+
         </section>
 
         <div class="contorlForm">

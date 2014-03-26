@@ -1,4 +1,4 @@
-/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+form/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 
 /* ==========================================================================
    HTML5 display definitions
@@ -1658,7 +1658,7 @@ footer {
     color: #6e6e6f;
     margin: 16px 0 4px 10px;
 }
-.dialog-action form {
+.dialog-action .dialogForm {
     background: #eeeff0;
     border: 1px solid #c0d0df;
     border-radius: 4px;
@@ -1670,7 +1670,7 @@ footer {
 
 
 /*label*/
-.dialog-action form label {
+.dialog-action .dialogForm label {
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -1701,7 +1701,7 @@ z-index: -1;
     height: 33px;
     border-radius: 8px;
     outline: 0;
-    margin: 0 0 0 50px;
+    margin: 0;
     padding: 0 10px;
     border: 1px solid #CFCFCF;
     position: absolute;
@@ -1710,6 +1710,8 @@ z-index: -1;
     left: 100px;
     -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
     box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    position: absolute;
+    left: 149px;
 }
 .dialog-action .email:focus {
     border: 1px solid #8abbdc;
@@ -1742,88 +1744,23 @@ z-index: -1;
     float: left;
 }
 
-/*select dropdown*/
-.formType {
-    margin-left: 47px!important;
+.actionItem-el-title {
+    padding: 0;
+    color: #6e6e6f;
+    font-size: 14px;
+    font-weight: 100;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 21px;
+    position: relative;
+    margin: 0 0 0 48px;
+    width: auto;
 }
 
-#formList {
-    height: 35px!important;
-    z-index: 111;
-    left: 103px;
-    position: absolute;
-    top: -4px;
-    z-index: 11;
-}
-#formList option {
-    /*width: 262px;*/
-}
-.customSelectInner {
-    width: auto!important;
-}
-.customSelectInner {
-    border: 0!important;
-    outline: 0!important;
-}
+.actionItem-elDropdown {
 
-.dialog span.customSelect {
-    background: #fff url('../img/select.png') 238px center no-repeat;
-    color: #555;
-    width: 240px;
-    height: 33px;
-    border-radius: 8px;
-    outline: 0;
-    margin: 0;
-    padding: 0 10px;
-    border: 1px solid #CFCFCF;
-    z-index: 9999;
-    line-height: 31px;
-    left: 103px;
-    position: absolute;
-    top: -4px;
-    z-index: 1;
-    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
-    box-shadow: inset 1px 1px 0 0 #E6E6E6;
-}
-
-span.customSelect {
-/*    font:12px sans-serif;
-    background:#fff url('http://i48.tinypic.com/2u7rpec.png') right center no-repeat;
-    border:1px solid #ddd;
-    color:#555;
-    padding:7px 9px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px 2px;
-    width:175px;
-
-    width: 240px;
-    height: 33px;
-    border-radius: 8px;
-    outline: 0;
-    margin: 0 0 0 50px;
-    padding: 0 10px;
-    border: 1px solid #CFCFCF;
-
-    z-index: 9999;
-*/overflow: hidden;
-    background: #fff url('../img/select.png') 238px center no-repeat;
-    color: #555;
-    width: 240px;
-    height: 33px;
-    border-radius: 8px;
-    outline: 0;
-    margin: 0 0 0 33px;
-    padding: 0 10px;
-    border: 1px solid #CFCFCF;
-    z-index: 9999;
-    line-height: 31px;
-    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
-    box-shadow: inset 1px 1px 0 0 #E6E6E6;
-}
-
-.customSelect.customSelectOpen {
-    background: #fff url('../img/selectUp.png') 238px center no-repeat;
+    left: 149px;
+    position: absolute!important;
 }
 
 
@@ -2122,7 +2059,6 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     width: 98%;
     display: block;
     margin: 0 auto;
-    overflow: auto;
     padding-bottom: 6px;
     margin-bottom: 12px;
 }
@@ -2151,61 +2087,57 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
 .map a:hover {
     text-decoration: underline;
 }
-/* home info forms */
-.formWrap {
-        width: 50%;
-    display: inline-block;
+
+
+/* save */
+.chars-bottomControl .saveLate,
+.chars-bottomControl .goBack {
+    float: right;
+    color: #0b77c2;
+    text-align: center;
+    margin: 33px 19px 0 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chars-bottomControl .saveCont {
+    float: right;
+    width: 230px;
+}
+.chars-bottomControl .quote-shad {
+background: url('../img/quote_shad.png') no-repeat;
+display: block;
+height: 22px;
+width: 244px;
+position: absolute;
+bottom: -13px;
+left: -6px;
+z-index: -1;
+background-size: 100% 100%;
+}
+
+.chars-bottomControl .goBack {
     float: left;
 }
 
-.formWrap .formType {
+/* legel notice */
+.charRules {
+    padding: 210px 20px 0 20px;
+    word-spacing: 7px;
+    padding: 210px 20px 0 20px;
+    word-spacing: 7px;
     color: #6e6e6f;
-    font-size: 14px;
-    margin-left: 37px!important;
-    position: relative;
-    margin: 2px 0;
-    padding-bottom: 1px;
-    display: block;
-    clear: both;
-}
-.formWrap .formType .hasCustomSelect{
-    right: 14px;
-}
-.formWrap .formType .hasCustomSelect option {
-    color: #6e6e6f;
-    border: 0!important;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
-    box-shadow: inset 1px 1px 0 0 #E6E6E6;
-}
-.formWrap .formType .customSelect {
-    color: #6e6e6f;
-
-    /*
-    display: block;
-    width: 262px!important;
-    */
-}
-.formWrap .formType .customSelect.customSelectOpen {
-    /* opened main styled*/
-    /*border: 1px solid gray;*/
+    font-family: Verdana;
+    font-size: 11px;
 }
 
-.formWrap .formType .reqInfo {
-    position: absolute;
-    top: 11px;
-    left: 268px;
-}
+/*-----  End of Characteristics page  ------*/
 
-.formWrap .formType h4 {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    font-weight: 100;
-    display: block;
-    width: 252px;
-    vertical-align: top;
-    line-height: 21px;
+/* all forms blocks */
+.formWrap {
+        width: 50%;
+    display: inline-block;
     float: left;
 }
 
@@ -2214,44 +2146,143 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     font-weight: bold;
 }
 
-.formType-date {
-     background: #fff;
-    color: #555;
-    width: 64px;
-    height: 31px;
-    border-radius: 8px;
-    outline: 0;
-    margin: 0 0 0 33px;
-    padding: 0px 10px;
-    border: 1px solid #CFCFCF;
-    z-index: 9999;
-    line-height: 31px;
-    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
-    box-shadow: inset 1px 1px 0 0 #E6E6E6;
+.formBlock {
+    width: 590px;
+    margin: 4px 0;
+    position: relative;
+    clear: both;
+}
+.formBlock:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.formBlock .formBlock-title {
+    padding: 0 10px 0 0;
+    margin: 0 0 0 18px;
+    color: #6e6e6f;
+    font-size: 14px;
+    font-weight: 100;
+    display: inline-block;
+    width: 292px;
+    vertical-align: top;
+    line-height: 21px;
+    position: relative;
 }
 
-.formType-year {
-    background: #fff;
-    color: #555;
-    width: auto;
-    height: 31px;
-    border-radius: 8px;
-    outline: 0;
+.formBlock .formBlock-input.inputDropdown {
+    display: inline-block;
+    width: 240px;
+    height: 33px;
     margin: 0;
-    padding: 0px 2px;
+    padding: 0 10px;
     border: 1px solid #CFCFCF;
-    text-indent: 11px;
-    z-index: 9999;
+    border-radius: 8px;
+    background: #fff;
+    /*overflow: hidden;*/
     line-height: 31px;
+    outline: 0;
     -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
     box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    position: relative;
+    cursor: pointer;
+    color: #929292;
+}
+.inputDropdown-arrow {
+    background: url('../img/select.png')no-repeat;
+    width: 14px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 4px;
+}
+.inputDropdown-arrowUp {
+    background: url('../img/selectUp.png')no-repeat;
+}
+.formBlock .formBlock-input.inputDropdown ul {
+    display: inline-block;
+    width: 240px;
+    height: auto;
+    margin: 0;
+    padding: 4px 10px;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    background: #fff;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 36px;
+    z-index: 999;
+    display: none;
 }
 
+.formBlock .formBlock-input.inputDropdown ul li {
+    padding: 0 10px;
+    margin: 0 -6px;
+
+}
+.formBlock .formBlock-input.inputDropdown ul li:hover {
+    background: #c2e6ff;
+    border-radius: 4px;
+}
+
+
+
+.formBlock-reqInfo {
+background: url(../img/reqInfo.png)no-repeat;
+width: 10px;
+height: 10px;
+display: inline-block;
+position: absolute;
+right: 4px;
+top: 11px;
+}
+
+/*responsive form input */
+.formBlock .formBlock-input.inputResponsive {
+    display: inline-block;
+    width: 262px;
+    margin: 0;
+    padding: 0;
+    color: #929292;
+}
+.formBlock input {
+    padding: 0 10px;
+    line-height: 31px;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    position: relative;
+
+    height: 33px;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    background: #fff;
+    color: #929292;
+}
+
+.formBlock .inpitResp-50 {
+    width: 107px;
+}
+.formBlock .inpitResp-date {
+    width: 73px;
+}
+.formBlock .inpitResp-year {
+    width: 130px;
+}
+
+/* radio and check */
 .radioBlWrap {
     display: inline-block;
-    margin-left: 18px;
     position: relative;
-    top: 4px;
+    left: -16px;
+    top: -3px;
 }
 
 .formType-radio {
@@ -2263,7 +2294,8 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     display: inline-block;
     clear: both;
     position: relative;
-    left: -4px;
+    height: 27px;
+    left: -16px;
 }
 .formType-radio input[type="radio"],
 .formType-checkbox input[type="checkbox"] {
@@ -2272,13 +2304,18 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     left: 22px;
     z-index: -1;
 }
-.formType .radioLable {
+.formBlock .radioLable {
     position: relative;
     top: -7px;
+    color: #6e6e6f;
+    font-weight: bold;
 }
-.formType .checkboxLable {
+.formBlock .checkboxLable {
     position: relative;
     top: -7px;
+    color: #6e6e6f;
+    font-size: 14px;
+    font-weight: 100;
 }
 .formType-radio label {
     background: url('../img/radioDef.png') no-repeat;
@@ -2299,7 +2336,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     background: url('../img/cheCh.png') no-repeat;
 }
 
-.formType .formType-dist {
+.formType-dist {
     background: #fff;
     color: #555;
     width: 40%;
@@ -2315,53 +2352,97 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     box-shadow: inset 1px 1px 0 0 #E6E6E6;
 }
 
-.formType .distWrap {
+.distWrap {
     display: inline-block;
     margin-left: 35px;
     width: 270px;
 }
-.formType .checkboxBlWrap {
-    margin-left: 24px;
-    margin-top: 6px;
+.checkboxBlWrap {
+    display: inline-block;
+    position: relative;
+    top: -6px;
+}
+
+/* set of checks */
+.formBlock-setOfChecks {
+    display: inline-block;
+    width: 240px;
+}
+
+.formBlock-setOfChecks .setOfchkecks-title .formBlock-reqInfo {
+    position: static;
+    margin-left: 8px;
+}
+.formBlock-setOfChecks .setOfchkecks-title {
+    color: #6e6e6f;
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    height: 35px;
+    line-height: 40px;
+    display: inline-block;
+    width: 130px;
+}
+
+.setOfchkecks-Wrap {
+    float: right;
+    margin: 0 -31px;
+    display: inline-block;
+    position: relative;
+    left: -16px;
+    top: -3px;
+}
+
+.setOfchkecks-inputSmall {
+    display: block;
+    clear: both;
+}
+
+.formBlock-input.inputDropdown.setOfchkecks-input {
+    display: inline-block;
+
+    height: 33px;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    background: #fff;
+
+    line-height: 31px;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
+
+    cursor: pointer;
+    color: #929292;
+
+    width: 140px;
+    float: right;
+    position: absolute;
+    right: 3px;
+}
+
+.formBlock-input.inputDropdown.setOfchkecks-input ul {
+    width: 140px;
+}
+
+.setOfchkecks-chBox .formType-checkbox {
+    left: 0;
+}
+
+.setOfchkecks-chBox .checkboxLable {
+    width: 100px;
+    margin-right: -20px;
     display: inline-block;
 }
-
-/* save */
-.chars-bottomControl .saveLate,
-.chars-bottomControl .goBack {
-    float: right;
-    color: #0b77c2;
-    text-align: center;
-    margin: 33px 19px 0 0;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.chars-bottomControl .saveCont {
-    float: right;
-}
-
-.chars-bottomControl .goBack {
-    float: left;
-}
-
-/* legel notice */
-.charRules {
-    padding: 210px 20px 0 20px;
-    word-spacing: 7px;
-    padding: 210px 20px 0 20px;
-    word-spacing: 7px;
-    color: #6e6e6f;
-    font-family: Verdana;
-    font-size: 11px;
-}
-
-/*-----  End of Characteristics page  ------*/
-
-
-
-
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
 /*=============================================
 =            Responsive up to 1024            =
 =============================================*/
@@ -2434,48 +2515,28 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
         width: 400px;
         height: 270px;
     }
-    .formWrap .formType h4 {
-        width: 188px;
+    /* forms input and select dropdown */
+    .formBlock .formBlock-title {
+        padding: 0 10px 0 0;
+        margin: 0 0 0 18px;
+        color: #6e6e6f;
+        font-size: 14px;
+        font-weight: 100;
+        display: inline-block;
+        width: 128px;
+     }
+     .formBlock-input.inputDropdown.setOfchkecks-input {
+        right: 167px;
     }
-    .formWrap .formType .hasCustomSelect {
-        right: 16px;
-        width: 160px!important;
-    }
-    .customSelect.customSelect {
-        background: #fff url('../img/select.png') 138px center no-repeat;
-        color: #555;
-        width: 140px;
-        height: 33px;
-        border-radius: 8px;
-        outline: 0;
-        margin: 0 0 0 33px;
-        padding: 0 10px;
-        border: 1px solid #CFCFCF;
-        z-index: 9999;
-        line-height: 31px;
-    }
-    .customSelect.customSelectOpen {
-        background: #fff url('../img/selectUp.png') 138px center no-repeat;
-    }
-    .formWrap .formType .reqInfo {
-        left: 205px;
-    }
-    .formType-year {
-        width: 91px;
-    }
-    .formType-date {
-        width: 30px;
-    }
-    .formType .formType-dist {
-        width: 56px;
-    }
-    .formType .distWrap {
-        width: 170px;
-    }
-    .mess-quote.saveCont {
+        .mess-quote.saveCont {
         clear: none;
     }
-}
+
+    .charRules {
+        padding: 150px 0px 0 20px;
+    }
+
+ }
 
 /*-----  End of Responsive up to 1024  ------ */
 

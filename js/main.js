@@ -51,21 +51,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    //custom arrow for select drop list
-    $('#formList').customSelect();
-    /* Home Info Forms*/
-    $('#form_01').customSelect();
-    $('#form_02').customSelect();
-    $('#form_03').customSelect();
-    $('#form_04').customSelect();
-
-
     //popup controls show/hide
-    // function hidePopUp() {
-    //     $('#popUp').addClass('hide');
-    // };
-    // hidePopUp();
-
     $('.head-logo').click(function() {
         //$('#popUp').removeClass('hide');
         $('.popUp').addClass('show');
@@ -76,5 +62,46 @@ jQuery(document).ready(function($) {
         $('.popUp').removeClass('show');
     });
 
+
+    // formBlock-input inputDropdown
+    var dropList = $('.inputDropdown>ul');
+
+    $(".inputDropdown").on('click', dropList, function(event) {
+
+        if (dropList.is(":visible")) {
+            // Hide - slide up.
+
+            $(this).children('ul').slideUp(300);
+            $(this).children('.inputDropdown-arrow').removeClass('inputDropdown-arrowUp');
+            event.stopPropagation();
+
+        } else {
+
+
+            // Show - slide down.
+            $(this).children('ul').slideDown(300);
+            $(this).children('.inputDropdown-arrow').addClass('inputDropdown-arrowUp');
+
+            event.stopPropagation();
+        }
+    });
+
+    $('.inputDropdownList li').on('click', function(event) {
+        var dropdownItem = $(event.target);
+
+        var newData = dropdownItem.html();
+        var target = $(this).parent().siblings('.newTarget');
+        target.html(newData);
+
+
+    });
+
+    //hide if clicked out of dropdown  box
+    $(document).click(function(e) {
+        if ($(e.target).parents('.inputDropdown').first().length == 0 && dropList.is(":visible"))
+            $('.inputDropdown-arrow').removeClass('inputDropdown-arrowUp');
+        dropList.fadeOut(300);
+
+    });
 
 });
