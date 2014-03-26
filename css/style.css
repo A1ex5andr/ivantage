@@ -1450,7 +1450,6 @@ textarea  {
     top: -4px;
     left: -4px;
     border: 4px solid #fff;
-    z-index: 9999;
     background: #e1e2e4;
     border-radius: 14px;
      -webkit-transition: all 0.3s ease-in-out;
