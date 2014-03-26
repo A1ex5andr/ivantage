@@ -36,7 +36,7 @@ footer,
 .quotes table tbody tr:hover {
     display: block!important;
     float: left!important;
-    width: 878px!important;
+    width: 890px!important;
 }
 
 .popUp {
@@ -48,3 +48,8 @@ footer,
 .contorlForm span {
     margin: 2px 24px 0 0;
 }
+
+.wizard  a.past span  {
+    background: url(../img/wizIe.png)no-repeat!important;
+    margin-left: 2px;
+ }
