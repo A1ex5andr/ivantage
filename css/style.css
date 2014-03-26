@@ -1805,7 +1805,7 @@ span.customSelect {
     border: 1px solid #CFCFCF;
 
     z-index: 9999;
-*/
+*/overflow: hidden;
     background: #fff url('../img/select.png') 238px center no-repeat;
     color: #555;
     width: 240px;
@@ -1830,6 +1830,7 @@ span.customSelect {
 .contorlForm {
     display: block;
     height: 100px;
+    line-height: 43px;
 }
 
 .contorlForm span {
@@ -1847,9 +1848,9 @@ span.customSelect {
 }
 .contorlForm span h5 {
     margin: 0;
-    padding-top: 13px;
-    font-size: 17px;
     letter-spacing: 1px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
 }
 
 .contorlForm .cntrl-cancel {
@@ -2167,16 +2168,32 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     clear: both;
 }
 .formWrap .formType .hasCustomSelect{
-    right: 30px;
+    right: 14px;
 }
-.formWrap .formType span.customSelect {
-    color: #A7A7A7;
+.formWrap .formType .hasCustomSelect option {
+    color: #6e6e6f;
+    border: 0!important;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+    box-shadow: inset 1px 1px 0 0 #E6E6E6;
+}
+.formWrap .formType .customSelect {
+    color: #6e6e6f;
+
+    /*
+    display: block;
+    width: 262px!important;
+    */
+}
+.formWrap .formType .customSelect.customSelectOpen {
+    /* opened main styled*/
+    /*border: 1px solid gray;*/
 }
 
 .formWrap .formType .reqInfo {
     position: absolute;
-    top: 12px;
-    left: 254px;
+    top: 11px;
+    left: 268px;
 }
 
 .formWrap .formType h4 {
@@ -2185,7 +2202,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     font-size: 14px;
     font-weight: 100;
     display: block;
-    width: 236px;
+    width: 252px;
     vertical-align: top;
     line-height: 21px;
     float: left;
@@ -2222,6 +2239,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     margin: 0;
     padding: 0px 2px;
     border: 1px solid #CFCFCF;
+    text-indent: 11px;
     z-index: 9999;
     line-height: 31px;
     -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
@@ -2243,6 +2261,8 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     float: left;
     display: inline-block;
     clear: both;
+    position: relative;
+    left: -4px;
 }
 .formType-radio input[type="radio"],
 .formType-checkbox input[type="checkbox"] {
@@ -2256,7 +2276,8 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     top: -7px;
 }
 .formType .checkboxLable {
-    line-height: 26px;
+    position: relative;
+    top: -7px;
 }
 .formType-radio label {
     background: url('../img/radioDef.png') no-repeat;
@@ -2280,7 +2301,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
 .formType .formType-dist {
     background: #fff;
     color: #555;
-    width: 38%;
+    width: 40%;
     height: 31px;
     border-radius: 8px;
     outline: 0;
@@ -2296,7 +2317,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
 .formType .distWrap {
     display: inline-block;
     margin-left: 35px;
-    width: 50%;
+    width: 270px;
 }
 .formType .checkboxBlWrap {
     margin-left: 24px;
@@ -2380,8 +2401,8 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     }
     .advSearch-control {
         position: absolute;
-        right: 50px;
-        bottom: 34px;
+        right: 42px;
+        top: 208px;
     }
     .message {
         float: right;
@@ -2446,6 +2467,9 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     }
     .formType .formType-dist {
         width: 56px;
+    }
+    .formType .distWrap {
+        width: 170px;
     }
     .mess-quote.saveCont {
         clear: none;
