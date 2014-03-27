@@ -2282,7 +2282,6 @@ top: 11px;
 
 /* radio and check */
 .radioBlWrap {
-    display: inline-block;
     position: relative;
     left: -16px;
     top: -3px;
@@ -2436,7 +2435,7 @@ top: 11px;
 
 .setOfchkecks-chBox .checkboxLable {
     width: 100px;
-    margin-right: -20px;
+    margin-right: -15px;
     display: inline-block;
 }
 .clearfix:after {
