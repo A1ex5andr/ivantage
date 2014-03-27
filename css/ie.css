@@ -53,3 +53,17 @@ footer,
     background: url(../img/wizIe.png)no-repeat!important;
     margin-left: 2px;
  }
+.formType-radio input[type="radio"],
+.formType-checkbox input[type="checkbox"]  {
+        display: inline-block;
+}
+.setOfchkecks-Wrap {
+    margin: 0 -38px;
+    left: -20px;
+    top: -2px;
+}
+.formBlock .radioLable {
+
+margin-right: 0px;
+
+}

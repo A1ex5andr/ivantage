@@ -2283,8 +2283,8 @@ top: 11px;
 /* radio and check */
 .radioBlWrap {
     position: relative;
-    left: -16px;
-    top: -3px;
+/*    left: -16px;*/
+    top: 2px;
     float: left;
 }
 
@@ -2298,13 +2298,18 @@ top: 11px;
     clear: both;
     position: relative;
     height: 27px;
-    left: -16px;
+/*    left: -16px;*/
+top: 10px;
+}
+.formType-radio input[type="radio"],
+.formType-checkbox input[type="checkbox"]  {
+        display: none;
 }
 .formType-radio input[type="radio"],
 .formType-checkbox input[type="checkbox"] {
     position: relative;
-    top: -12px;
-    left: 22px;
+/*    top: -12px;
+    left: 22px;*/
     z-index: -1;
 }
 .formBlock .radioLable {
@@ -2312,13 +2317,16 @@ top: 11px;
     top: -7px;
     color: #6e6e6f;
     font-weight: bold;
+    margin-right: 10px;
 }
 .formBlock .checkboxLable {
     position: relative;
-    top: -7px;
+    top: 3px;
     color: #6e6e6f;
     font-size: 14px;
     font-weight: 100;
+    vertical-align: top;
+
 }
 .formType-radio label {
     background: url('../img/radioDef.png') no-repeat;
@@ -2334,6 +2342,8 @@ top: 11px;
     width: 30px;
     height: 24px;
     display: inline-block;
+    float: left;
+
 }
 .formType-checkbox input[type="checkbox"]:checked+label {
     background: url('../img/cheCh.png') no-repeat;
@@ -2389,11 +2399,11 @@ top: 11px;
 
 .setOfchkecks-Wrap {
     float: right;
-    margin: 0 -31px;
+    margin: 0 -29px;
     display: inline-block;
     position: relative;
-    left: -16px;
-    top: -3px;
+    left: 0;
+    top: 5px;
 }
 
 .setOfchkecks-inputSmall {
@@ -2435,8 +2445,13 @@ top: 11px;
 
 .setOfchkecks-chBox .checkboxLable {
     width: 100px;
-    margin-right: -15px;
+   /* margin-right: -15px;*/
     display: inline-block;
+}
+.setOfchkecks-chBox .formType-checkbox label {
+    float: none;
+        top: 0;
+position: relative;
 }
 .clearfix:after {
     visibility: hidden;
