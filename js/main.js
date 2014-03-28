@@ -104,4 +104,11 @@ jQuery(document).ready(function($) {
 
     });
 
+    // this runs calendar
+    $(function() {
+        $("#datepicker").datepicker();
+        $("#datepicker2").datepicker();
+    });
+    //$("#datepicker").datepicker().datepicker("setDate", new Date());//todays date in datepicker on start
+
 });

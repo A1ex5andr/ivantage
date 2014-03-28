@@ -538,7 +538,8 @@ html,
 button,
 input,
 select,
-textarea  {
+textarea,
+.ui-widget  {
     font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
@@ -2448,11 +2449,105 @@ top: 10px;
    /* margin-right: -15px;*/
     display: inline-block;
 }
+
 .setOfchkecks-chBox .formType-checkbox label {
     float: none;
-        top: 0;
-position: relative;
+    top: 0;
+    position: relative;
 }
+
+/* calendar */
+
+.formBlock-calendar .datepicker {
+    width: 100px;
+    width: 100px;
+    background-image: url(../img/dateIco.png);
+    background-position: 95px 5px;
+    background-repeat: no-repeat;
+}
+
+.ui-widget-header {
+    border: 0;
+    background: #1e81c7;
+    color: #222222/*{fcHeader}*/;
+    font-weight: 100;
+    border-bottom-left-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    color: #fff;
+    font-size: 14px;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    padding: 0;
+    width: 25px;
+    height: 21px;
+    top: 1px;
+}
+
+.ui-datepicker .ui-datepicker-prev span{
+    background-image: url(../img/prevMonth.png)/*{iconsHeader}*/;
+}
+.ui-datepicker .ui-datepicker-prev:hover span{
+    background-image: url(../img/prevMonthHov.png)/*{iconsHeader}*/;
+}
+.ui-datepicker .ui-datepicker-next span {
+    background-image: url(../img/nextMonth.png)/*{iconsHeader}*/;
+}
+.ui-datepicker .ui-datepicker-next:hover span {
+    background-image: url(../img/nextMonthHov.png)/*{iconsHeader}*/;
+}
+.ui-icon-circle-triangle-w, 
+.ui-icon-circle-triangle-e {
+    background-position: 0;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {  
+    display: inline-block;  
+    width: 30px;  
+    height: 30px;  
+    text-align: center;  
+    cursor: pointer;  
+    background-image: none;
+    content: "&#60;";
+    background-repeat: no-repeat;  
+    line-height: 600%;  
+    overflow: hidden;  
+} 
+
+#ui-datepicker-div > table > thead > tr {
+    background: #f2f2f2;
+}
+.ui-datepicker td span:hover, .ui-datepicker td a:hover {
+    background: #c2e6ff!important;
+    border-radius: 4px;
+}
+
+.ui-datepicker th {
+    padding: 3px 0;
+    text-align: center;
+    font-weight: 100;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: block;
+    padding: 0 .2em;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 0;
+    background: none;
+}
+.ui-datepicker {
+    width: 207px;
+    padding: 0;
+    margin-top: 3px;
+}
+.ui-datepicker .ui-datepicker-header {
+    padding: 0;
+}
+
+
+/* clerfix */
 .clearfix:after {
     visibility: hidden;
     display: block;

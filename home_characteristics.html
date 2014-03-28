@@ -10,6 +10,9 @@
 
     <title>Ivantage</title>
 
+    <!-- UI Style -->
+    <link href="css/ui/jquery.ui.base.css" rel="stylesheet">
+    <link href="css/ui/jquery.ui.theme.css" rel="stylesheet">
     <!-- Main Style -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -460,16 +463,31 @@
                       </div>
                     </div>
                   </div>
-
-
-
-
-
-
               </div>
+            </div>
 
-
-
+            <!-- new block of form elements -->
+            <div class="homeInfo-wrapper clearfix"> 
+              <div class="formWrap clearfix">
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Date
+                  </div>
+                  <div class="formBlock-calendar">
+                    <input type="text" id="datepicker" class="datepicker"> 
+                  </div>
+                </div>
+              </div>
+              <div class="formWrap clearfix">
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                     Date
+                  </div>
+                  <div class="formBlock-calendar">
+                    <input type="text" id="datepicker2" class="datepicker"> 
+                  </div>
+                </div>
+              </div>
             </div>
 
 
@@ -588,8 +606,10 @@
       </div>
     </aside>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery  -->
     <script src="js/jquery_1_10_2.js"></script>
+    <!-- jQuery UI -->
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <!-- Cusom Select  -->
     <script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
     <!-- Main JS  -->
