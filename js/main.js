@@ -111,4 +111,41 @@ jQuery(document).ready(function($) {
     });
     //$("#datepicker").datepicker().datepicker("setDate", new Date());//todays date in datepicker on start
 
+    //autocmplete input field
+    $(function() {
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+        $("#tags").autocomplete({
+            source: availableTags
+        });
+    });
+
+    //tolltip
+    $('.tip').hover(function() {
+        $('.toolNote-img').toggleClass('showTip');
+        $('.toolNote-mess').toggleClass('showTip');
+    });
+
 });
