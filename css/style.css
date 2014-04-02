@@ -2013,20 +2013,20 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
 
 
 /* Home Characteristics */
-.homeChars {
+.pageChars {
     position: relative;
     clear: both;
     margin-bottom: 40px
 }
 
-.homeChars header h1 {
+.pageChars header h1 {
     font-size: 30px;
         color: #0b77c2;
     font-weight: 100;
     float: left;
     margin-bottom: 0;
 }
-.homeChars header h3 {
+.pageChars header h3 {
     font-size: 12px;
     color: #0b77c2;
     font-weight: 100;
@@ -2035,7 +2035,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     top: 23px;
     left: 30px;
 }
-.homeChars header h4 {
+.pageChars header h4 {
     font-size: 14px;
     color: #0b77c2;
     font-weight: 100;
@@ -2053,7 +2053,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     border: 1px solid #e4e5e6;
     border-radius: 4px;
 }
-.pageInfo>h3 {
+.pageInfo .h3{
     font-size: 20px;
     font-weight: bold;
     color: #0b77c2;
@@ -2068,6 +2068,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     display: block;
     margin: 0 auto;
     padding-bottom: 6px;
+    padding-top: 8px;
     margin-bottom: 12px;
 }
 
@@ -2694,6 +2695,83 @@ margin-right: auto;
     clear: both;
     height: 0;
     }
+
+/* app_info */
+.pageWarn {
+    color: #6e6e6f;
+    font-size: 16px;
+}
+.pageInfo {
+ 
+}
+.pageInfo.appInfo .headerInput {
+    overflow: auto;
+}
+.pageInfo.appInfo .headerInput .h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b77c2;
+    padding: 0;
+    margin-left: 8px;
+    display: inline-block;
+    float: left;
+}
+.pageInfo.appInfo .headerInput .formBlock {
+    float: right;
+    clear: none;
+    margin: 28px 19px 10px 0;
+}
+
+.pageInfo-wrapper {
+ 
+}
+
+/* app_info map */
+
+.formMap {
+    margin: 0 0 0 18px;
+    position: relative;
+    width: 472px;
+    clear: both;
+}
+
+.formMap h4 {
+    padding: 0 10px 0 0;
+    color: #6e6e6f;
+    font-size: 14px;
+    font-weight: 800;
+    vertical-align: top;
+    line-height: 21px;
+}
+.formMap .formMap-nav a,
+.formMap .formMap-nav span {
+    padding-right: 10px;
+    float: right;
+    color: #1e81c7;
+    font-size: 14px;
+    text-decoration: none;
+ }    
+.formMap .formMap-nav span,
+.formMap .formMap-nav .formNav-active {
+    color: #6e6e6f;
+}
+
+
+
+/* all formBlock placeholders */
+.formBlock ::-webkit-input-placeholder {
+   
+}
+.formBlock ::-moz-placeholder { /* Firefox 19+ */
+   
+}
+.formBlock :-ms-input-placeholder {
+   
+}
+.formBlock :-moz-placeholder { /* Firefox 18- */
+   
+}
+
 /*=============================================
 =            Responsive up to 1024            =
 =============================================*/
