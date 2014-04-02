@@ -1508,6 +1508,42 @@ textarea,
 .carrLogo_08 {
     background: url('../img/08.png') no-repeat;
 }
+.carrLogo_09 {
+    background: url('../img/09.png') no-repeat;
+}
+.carrLogo_10 {
+    background: url('../img/10.png') no-repeat;
+}
+.carrLogo_11 {
+    background: url('../img/11.png') no-repeat;
+}
+.carrLogo_12 {
+    background: url('../img/12.png') no-repeat;
+}
+.carrLogo_13 {
+    background: url('../img/13.png') no-repeat;
+}
+.carrLogo_14 {
+    background: url('../img/14.png') no-repeat;
+}
+.carrLogo_15 {
+    background: url('../img/15.png') no-repeat;
+}
+.carrLogo_16 {
+    background: url('../img/16.png') no-repeat;
+}
+.carrLogo_17 {
+    background: url('../img/17.png') no-repeat;
+}
+.carrLogo_18 {
+    background: url('../img/18.png') no-repeat;
+}
+.carrLogo_19 {
+    background: url('../img/19.png') no-repeat;
+}
+.carrLogo_20 {
+    background: url('../img/20.png') no-repeat;
+}
 
 .carAcc {
     visibility: hidden;
@@ -1806,7 +1842,7 @@ z-index: -1;
     border-color: transparent;
 }
 .contorlForm .cntrl-cancel:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 .contorlForm .cntrl-confirm:hover {
     background: #fff;
