@@ -63,46 +63,6 @@ jQuery(document).ready(function($) {
     });
 
 
-    // formBlock-input inputDropdown
-    var dropList = $('.inputDropdown>ul');
-
-    $(".inputDropdown").on('click', dropList, function(event) {
-
-        if (dropList.is(":visible")) {
-            // Hide - slide up.
-
-            $(this).children('ul').slideUp(300);
-            $(this).children('.inputDropdown-arrow').removeClass('inputDropdown-arrowUp');
-            event.stopPropagation();
-
-        } else {
-
-
-            // Show - slide down.
-            $(this).children('ul').slideDown(300);
-            $(this).children('.inputDropdown-arrow').addClass('inputDropdown-arrowUp');
-
-            event.stopPropagation();
-        }
-    });
-
-    $('.inputDropdownList li').on('click', function(event) {
-        var dropdownItem = $(event.target);
-
-        var newData = dropdownItem.html();
-        var target = $(this).parent().siblings('.newTarget');
-        target.html(newData);
-
-
-    });
-
-    //hide if clicked out of dropdown  box
-    $(document).click(function(e) {
-        if ($(e.target).parents('.inputDropdown').first().length == 0 && dropList.is(":visible"))
-            $('.inputDropdown-arrow').removeClass('inputDropdown-arrowUp');
-        dropList.fadeOut(300);
-
-    });
 
     // this runs calendar
     $(function() {
@@ -146,6 +106,21 @@ jQuery(document).ready(function($) {
     $('.tip').hover(function() {
         $('.toolNote-img').toggleClass('showTip');
         $('.toolNote-mess').toggleClass('showTip');
+    });
+
+    // custom select box with options
+    $("select").selectBoxIt();
+
+    //dropdown arrow on open state
+
+    $("select").bind({
+        // Binds to the 'open' event on the original select box
+        "open": function() {
+            $(this).next().find("#testSelectBoxItArrow").addClass("dropup");
+        },
+        "close": function() {
+            $(this).next().find("#testSelectBoxItArrow").removeClass("dropup");
+        }
     });
 
 });

@@ -327,16 +327,13 @@
                      City
                     <span class="formBlock-reqInfo"></span>
                   </div>
-                  <div class="formBlock-input inputDropdown">
-                    <div class="newTarget">Owner - Primary</div>
-                    <span class="inputDropdown-arrow"></span>
-                    <ul class="inputDropdownList">
-                      <li>1</li>
-                      <li>2</li>
-                      <li>123 456 890 - 123 456 789 0 - 123 456 789 0</li>
-                      <li>4</li>
-                      <li>5</li>
-                    </ul>
+                  <div class="">
+                     <select id="test" name="test">
+                      <option value="SelectBoxIt is:">SelectBoxIt is:</option>
+                      <option value="a jQuery Plugin">a jQuery Plugin</option>
+                      <option value="a Select Box Replacement">a Select Box Replacement</option>
+                      <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+                    </select>
                   </div>
                 </div>
 
@@ -466,40 +463,39 @@
         <section class="dialog-action">
           <h2>Please choose your action</h2>
 
-        <div class="dialogForm">
+          <div class="dialogForm">
 
-        <div class="actionItem">
-          <div class="actionItem-el">
-            <input type="radio" name="color" value="#0000ff" id="print"/>
-            <label for="print" class="print"></label>
-          </div>
-          <span>Download and Print</span>
-        </div>
+            <div class="actionItem">
+              <div class="actionItem-el">
+                <input type="radio" name="color" value="#0000ff" id="print"/>
+                <label for="print" class="print"></label>
+              </div>
+              <span>Download and Print</span>
+            </div>
 
-        <div class="actionItem">
-          <div class="actionItem-el">
-            <input type="radio" name="color" value="#00ffff" id="mail"/>
-            <label for="mail" class="mail"></label>
-          </div>
-          <span>Email to</span>
-          <input type="text" class="email">
-        </div>
+            <div class="actionItem">
+              <div class="actionItem-el">
+                <input type="radio" name="color" value="#00ffff" id="mail"/>
+                <label for="mail" class="mail"></label>
+              </div>
+              <span>Email to</span>
+              <input type="text" class="email">
+            </div>
 
-        <div class="actionItem">
+            <div class="actionItem">
                 <div class="formBlock">
                   <div class="actionItem-el-title">
                      Form Type
                   </div>
-                  <div class="formBlock-input inputDropdown actionItem-elDropdown">
-                    <div class="newTarget">Owner - Primary</div>
-                    <span class="inputDropdown-arrow"></span>
-                    <ul class="inputDropdownList">
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
-                    </ul>
+                  <div class="actionItem-elDropdown">
+                          <div class="selectSmallRight">
+                             <select id="test" name="test">
+                              <option value="SelectBoxIt is:">SelectBoxIt is:</option>
+                              <option value="a jQuery Plugin">a jQuery Plugin</option>
+                              <option value="a Select Box Replacement">a Select Box Replacement</option>
+                              <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+                            </select>
+                          </div>
                   </div>
                 </div>
             </div>
@@ -522,7 +518,7 @@
     <!-- jQuery UI -->
       <script src="js/jQueryUI-1.10.4.js"></script>
     <!-- Cusom Select  -->
-      <script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
+      <script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
     <!-- Main JS  -->
       <script type="text/javascript" src="js/main.js"></script>
 
