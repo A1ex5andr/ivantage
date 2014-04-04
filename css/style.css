@@ -2195,6 +2195,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     margin: 4px 0;
     position: relative;
     clear: both;
+    min-height: 35px;
 }
 .formBlock:after {
     visibility: hidden;
@@ -2216,6 +2217,28 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     line-height: 21px;
     position: relative;
     float: left;
+}
+
+.formWrap .mapLink a {
+    font-size: 12px;
+    float: right;
+    padding: 12px 20px;
+    color: #1e81c7;
+    text-decoration: none;
+}
+
+.bottomContor-nav {
+    float: left;
+    text-align: center;
+    margin: 33px 19px 0 0;
+    border-radius: 8px;
+}
+.bottomContor-nav a {
+    text-decoration: none;
+    color: #0b77c2;
+}
+.bottomContor-nav span {
+    padding: 0 20px;
 }
 
 /* --- custom select dropdown */
@@ -2900,6 +2923,10 @@ top: 10px;
 .formBlock-input.input-normal {
     width: 240px;
 }
+.formBlock-input.input-disable {
+    background: #e7e7e8;
+    cursor: not-allowed;
+}
  
 /* tooltip */ 
 .toolTip {
@@ -2935,7 +2962,13 @@ margin-right: auto;
 .showTip {
     visibility: visible!important;
 }
- 
+
+    /* formBlock tooltip */
+    .formBlock .toolTip {   
+        position: absolute;
+        top: 0;
+        left: 196px;
+    }
 
 /* clerfix */
 .clearfix:after {
@@ -2948,9 +2981,16 @@ margin-right: auto;
     }
 
 /* app_info */
-.pageWarn {
+.pageWarn,
+.pageDetail {
     color: #6e6e6f;
     font-size: 16px;
+    clear: both;
+}
+.pageDetail {
+    width: 910px;
+    padding-left: 10px;
+    font-weight: 100;
 }
 .pageInfo {
  
