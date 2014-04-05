@@ -65,3 +65,7 @@ footer,
 .formBlock .radioLable {
     margin-right: 0px;
 }
+
+.mess-quote.saveCont {
+    width: 290px;
+}

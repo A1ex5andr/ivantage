@@ -109,7 +109,9 @@ jQuery(document).ready(function($) {
     });
 
     // custom select box with options
-    $("select").selectBoxIt();
+    $("select").selectBoxIt({
+        aggressiveChange: true
+    });
 
     //dropdown arrow on open state
 
