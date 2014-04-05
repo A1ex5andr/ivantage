@@ -2218,6 +2218,10 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     position: relative;
     float: left;
 }
+    /* customized field */
+    .appInfo .formBlock .formBlock-title {
+        width: 150px;
+    }
 
 .formWrap .mapLink a {
     font-size: 12px;
@@ -2567,6 +2571,11 @@ top: 11px;
     border-radius: 8px;
     background: #fff;
     color: #929292;
+}
+
+/* Hard "outline" with box-shadow: */
+.formBlock-input.input-normal:focus {
+    box-shadow: 0px 0px 0px 1pt #8abbdc;
 }
 
 .formBlock .inpitResp-50 {
@@ -2934,7 +2943,7 @@ top: 10px;
     position: relative;
     display: block;
     text-align: center;
-    width: 200px;
+    width: 20px;
 }
 
 .toolTip .toolNote-mess {
@@ -2944,9 +2953,9 @@ top: 10px;
     color: #fff;
     padding: 10px 20px;
     border-radius: 6px;
-    left: 0;
-    right: 0;
+    right: -110px;
     display: block; 
+    width: 200px;
 }
 .toolTip .toolNote-img {
     display: block;
@@ -2967,8 +2976,10 @@ margin-right: auto;
     .formBlock .toolTip {   
         position: absolute;
         top: 0;
-        left: 196px;
+        right: 126px;
+        z-index: 1;
     }
+ 
 
 /* clerfix */
 .clearfix:after {
