@@ -5,6 +5,10 @@
     border: 1px solid #dadada;
 }
 
+.contorlForm {
+    right: -22px;
+}
+
 footer,
 .quotes table tr,
 .gradient {
@@ -21,12 +25,19 @@ footer,
     z-index: 9;
     position: relative;
  }
+ .navi ul li h2 {
+    font-size: 13px!important;
+}
 .advSearch,
 .advSearch-container .col input,
 .advSearch-control .srch  {
     z-index: 90;
     position: relative;
  }
+
+.advSearch-control {
+    right: 23px;
+}
 
 .quotes table *,
 .quotes table tbody tr {
@@ -68,4 +79,8 @@ footer,
 
 .mess-quote.saveCont {
     width: 290px;
+}
+.chars-bottomControl .quote-shad {
+    width: 290px;
+    left: -3px;
 }

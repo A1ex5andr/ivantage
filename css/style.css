@@ -670,7 +670,7 @@ textarea,
     padding: 10px 0 0 0;
 }
 .navi ul li h2 {
-    font-size: 14px;
+    font-size: 14px!important;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -683,7 +683,7 @@ textarea,
     padding-top: 10px;
 }
 .navi ul .navi-more:hover  h2 {
-    font-size: 16px;
+    /*font-size: 16px;*/
     padding-top: 0;
 }
 
@@ -708,13 +708,13 @@ textarea,
 .navi-more a {
     background: #bd55cc;
 }
-.navi-more a span {
+.navi-more .naviMoreArr {
     display: inline-block;
     height: 5px;
     width: 5px;
     background: url('../img/arr_w_d.png')no-repeat;
 }
-.navi-more a:hover span {
+.navi-more a:hover .naviMoreArr {
     background: url('../img/arr_w_u.png')no-repeat;
 }
 
@@ -1813,6 +1813,9 @@ z-index: -1;
     display: block;
     height: 100px;
     line-height: 43px;
+    position: relative;
+    top: 0;
+    right: 0;
 }
 
 .contorlForm span {
@@ -1822,11 +1825,14 @@ z-index: -1;
     background: #0b77c2;
     padding: 0;
     text-align: center;
-    margin: 16px 2px 0 0;
+    margin: 0;
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
     border: 3px solid #0b77c2;
+    position: relative;
+    top: 16px;
+    right: 2px;
 }
 .contorlForm span h5 {
     margin: 0;
@@ -3106,13 +3112,16 @@ margin-right: auto;
     .advSearch-container {
         display: none;
         position: absolute;
-        background: url('../img/advSearch.png') no-repeat;
+        background: url('../img/advSearchS.png') no-repeat;
         width: 904px;
         height: 268px;
-        right: -22px;
+        right: -24px;
         top: 0;
-        background-size: 886px;
+        /*background-size: 886px;*/
         z-index: 9;
+    }
+    .advSearch .advSearch-btn {
+        font-size: 13px;
     }
     .advSearch-container .col input {
         width: 160px;

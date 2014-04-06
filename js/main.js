@@ -3,9 +3,9 @@ jQuery(document).ready(function($) {
     // button hover more/less toggle
     $('.navi-more ').hover(
         function() {
-            $('.navi-more h2 storng').text('Less');
+            $('.naviMoreTitle').text('Less');
         }, function() {
-            $('.navi-more h2 storng').text('More');
+            $('.naviMoreTitle').text('More');
         }
     );
 
