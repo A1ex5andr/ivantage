@@ -1680,6 +1680,9 @@ textarea,
 .carrLogo_07 {
     background: url('../img/07.png') no-repeat;
 }
+.carrLogo_07_new {
+    background: url('../img/07_new.png') no-repeat;
+}
 .carrLogo_08 {
     background: url('../img/08.png') no-repeat;
 }
@@ -1718,6 +1721,9 @@ textarea,
 }
 .carrLogo_20 {
     background: url('../img/20.png') no-repeat;
+}
+.carrLogo_21 {
+    background: url('../img/21.png') no-repeat;
 }
 
 .carAcc {
