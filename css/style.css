@@ -1031,6 +1031,7 @@ textarea,
 .quotes {
     padding-left: 20px;
     padding-right: 40px;
+    position: relative;
 }
 .quotes > a {
     color: #6fa2d3;
@@ -1049,6 +1050,9 @@ textarea,
     font-size: 30px;
     font-weight: 100;
     margin-bottom: 0;
+}
+.quotes > h2 > span {
+    font-size: 16px;
 }
 
 .quotes table {
@@ -1197,12 +1201,14 @@ textarea,
  color: #6e6e6f;
  font-size: 14px;
  padding-top: 10px;
+ clear: both;
+ height: 42px;
 }
 .quoteFlWrap {
     display: inline-block;
 }
 .quoteFlWrap.quoteDatepick{
-    width: 180px;
+    width: 176px;
 }
 .quoteFilter h4 {
     color: #6e6e6f;
@@ -1258,7 +1264,7 @@ textarea,
     margin: 0;
     border-radius: 5px;
     position: relative;
-    top: 9px;
+    top: 7px;
     right: 4px;
     padding: 2px 4px;
 }
@@ -1272,7 +1278,7 @@ textarea,
 }
 .quoteFilter-clear {
     position: relative;
-    top: 9px;
+    top: 7px;
     right: 4px;
     padding: 2px 4px;
     text-decoration: none;
@@ -1281,6 +1287,31 @@ textarea,
     text-decoration: none;
     color: #0b77c2;
 }
+
+.exportAgent * {
+    color: #0b77c2;
+    text-decoration: none;
+}
+.exportAgent {
+    position: absolute;
+    top: 22px;
+    right: 44px;
+    
+}
+.exportAgent-but {
+    display: inline-block;
+}
+.exportAgent-but a {
+    background-image: url('../img/exportAgent.png');
+    font-size: 12px;
+    width: 113px;
+    display: block;
+    height: 22px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
 
 /* quote table */ 
 .personalQuotesTable {}
@@ -1299,6 +1330,10 @@ textarea,
 .personalQuotesTable .col5a {
     width: 70px;
 }
+
+
+
+
 /* quotes navi */
 
 .quotesPersonal-navi {
@@ -1306,6 +1341,13 @@ textarea,
     border-top: 2px solid #dadada;
     padding-top: 10px;
     background: #fcfcfc;
+}
+
+.quotesPersonal-navi.outTable-navi {
+    text-align: center;
+    border-top: 0;
+    padding-top: 10px;
+    background: transparent;
 }
 .quotesPersonal-navi span {
     width: 24px;
@@ -1343,6 +1385,11 @@ textarea,
     background: #fcfcfc;
     padding: 10px 0;
     border-top: 1px solid #e3e4e5;
+}
+
+.message.quoteMessageBl {
+    float: right;
+    margin-top: 108px;
 }
 
 /* messages */
@@ -1833,12 +1880,13 @@ footer {
 
 .dialog {
     width: 778px;
-    height: 402px;
+    height: auto;
     display: block;
-    margin: 150px auto;
+    margin: 160px auto;
     background: #fff;
     padding: 4px;
     border-radius: 4px;
+    padding-bottom: 0;
 }
 
 .dialog h1 {
@@ -1915,6 +1963,7 @@ z-index: -1;
 
 .dialog-action label.print {background: url('../img/radioDef.png') no-repeat;}
 .dialog-action label.mail {background: url('../img/radioDef.png') no-repeat;}
+.dialog-action label.errRadio {background: url('../img/radioDefErr.png') no-repeat;}
 
 .dialog-action input[type="radio"]:checked+label {
     background: url('../img/radioCh.png') no-repeat;
@@ -1992,7 +2041,7 @@ z-index: -1;
 /* buttons */
 .contorlForm {
     display: block;
-    height: 100px;
+    height: 80px;
     line-height: 43px;
     position: relative;
     top: 0;
@@ -2106,6 +2155,12 @@ line-height: 20px;
 }
 .charsNotice {
     background: url('../img/chars_notice.png') no-repeat;
+}
+
+.chars>.error {
+    width: 1222px;
+    margin: 0 0 10px 0;
+    border-radius: 4px;
 }
 
 /* wizard */
@@ -2463,6 +2518,9 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
   display: inline-block;
   vertical-align: top;
 }
+.selectError .selectboxit.selectboxit-enabled {
+    background: #fce3e3!important;
+}
 
 /* Styles that apply to all SelectBoxIt elements */
 .selectboxit-container * {
@@ -2503,7 +2561,9 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
   height: 30px; /* Height of the drop down */
   line-height: 30px; /* Vertically positions the drop down text */
   display: block;
-
+}
+.selectError>.selectboxit-container span  {
+    color: #c20909;
 }
 
 /* Focus pseudo selector */
@@ -2624,6 +2684,12 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
 }
 .dropup {
     background: url('../img/selectUp.png')no-repeat!important;
+}
+.selectError .selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+    background: url('../img/selectErr.png')no-repeat;
+}
+.selectError .dropup {
+    background: url('../img/selectUpErr.png')no-repeat!important;
 }
 
 /* Drop Down down arrow for jQueryUI and jQuery Mobile */
@@ -3066,6 +3132,13 @@ top: 10px;
     background: url(../img/errorWarn.png)no-repeat;
     background-position: 7px 10px;
 }
+.errorTextMark {
+    color: #c20909!important;
+}
+.errorBlockMark {
+    background: #fce3e3!important;
+    color: #c20909;
+}
 
 /* autocomplete */
 .ui-widget-content {
@@ -3208,6 +3281,7 @@ margin-right: auto;
 .pageInfo {
  
 }
+
 .pageInfo.appInfo .headerInput {
     overflow: auto;
 }

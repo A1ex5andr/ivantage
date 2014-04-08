@@ -84,3 +84,14 @@ footer,
     width: 290px;
     left: -3px;
 }
+
+/* customers */ 
+.quoteFilter {
+    height: 50px!important;
+}
+.quoteFilter .quoteFilter-location {
+    display: inline-block;
+    margin-right: 2px;
+    position: relative;
+    top: 14px;
+}

@@ -214,6 +214,20 @@
         <p class="pageDetail">
           PLEASE READ THE FOLLOWING TO THE CUSTOMER AND OBTAIN CUSTOMER VERBAL CONSENT: “I will need to gather more information to obtain a quote for you from a non-Allstate company. In order to obtain a quote, I’ll need to share your information. If you are comfortable with this, I’ll begin now."
         </p>
+
+            <div class="error ">
+              <div class="error-1">
+                <span class="error-warn"></span>
+                Please enter your first name
+              </div>
+              <div class="error-2">
+                <span class="error-warn"></span>
+                Please enter your valid email
+              </div>
+            </div>
+
+
+
         <div class="pageInfo appInfo">
 
             <div class="headerInput">
@@ -238,12 +252,12 @@
                     </div>
                 </div>
                 <div class="formBlock">
-                  <div class="formBlock-title">
+                  <div class="formBlock-title errorTextMark">
                     First Name
                     <span class="formBlock-reqInfo"></span>
                   </div>
                   <div class="formBlock-input inputResponsive">
-                    <input class="formBlock-input input-normal" placeholder=" ">  
+                    <input class="formBlock-input input-normal errorBlockMark" placeholder=" ">  
                   </div>
                 </div>
                 <div class="formBlock">
@@ -290,11 +304,11 @@
             <div class="pageInfo-wrapper clearfix"> 
               <div class="formWrap clearfix">
                 <div class="formBlock">
-                  <div class="formBlock-title">
+                  <div class="formBlock-title errorTextMark">
                     Email Address
                   </div>
                   <div class="formBlock-input inputResponsive">
-                    <input class="formBlock-input input-normal" placeholder=" ">  
+                    <input class="formBlock-input input-normal errorBlockMark" placeholder=" ">  
                   </div>
                   <div class="toolTip">
                       <div class="toolNote-mess">
@@ -439,6 +453,18 @@
               You also knowledge that you will explain the purpose of the Program Notice and Privacy Statement to the customer, including the fact that this is a non-Allstate policy being considered for purchase.
           </p>
         </article>
+            
+            <div class="error ">
+              <div class="error-1">
+                <span class="error-warn"></span>
+                Please enter your first name
+              </div>
+              <div class="error-2">
+                <span class="error-warn"></span>
+                Please enter your valid email
+              </div>
+            </div>
+
         <section class="dialog-action">
           <h2>Please choose your action</h2>
 
@@ -455,10 +481,10 @@
             <div class="actionItem">
               <div class="actionItem-el">
                 <input type="radio" name="color" value="#00ffff" id="mail"/>
-                <label for="mail" class="mail"></label>
+                <label for="mail" class="mail errRadio"></label>
               </div>
-              <span>Email to</span>
-              <input type="text" class="email">
+              <span class="">Email to</span>
+              <input type="text" class="email errorBlockMark">
             </div>
 
             <div class="actionItem">
@@ -467,8 +493,8 @@
                      Form Type
                   </div>
                   <div class="actionItem-elDropdown">
-                          <div class="selectSmallRight">
-                             <select id="test" name="test">
+                          <div class="selectSmallRight selectError">
+                             <select id="test" name="test" class="">
                               <option value="SelectBoxIt is:">SelectBoxIt is:</option>
                               <option value="a jQuery Plugin">a jQuery Plugin</option>
                               <option value="a Select Box Replacement">a Select Box Replacement</option>
