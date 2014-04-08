@@ -601,6 +601,9 @@ textarea,
     color: #89bee7;
     text-decoration: none;
 }
+.head .head-client .hello .logOutWrap {
+    color: #89bee7;
+}
 .head .head-client a:hover {
     color: #9fd3f9;
     text-decoration: underline;
@@ -636,6 +639,8 @@ textarea,
     clear: both;
     height: 120px;
     display: block;
+    z-index: 4444;
+    position: relative;
 }
 
 .navi ul {
@@ -907,6 +912,7 @@ textarea,
  .advSearch {
     float: right;
     position: relative;
+    z-index: 5555;
 }
  .advSearch .advSearch-btn {
     color: #0b77c2;
@@ -1040,8 +1046,9 @@ textarea,
 
 .quotes > h2 {
     color: #0b77c2;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 100;
+    margin-bottom: 0;
 }
 
 .quotes table {
@@ -1133,6 +1140,17 @@ textarea,
     border-bottom: 1px solid transparent;
 }
 
+.lte-ie9 .quotes table tbody tr:hover {
+ 
+    float:left;
+    clear:left;
+    width: 888px;
+    z-index: 1;
+    border-radius: 6px!important;
+    display: block;
+}
+
+
 .quotes table tbody tr:hover .copyDel * {
     visibility: visible;
 }
@@ -1155,6 +1173,8 @@ textarea,
     width: 12px;
     background: url('../img/arr_bl.png') no-repeat;
     cursor: pointer;
+    position: relative;
+    left: 5px;
 }
 .tableSorter {
     cursor: pointer;
@@ -1172,7 +1192,158 @@ textarea,
     border: 1px solid #e4e5e6;
 }
 
+/* quotes filter */
+.quoteFilter {
+ color: #6e6e6f;
+ font-size: 14px;
+ padding-top: 10px;
+}
+.quoteFlWrap {
+    display: inline-block;
+}
+.quoteFlWrap.quoteDatepick{
+    width: 180px;
+}
+.quoteFilter h4 {
+    color: #6e6e6f;
+    font-size: 14px;
+    margin: 0!important;
+    padding: 0 0 0 0!important;
+    font-weight: 100!important;
+    display: inline-block;
+    position: relative;
+    top: 6px;
+}
+.quoteFilter .quoteFilter-location {
+    display: inline-block;
+    margin-right: 10px;
+}
+.quoteFilter .quoteFilter-location .selectboxit-container .selectboxit {
+    width: 94px!important;
+    height: 28px;
+}
+.quoteFilter .quoteFilter-location .selectboxit .selectboxit-arrow-container .selectboxit-arrow {
+    top: 11px;
+    right: 5px;
+}
+.quoteFilter .quoteFilter-location .selectboxit-container .selectboxit-options {
+    margin-top: -2px;
+}
 
+.quoteFilter .formBlock-calendar .datepicker {
+    width: 92px;
+    background-position: 82px 4px;
+}
+.quoteFilter-stDate,
+.quoteFilter-stDate > div {
+    display: inline-block;
+    clear: none!important;
+    width: 100px!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+.quoteFilter-stDate .formBlock-calendar .datepicker {
+    height: 27px;
+    top: 6px;
+    left: 0;
+    line-height: 29px;
+}
+.quoteSmallFilter .quoteFilter-location .selectboxit-container .selectboxit {
+    width: 56px!important;
+}
+
+.quoteFilter-apply {
+    background: #0b77c2;
+    text-align: center;
+    margin: 0;
+    border-radius: 5px;
+    position: relative;
+    top: 9px;
+    right: 4px;
+    padding: 2px 4px;
+}
+.quoteFilter-apply a {
+    color: #fff;
+    text-decoration: none;
+}
+.quoteFilter-apply:hover {
+    -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+    box-shadow: inset 1px 1px 6px 0 #222222;
+}
+.quoteFilter-clear {
+    position: relative;
+    top: 9px;
+    right: 4px;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+.quoteFilter-clear a {
+    text-decoration: none;
+    color: #0b77c2;
+}
+
+/* quote table */ 
+.personalQuotesTable {}
+.personalQuotesTable .col2  {
+    width: 90px!important;
+}
+.personalQuotesTable .col3 {
+    width: 144px!important;
+}
+.personalQuotesTable .col4 {
+    width: 136px!important;
+}
+.personalQuotesTable .col7 {
+    width: 69px!important;
+}
+.personalQuotesTable .col5a {
+    width: 70px;
+}
+/* quotes navi */
+
+.quotesPersonal-navi {
+    text-align: center;
+    border-top: 2px solid #dadada;
+    padding-top: 10px;
+    background: #fcfcfc;
+}
+.quotesPersonal-navi span {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    cursor: pointer;
+}
+.quotesPersonal-navi .ffback {
+    background: url(../img/ff_back.jpg);
+}
+.quotesPersonal-navi .fback {
+    background: url(../img/f_back.jpg);
+}
+.quotesPersonal-navi .fnext {
+    background: url(../img/f_next.jpg);
+}
+.quotesPersonal-navi .ffnext {
+    background: url(../img/ff_next.jpg);
+}
+
+.quotesNavi-pages {
+    display: inline-block;
+    color: #0b77c2;
+    vertical-align: top;
+    line-height: 25px;
+    padding: 0 20px;
+}
+
+ 
+.quotesIntableTitle{
+    color: #0b77c2;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+    background: #fcfcfc;
+    padding: 10px 0;
+    border-top: 1px solid #e3e4e5;
+}
 
 /* messages */
 .message {
@@ -1380,16 +1551,20 @@ textarea,
     color: #0b77c2;
     font-size: 40px;
     font-weight: 100;
+    margin-bottom: 0;
 }
 
 .carrBl {
     background: #f7f7f8;
     border: 1px solid #e4e5e6;
-    width: 1200px;
-    height: 206px;
+    width: 1190px;
+    /* height: 206px; */
     border-radius: 6px;
     margin-bottom: 50px;
     text-align: center;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .carrBl .carrBl-title {
@@ -1458,7 +1633,7 @@ textarea,
     position: absolute;
     top: -4px;
     left: -4px;
-    border: 4px solid #fff;
+    border: 4px solid #f7f7f8;
     background: #e1e2e4;
     border-radius: 14px;
      -webkit-transition: all 0.3s ease-in-out;
@@ -1473,7 +1648,7 @@ textarea,
     position: absolute;
     top: -25px;
     left: -30px;
-    border: 4px solid #fff;
+    border: 4px solid #f7f7f8; 
     z-index: 9999;
     background: #e1e2e4;
     border-radius: 14px;
@@ -2112,6 +2287,10 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     padding-bottom: 6px;
     padding-top: 8px;
     margin-bottom: 12px;
+    border: 2px solid transparent;
+}
+.pageInfo-wrapperActive {
+    border: 2px solid #c0d0df;
 }
 
 /* home info pictures and map links */
@@ -2318,6 +2497,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
   height: 30px; /* Height of the drop down */
   line-height: 30px; /* Vertically positions the drop down text */
   display: block;
+
 }
 
 /* Focus pseudo selector */
@@ -2352,7 +2532,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 100%;  /* Minimum Width of the dropdown list box options */
-  *width: 100%;
+  /*width: 100%;*/
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2366,7 +2546,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
   text-align: left;
     -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
     box-shadow: inset 1px 1px 0 0 #E6E6E6;
-    width: 260px;
+   /* width: 260px;*/
     padding: 5px;
     margin-top: 3px;
 }
@@ -2868,6 +3048,7 @@ top: 10px;
     font-size: 14px;
     color: #c20909;
     padding-bottom: 10px;
+    overflow: hidden;
 } 
 .error div {
    padding: 0px 0 0 5px;

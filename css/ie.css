@@ -31,7 +31,7 @@ footer,
 .advSearch,
 .advSearch-container .col input,
 .advSearch-control .srch  {
-    z-index: 90;
+    
     position: relative;
  }
 

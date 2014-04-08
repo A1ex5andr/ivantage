@@ -68,6 +68,7 @@ jQuery(document).ready(function($) {
     $(function() {
         $("#datepicker").datepicker();
         $("#datepicker2").datepicker();
+        $("#datepicker3").datepicker();
     });
     //$("#datepicker").datepicker().datepicker("setDate", new Date());//todays date in datepicker on start
 
@@ -113,8 +114,7 @@ jQuery(document).ready(function($) {
         aggressiveChange: true
     });
 
-    //dropdown arrow on open state
-
+    //dropdown arrow on open state for select
     $("select").bind({
         // Binds to the 'open' event on the original select box
         "open": function() {
@@ -123,6 +123,14 @@ jQuery(document).ready(function($) {
         "close": function() {
             $(this).next().find("#testSelectBoxItArrow").removeClass("dropup");
         }
+    });
+
+    //focus if internal formBlock active
+    $(".pageInfo-wrapper").on('click', '.formBlock-input', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        $('.pageInfo-wrapper').removeClass('pageInfo-wrapperActive');
+        $(this).closest('.pageInfo-wrapper').addClass('pageInfo-wrapperActive');
     });
 
 });

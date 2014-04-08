@@ -22,6 +22,9 @@
     <!-- Main JS  -->
       <script type="text/javascript" src="js/main.js"></script>
 
+    <!-- UI Style -->
+    <link href="css/ui/jquery.ui.base.css" rel="stylesheet">
+    <link href="css/ui/jquery.ui.theme.css" rel="stylesheet">
     <!-- Main Style -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -61,7 +64,7 @@
 
         <nav class="navi">
           <ul>
-            <li class="navi-home navi-link active">
+            <li class="navi-home navi-link">
               <a href="">
                 <img src="img/home.png" alt="">
                 <h2>Home</h2>
@@ -70,7 +73,7 @@
                 <span class="arrow-down"></span>
               </span>
             </li>
-            <li class="navi-quote navi-link">
+            <li class="navi-quote navi-link active">
               <a href="">
                 <img src="img/quote.png" alt="">
                 <h2>View Quotes</h2>
@@ -137,13 +140,64 @@
 
        <div class="quotes">
 
-        <h2>Recent Quotes</h2>
+        <h2>Personal Quotes</h2>
+        <div class="quoteFilter">
+          <div class="quoteFlWrap">
+            <h4>Filter by Location</h4>
+            <div class="quoteFilter-location">
+               <select id="test" name="test">
+                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
+                <option value="a jQuery Plugin">a jQuery Plugin</option>
+                <option value="a Select Box Replacement">a Select Box Replacement</option>
+                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              </select>
+            </div>
+          </div>
+          <div class="quoteFlWrap quoteDatepick">
+            <h4>Start Date</h4>
+                <div class="formBlock quoteFilter-stDate">
+                  <div class="formBlock-calendar">
+                    <input type="text" id="datepicker3" class="datepicker"> 
+                  </div>
+                </div>
+          </div>
+          <div class="quoteFlWrap quoteDatepick">
+            <h4>End Date</h4>
+                <div class="formBlock quoteFilter-stDate">
+                  <div class="formBlock-calendar">
+                    <input type="text" id="datepicker2" class="datepicker"> 
+                  </div>
+                </div>
+          </div>
+          <div class="quoteFlWrap quoteSmallFilter">
+            <div class="quoteFilter-location">
+               <select id="test" name="test">
+                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
+                <option value="a jQuery Plugin">a jQuery Plugin</option>
+                <option value="a Select Box Replacement">a Select Box Replacement</option>
+                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              </select>
+            </div>
+          </div>
+          <div class="quoteFlWrap quoteSmallFilter">
+            <div class="quoteFilter-location">
+               <select id="test" name="test">
+                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
+                <option value="a jQuery Plugin">a jQuery Plugin</option>
+                <option value="a Select Box Replacement">a Select Box Replacement</option>
+                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              </select>
+            </div>
+          </div>
+          <span class="quoteFilter-apply"><a href="">Apply</a></span>
+          <span class="quoteFilter-clear"><a href="">Clear</a></span>
+        </div>
         <div class="tableWrap">
-        <table>
+        <table class="personalQuotesTable">
           <thead>
             <tr>
               <th class="col2 tableSorter">
-                 Modified Date<span class="sortArrow"></span></th>
+                 Modified<span class="sortArrow"></span></th>
               <th class="col3">
                 <a href="">
                   Name
@@ -151,12 +205,17 @@
               </th>
               <th class="col4">
                 <a href="">
-                  Business
+                  Quote Name
                 </a>
               </th>
               <th class="col5">
                 <a href="">
-                  Phone number
+                  Application ID
+                </a>
+              </th>
+              <th class="col5a">
+                <a href="">
+                  Business
                 </a>
               </th>
               <th class="col6">
@@ -181,7 +240,10 @@
                       <td class="col5">
                           (888)312-4234
                       </td>
-                      <td class="col6">
+                      <td class="col5a">
+                        
+                      </td>
+                      <td class="col6"> 
                           Complete
                       </td>
                       <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
@@ -198,6 +260,9 @@
                       </td>
                       <td class="col5">
                           (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        
                       </td>
                       <td class="col6">
                           In Progress
@@ -217,6 +282,9 @@
                       <td class="col5">
                           (888)312-4234
                       </td>
+                      <td class="col5a">
+                        
+                      </td>
                       <td class="col6">
                           In Progress
                       </td>
@@ -234,6 +302,9 @@
                       </td>
                       <td class="col5">
                           (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        
                       </td>
                       <td class="col6">
                           Complete
@@ -253,6 +324,9 @@
                       <td class="col5">
                           (888)312-4234
                       </td>
+                      <td class="col5a">
+                        
+                      </td>
                       <td class="col6">
                           Complete
                       </td>
@@ -270,6 +344,9 @@
                       </td>
                       <td class="col5">
                           (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
                       </td>
                       <td class="col6">
                           Complete
@@ -289,6 +366,9 @@
                       <td class="col5">
                           (888)312-4234
                       </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
                       <td class="col6">
                           In Progress
                       </td>
@@ -306,6 +386,9 @@
                       </td>
                       <td class="col5">
                           (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
                       </td>
                       <td class="col6">
                           In Progress
@@ -325,6 +408,9 @@
                       <td class="col5">
                           (888)312-4234
                       </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
                       <td class="col6">
                           Complete
                       </td>
@@ -342,6 +428,9 @@
                       </td>
                       <td class="col5">
                           (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
                       </td>
                       <td class="col6">
                           In Progress
@@ -361,6 +450,9 @@
                       <td class="col5">
                           (888)312-4234
                       </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
                       <td class="col6">
                           In Progress
                         </td>
@@ -368,8 +460,146 @@
                   </tr>
           </tbody>
         </table>
+        <div class="quotesPersonalWrap">
+          <div class="quotesPersonal-navi">
+            <span class="ffback"></span>
+            <span class="fback"></span>
+            <div class="quotesNavi-pages">
+              <b>1</b> 2 3 4 5 ... 10  
+            </div>
+            <span class="fnext"></span>
+            <span class="ffnext"></span>
+          </div>
         </div>
-        <a href="">View all quotes ></a>
+        
+        <h2 class="quotesIntableTitle">  
+          Commercial Quotes
+        </h2>
+
+        <table class="personalQuotesTable">
+          <thead>
+            <tr>
+              <th class="col2 tableSorter">
+                 Modified<span class="sortArrow"></span></th>
+              <th class="col3">
+                <a href="">
+                  Name
+                </a>
+              </th>
+              <th class="col4">
+                <a href="">
+                  Quote Name
+                </a>
+              </th>
+              <th class="col5">
+                <a href="">
+                  Application ID
+                </a>
+              </th>
+              <th class="col5a">
+                <a href="">
+                  Business
+                </a>
+              </th>
+              <th class="col6">
+                <a href="">
+                  Status
+                </a>
+              </th>
+              <th class="col7"></th>
+            </tr>
+          </thead>
+          <tbody>
+                  <tr>
+                      <td class="col2">
+                          11/16/2013
+                      </td>
+                      <td class="col3">
+                          Martin, James
+                      </td>
+                      <td class="col4">
+                          Motorcycle, HO
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          In Progress
+                      </td>
+                      <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+                  <tr class="gradient">
+                      <td class="col2">
+                          11/10/2013
+                      </td>
+                      <td class="col3">
+                          Edwards, Miguel
+                      </td>
+                      <td class="col4">
+                          HO
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          Complete
+                      </td>
+                        <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+                  <tr>
+                      <td class="col2">
+                          11/06/2013
+                      </td>
+                      <td class="col3">
+                          Wadas, Thomas
+                      </td>
+                      <td class="col4">
+                          Pet Health Insurance
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          In Progress
+                      </td>
+                        <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+                  <tr class="last">
+                      <td class="col2">
+                          11/06/2013
+                      </td>
+                      <td class="col3">
+                          Hoogland, Carolyn
+                      </td>
+                      <td class="col4">
+                          HO
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          In Progress
+                        </td>
+                        <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+          </tbody>
+        </table>
+
+
+        </div>
+         
        </div>
 
       </div>
@@ -449,104 +679,8 @@
       </div>
     </section>
 
-    <section class="container">
-       <div class="carriers">
-
-        <h2>Available Carriers</h2>
-        <div class="carrBl">
-          <header class="carrBl-title">
-            <h3>Click on Access Carrier to connect to the carrier:</h3>
-             <p>To setup your carrier credentials<a href="">click here &#62;</a></p>
-          </header>
-          <div class="carrBl-item">
-            <span class="carrLogo_01"></span>
-          </div>
-          <!-- <div class="carrBl-item">
-            <span class="carrLogo_02"></span>
-          </div> -->
-
-
-          <!-- This is an example of working block with hover effect
-          in order to make other simply markup them same way -->
-
-          <div class="carrBl-item">
-              <div class="hov">
-                <span class="carrLogo_03"></span>
-                <div class="carAcc"><a href="">Carrier Access ></a></div>
-              </div>
-          </div>
-          <div class="carrBl-item">
-              <div class="hov">
-                <span class="carrLogo_03"></span>
-                <div class="carAcc"><a href="">Carrier Access ></a></div>
-              </div>
-          </div>
-          <div class="carrBl-item">
-              <div class="hov">
-                <span class="carrLogo_03"></span>
-                <div class="carAcc"><a href="">Carrier Access ></a></div>
-              </div>
-          </div>
-         <!--  <div class="carrBl-item">
-            <span class="carrLogo_04"></span>
-          </div> -->
-          <div class="carrBl-item">
-            <span class="carrLogo_05"></span>
-          </div>
-          <div class="carrBl-item">
-            <span class="carrLogo_06"></span>
-          </div>
-          <div class="carrBl-item">
-            <span class="carrLogo_07"></span>
-          </div>
-          <div class="carrBl-item">
-            <span class="carrLogo_08"></span>
-          </div>
-		  
-		 
-		  <div class="carrBl-item">
-            <span class="carrLogo_09"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_10"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_11"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_12"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_13"></span>
-          </div>
-          <!-- Other logos
-		  <div class="carrBl-item">
-            <span class="carrLogo_14"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_15"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_16"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_17"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_18"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_19"></span>
-          </div>
-		  <div class="carrBl-item">
-            <span class="carrLogo_20"></span>
-          </div>
-		  End of other logos -->
-
-        </div>
-
-      </div>
-    </section>
+    <aside class="charRules container">
+    </aside>
 
     <footer class="head gradient">
       <div class="foot container">
