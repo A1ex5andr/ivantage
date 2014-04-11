@@ -2090,6 +2090,104 @@ z-index: -1;
 
 /*-----  End of popUp dialog box  ------*/
 
+/*============================================
+=            Account Details page            =
+============================================*/
+.accDetails { 
+    clear: both;
+    position: relative;
+}
+.accDetails h1 {
+    color: #0b77c2;
+    font-size: 40px;
+    font-weight: 100;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+.accDetails-title { position: relative; }
+.accDetails-title a img { padding: 0 5px 0 10px; }
+.accDetails-title a {
+    font-weight: 100;
+    font-size: 14px;
+    color: #0b77c2;
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+}
+.accDetails-title .accDetBack {
+    background-image: url(../img/accountDetBack.png);
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    font-size: 12px;
+    width: 154px;
+    display: block;
+    height: 19px;
+    text-align: center;
+    line-height: 19px;
+}
+.accDetInfo {
+    background: #f0f0f1;
+     border-radius: 4px;
+     padding: 4px;
+}
+.accDetInfo > div,
+.accDetInfo_data > h4 {
+    display: inline-block;
+}
+.accDetInfo .accDetInfo {
+    width: 620px;
+}
+.accDetInfo_data {
+    padding: 2px 8px;
+}
+.accDetInfo_data > h4 {
+    color: #6e6e6f;
+    margin: 0;
+    font-weight: 100;
+}
+.accDetInfo_data > h5 {
+    color: #6e6e6f;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: Verdana;
+    margin: 6px 0 2px 0;
+}
+.accDetInfo-left {
+    width: 580px;
+}
+.accDetInfo-right {
+    border-left: 1px solid #d5d5d7;
+    top: -6px;
+    position: relative;
+}
+.accDetInfo-right a {
+    text-decoration: none;
+}
+.accDetInfo-right .addInfoQuote {
+    font-size: 36px;
+    color: #0b77c2;
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 0;
+    width: 180px;
+}
+    .accDetInfo-right .addInfoQuoteAuthor {
+        font-size: 16px;
+        clear: both;
+        position: relative;
+        top: -22px; 
+    }
+.accDetInfo-right  img {
+    position: relative;
+    top: -22px;
+    left: -14px;
+}
+
+
+/*-----  End of Account Details page  ------*/
+
+
 
 /*============================================
 =            Characteristics page            =

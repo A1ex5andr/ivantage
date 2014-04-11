@@ -69,6 +69,7 @@ jQuery(document).ready(function($) {
         $("#datepicker").datepicker();
         $("#datepicker2").datepicker();
         $("#datepicker3").datepicker();
+        $("#datepicker4").datepicker();
     });
     //$("#datepicker").datepicker().datepicker("setDate", new Date());//todays date in datepicker on start
 
