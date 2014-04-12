@@ -134,4 +134,144 @@ jQuery(document).ready(function($) {
         $(this).closest('.pageInfo-wrapper').addClass('pageInfo-wrapperActive');
     });
 
+    //delete or add block on formControls
+    $('.blockOfchars').on('click', '.formControl-but.butRem', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        $(this).closest('.blockOfchars').remove();
+    });
+
+
+    // what we add as a block of charachteristics
+    var addBlock = '<span class="blockOfchars">' +
+        '<div class="headerInput">' +
+        ' <h3 class="h3">Figo The Dog 2</h3>' +
+        '</div>' +
+        '<div class="pageInfo-wrapper clearfix">' +
+        '<div class="formWrap clearfix">' +
+        '<div class="formBlock">' +
+        '<div class="formBlock-title">' +
+        'Pet Name' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        ' <div class="formBlock-input inputResponsive">' +
+        '  <input class="formBlock-input input-normal" placeholder=" ">' +
+        ' </div>' +
+        '</div>' +
+        '<div class="formBlock">' +
+        '<div class="formBlock-title">' +
+        'Breed Type' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        ' <div class="formBlock-input inputResponsive">' +
+        '  <input class="formBlock-input input-normal" placeholder=" ">' +
+        ' </div>' +
+        '</div>' +
+        '<div class="formBlock">' +
+        '<div class="formBlock-title">' +
+        'Date of Birth' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        '<div class=" ">' +
+        '<select id="test" name="test">' +
+        ' <option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
+        ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
+        '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
+        '   <option value="a Stateful UI Widget">a Stateful UI Widget</option>' +
+        '  </select>' +
+        ' </div>' +
+        '</div>' +
+        '<div class="formBlock">' +
+        '<div class="formBlock-title">' +
+        'Spayed of Neutered' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        '<div class="radioBlWrap">' +
+        '<div class="formType-radio">' +
+        '<input type="radio" name="name3" value="#1" id="location5">' +
+        '<label for="location5" class="location5"></label>' +
+        '</div><span class="radioLable">Yes</span>' +
+        '  <div class="formType-radio">' +
+        '   <input type="radio" name="name3" value="#1" id="location6">' +
+        '    <label for="location6" class="location6"></label>' +
+        '   </div><span class="radioLable">No</span>' +
+        '  </div>' +
+        ' </div>' +
+        '</div>' +
+        '<div class="formWrap clearfix">' +
+        '<div class="formBlock">' +
+        '<div class="formBlock-title">' +
+        'Species' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        '<div class="">' +
+        '<select id="test" name="test">' +
+        '<option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
+        ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
+        '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
+        '   <option value="a Stateful UI Widget">a Stateful UI Widget</option>' +
+        '  </select>' +
+        ' </div>' +
+        '</div>' +
+        '<div class="formBlock">' +
+        ' <div class="formBlock-title">' +
+        '  Breed' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        '<div class="">' +
+        '<select id="test" name="test">' +
+        '<option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
+        ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
+        '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
+        '   <option value="a Stateful UI Widget">a Stateful UI Widget</option>' +
+        '  </select>' +
+        ' </div>' +
+        '</div>' +
+        '<div class="formBlock">' +
+        '<div class="formBlock-title">' +
+        'Gender' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        '<div class="">' +
+        '<select id="test" name="test">' +
+        '<option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
+        ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
+        '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
+        '   <option value="a Stateful UI Widget">a Stateful UI Widget</option>' +
+        '  </select>' +
+        ' </div>' +
+        '</div>' +
+        '<div class="formBlock">' +
+        '<div class="formBlock-title">' +
+        'Has Cushings, Diabetes or FeLV/FIV?' +
+        ' <span class="formBlock-reqInfo"></span>' +
+        '</div>' +
+        '<div class="radioBlWrap">' +
+        '<div class="formType-radio">' +
+        '<input type="radio" name="name4" value="#1" id="location7">' +
+        '<label for="location7" class="location7"></label>' +
+        '</div><span class="radioLable">Yes</span>' +
+        '  <div class="formType-radio">' +
+        '   <input type="radio" name="name4" value="#1" id="location8">' +
+        '    <label for="location8" class="location8"></label>' +
+        '   </div><span class="radioLable">No</span>' +
+        '  </div>' +
+        ' </div>' +
+        '</div>' +
+        '   <div class="formControl">' +
+        '    <div class="formControl-but butRem">-</div>' +
+        '    <div class="formControl-name">Remove</div>' +
+        '   </div>' +
+        '</div>' +
+        '</span>';
+
+    $('.formControl-but.butAdd').click(function(event) {
+        /* Act on the event */
+        event.preventDefault();
+        $('#targetPrependChars').append(addBlock);
+        $("select").selectBoxIt({
+            aggressiveChange: true
+        });
+    });
+
 });

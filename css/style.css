@@ -2263,25 +2263,25 @@ line-height: 20px;
 
 /* wizard */
 .wizard {
-    display: block;
     clear: both;
     height: 60px;
     position: relative;
+    background: url(../img/wiz/wizardBlock.jpg)no-repeat;
 }
 
 .wizard a {
     color: #6e6e6f;
-    background-size: 100% 100%;
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    float: left;
     margin: 0;
     padding: 0;
     height: 68px;
+    width: 110px;
+    font-size: 14px;
     position: relative;
 }
-.wizBar_1 {
+/*.wizBar_1 {
     background-image: url(../img/wiz/wizard_01.png);
     width: 110px;
 }
@@ -2310,22 +2310,34 @@ line-height: 20px;
 .wizBar_7 {
     background-image: url(../img/wiz/wizard_07.png);
     width: 151px;
-}
+}*/
 
-.wizard a.past {
+.wizard a.past,
+.wizard a.previous {
     color: #0b77c2;
 }
-.wizard a.wizBar_1.past span {
+.wizard a.previous {
+    font-weight: bold;
+}
+
+.wizard a.wizBar_1 .wizDot,
+.wizard a.wizBar_2 .wizDot,
+.wizard a.wizBar_3 .wizDot,
+.wizard a.wizBar_4 .wizDot,
+.wizard a.wizBar_5 .wizDot,
+.wizard a.wizBar_6 .wizDot,
+.wizard a.wizBar_7 .wizDot {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background: #0b77c2;
+    top: 33px;
     display: inline-block;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background:  #0b77c2;
-    top: 31px;
-    left: 46px;
+    display: none;
 }
-.wizard a.wizBar_2.past span {
+ 
+/*.wizard a.wizBar_2.past span {
     display: inline-block;
     position: absolute;
     width: 20px;
@@ -2335,7 +2347,7 @@ line-height: 20px;
     top: 31px;
     left: 49px;
 }
-.wizard a.wizBar_3.past span {
+.wizard a.wizBar_3.previous span {
     display: inline-block;
     position: absolute;
     width: 20px;
@@ -2345,7 +2357,7 @@ line-height: 20px;
     top: 31px;
     left: 39px;
     z-index: 111;
-}
+}*/
 /*.wizard a:not(.active):hover span {
     background: #C54040;
     z-index: 99;
@@ -2356,7 +2368,7 @@ position: absolute!important;
 background: url(../img/wiz/activeWiz.png) no-repeat!important;
 }*/
 
-.wizard a.active {
+/*.wizard a.active {
     color: #0b77c2;
     font-weight: bold;
 }
@@ -2368,14 +2380,14 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     height: 68px;
     left: 14px;
     z-index: 99;
-}
+}*/
 
 .wizard .wizBar-line {
     position: absolute;
     height: 3px;
     width: 360px;
     background: #0b77c2;
-    top: 39px;
+    top: 30px;
     left: 14px;
     z-index: 10;
 }
@@ -3007,8 +3019,13 @@ top: 10px;
     height: 24px;
     display: inline-block;
 }
+.formType-radio label.errRadio {background: url('../img/radioDefErr.png') no-repeat;}
+
 .formType-radio input[type="radio"]:checked+label {
     background: url('../img/radioCh.png') no-repeat;
+}
+.formType-radio input[type="radio"]:checked+label.errRadio {
+    background: url('../img/radioDefChErr.png') no-repeat;
 }
 .formType-checkbox label {
     background: url('../img/cheDef.png') no-repeat;
@@ -3116,6 +3133,42 @@ top: 10px;
     top: 0;
     position: relative;
 }
+
+
+/* form contorl buttons javascript actions */
+.formControl {
+
+}
+.formControl-but {
+    clear: both;
+    cursor: pointer;
+}
+.formControl .formControl-but {
+    font-family: 'MyriadProBold';
+    width: 30px;
+    height: 30px;
+    background: #0b77c2;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+}
+.formControl .formControl-name {
+    color: #0b77c2;
+    font-size: 14px;
+    display: inline-block;
+}
+.formControl .formControl-but.butRem {
+    margin: 0px 4px 0px 17px;
+}
+.formControl .formControl-but.butAdd {
+    margin: 6px 4px 8px 29px;
+}
+
+
+
 
 /* calendar */
 
