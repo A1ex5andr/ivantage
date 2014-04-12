@@ -135,8 +135,7 @@ jQuery(document).ready(function($) {
     });
 
     //delete or add block on formControls
-    $('.blockOfchars').on('click', '.formControl-but.butRem', function(event) {
-        event.preventDefault();
+    $('.blockOfchars').on('click', '.formControl-but.butRem', function() {
         /* Act on the event */
         $(this).closest('.blockOfchars').remove();
     });
@@ -145,7 +144,7 @@ jQuery(document).ready(function($) {
     // what we add as a block of charachteristics
     var addBlock = '<span class="blockOfchars">' +
         '<div class="headerInput">' +
-        ' <h3 class="h3">Figo The Dog 2</h3>' +
+        ' <h3 class="h3">New Block Name</h3>' +
         '</div>' +
         '<div class="pageInfo-wrapper clearfix">' +
         '<div class="formWrap clearfix">' +
@@ -259,7 +258,7 @@ jQuery(document).ready(function($) {
         ' </div>' +
         '</div>' +
         '   <div class="formControl">' +
-        '    <div class="formControl-but butRem">-</div>' +
+        '    <div class="formControl-but butRem">&#45;</div>' +
         '    <div class="formControl-name">Remove</div>' +
         '   </div>' +
         '</div>' +
