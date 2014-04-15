@@ -1208,7 +1208,7 @@ textarea,
     display: inline-block;
 }
 .quoteFlWrap.quoteDatepick{
-    width: 176px;
+    width: 186px;
 }
 .quoteFilter h4 {
     color: #6e6e6f;
@@ -1266,7 +1266,7 @@ textarea,
     position: relative;
     top: 7px;
     right: 4px;
-    padding: 2px 4px;
+    padding: 6px 10px;
 }
 .quoteFilter-apply a {
     color: #fff;
@@ -1311,7 +1311,24 @@ textarea,
     line-height: 20px;
 }
 
-
+        /*.quotes table .col2{
+            width: 132px;
+        }
+        .quotes table .col3{
+            width: 162px;
+        }
+        .quotes table .col4{
+            width: 152px;
+        }
+        .quotes table .col5{
+            width: 118px;
+        }
+        .quotes table .col6{
+            width: 82px;
+        }
+        .quotes table .col7{
+            width: 84px;
+        }*/
 
 /* quote table */ 
 .personalQuotesTable {}
@@ -2126,6 +2143,10 @@ z-index: -1;
     text-align: center;
     line-height: 19px;
 }
+.accDetails-title .accDetBack.accDetBackMC {
+    background-image: url(../img/accountDetBackMC.png);
+    width:180px;
+}
 .accDetInfo {
     background: #f0f0f1;
      border-radius: 4px;
@@ -2631,9 +2652,7 @@ font-size: 28px;
   display: inline-block;
   vertical-align: top;
 }
-.selectError .selectboxit.selectboxit-enabled {
-    background: #fce3e3!important;
-}
+
 
 /* Styles that apply to all SelectBoxIt elements */
 .selectboxit-container * {

@@ -18,7 +18,7 @@
     <!-- jQuery UI -->
       <script src="js/jQueryUI-1.10.4.js"></script>
     <!-- Cusom Select  -->
-      <script src="js/jquery.selectBoxIt.js"></script>
+      <script src="js/select2.js"></script>
     <!-- Main JS  -->
       <script type="text/javascript" src="js/main.js"></script>
 
@@ -26,6 +26,7 @@
     <link href="css/ui/jquery.ui.base.css" rel="stylesheet">
     <link href="css/ui/jquery.ui.theme.css" rel="stylesheet">
     <!-- Main Style -->
+    <link href="css/select2.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -144,7 +145,7 @@
           <div class="accDetails-title">
             <h1>Dan Smith</h1>
             <a href="" class="accDetEdit"><img src="img/accountDetEdit.png" alt="">Edit</a>
-            <a href="" class="accDetBack">< Back to Manage Customers</a>
+            <a href="" class="accDetBack accDetBackMC">< Back to Manage Customers</a>
           </div>
           <div class="accDetInfo">
             <div class="accDetInfo-left">
@@ -187,13 +188,14 @@
         </div> -->
         <div class="quoteFilter">
           <div class="quoteFlWrap">
-            <h4>Filter by Location</h4>
+            <h4>By Location</h4>
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
@@ -215,21 +217,23 @@
           </div>
           <div class="quoteFlWrap quoteSmallFilter">
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
           <div class="quoteFlWrap quoteSmallFilter">
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
@@ -520,11 +524,12 @@
           <div class="quoteFlWrap">
             <h4>Filter by Location</h4>
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
@@ -546,21 +551,23 @@
           </div>
           <div class="quoteFlWrap quoteSmallFilter">
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
           <div class="quoteFlWrap quoteSmallFilter">
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
@@ -900,14 +907,15 @@
                      Form Type
                   </div>
                   <div class="actionItem-elDropdown">
-                          <div class="selectSmallRight selectError">
-                             <select id="test" name="test" class="">
-                              <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                              <option value="a jQuery Plugin">a jQuery Plugin</option>
-                              <option value="a Select Box Replacement">a Select Box Replacement</option>
-                              <option value="a Stateful UI Widget">a Stateful UI Widget</option>
-                            </select>
-                          </div>
+                    <div class="selectSmallRight selectError">
+                      <select class="e1">
+                          <option value="AL">Alabama</option>
+                          <option value="Am">Amalapuram</option>
+                          <option value="An">Anakapalli</option>
+                          <option value="Ak">Akkayapalem</option>
+                          <option value="WY">Wyoming</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
             </div>

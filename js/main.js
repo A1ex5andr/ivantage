@@ -111,8 +111,13 @@ jQuery(document).ready(function($) {
     });
 
     // custom select box with options
-    $("select").selectBoxIt({
-        aggressiveChange: true
+    // $("select").selectBoxIt({
+    //     aggressiveChange: true
+    // });
+    $(function(){ 
+        $(".e1").select2({
+            minimumResultsForSearch: -1,
+        }); 
     });
 
     //dropdown arrow on open state for select

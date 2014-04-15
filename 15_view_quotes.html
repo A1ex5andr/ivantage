@@ -18,7 +18,7 @@
     <!-- jQuery UI -->
       <script src="js/jQueryUI-1.10.4.js"></script>
     <!-- Cusom Select  -->
-      <script src="js/jquery.selectBoxIt.js"></script>
+      <script src="js/select2.js"></script>
     <!-- Main JS  -->
       <script type="text/javascript" src="js/main.js"></script>
 
@@ -26,6 +26,7 @@
     <link href="css/ui/jquery.ui.base.css" rel="stylesheet">
     <link href="css/ui/jquery.ui.theme.css" rel="stylesheet">
     <!-- Main Style -->
+    <link href="css/select2.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -73,7 +74,7 @@
                 <span class="arrow-down"></span>
               </span>
             </li>
-            <li class="navi-quote navi-link ">
+            <li class="navi-quote navi-link active">
               <a href="">
                 <img src="img/quote.png" alt="">
                 <h2>View Quotes</h2>
@@ -82,7 +83,7 @@
                 <span class="arrow-down"></span>
               </span>
             </li>
-            <li class="navi-man navi-link active">
+            <li class="navi-man navi-link">
               <a href="">
                 <img src="img/man.png" alt="">
                 <h2>Manage <br> Customers</h2>
@@ -140,22 +141,17 @@
 
        <div class="quotes">
 
-        <h2>Customers <span>(53)</span></h2>
-        <div class="exportAgent">
-          <div class="exportAgent-but">
-            <a href="">Export for eAgent ></a>
-          </div>
-          <a href="">(Help)</a>
-        </div>
+        <h2>Personal Quotes</h2>
         <div class="quoteFilter">
           <div class="quoteFlWrap">
             <h4>Filter by Location</h4>
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
@@ -177,21 +173,23 @@
           </div>
           <div class="quoteFlWrap quoteSmallFilter">
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+                            <select class="e1">
+                                <option value="AL">Alabama</option>
+                                <option value="Am">Amalapuram</option>
+                                <option value="An">Anakapalli</option>
+                                <option value="Ak">Akkayapalem</option>
+                                <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
           <div class="quoteFlWrap quoteSmallFilter">
             <div class="quoteFilter-location">
-               <select id="test" name="test">
-                <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                <option value="a jQuery Plugin">a jQuery Plugin</option>
-                <option value="a Select Box Replacement">a Select Box Replacement</option>
-                <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
               </select>
             </div>
           </div>
@@ -466,16 +464,8 @@
                   </tr>
           </tbody>
         </table>
-        
-        <div class="tabBotBorder"></div>
- 
-        </div>
-         
-       </div>
-
-
         <div class="quotesPersonalWrap">
-          <div class="quotesPersonal-navi outTable-navi">
+          <div class="quotesPersonal-navi">
             <span class="ffback"></span>
             <span class="fback"></span>
             <div class="quotesNavi-pages">
@@ -485,6 +475,136 @@
             <span class="ffnext"></span>
           </div>
         </div>
+        
+        <h2 class="quotesIntableTitle">  
+          Commercial Quotes
+        </h2>
+
+        <table class="personalQuotesTable">
+          <thead>
+            <tr>
+              <th class="col2 tableSorter">
+                 Modified<span class="sortArrow"></span></th>
+              <th class="col3">
+                <a href="">
+                  Name
+                </a>
+              </th>
+              <th class="col4">
+                <a href="">
+                  Quote Name
+                </a>
+              </th>
+              <th class="col5">
+                <a href="">
+                  Application ID
+                </a>
+              </th>
+              <th class="col5a">
+                <a href="">
+                  Business
+                </a>
+              </th>
+              <th class="col6">
+                <a href="">
+                  Status
+                </a>
+              </th>
+              <th class="col7"></th>
+            </tr>
+          </thead>
+          <tbody>
+                  <tr>
+                      <td class="col2">
+                          11/16/2013
+                      </td>
+                      <td class="col3">
+                          Martin, James
+                      </td>
+                      <td class="col4">
+                          Motorcycle, HO
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          In Progress
+                      </td>
+                      <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+                  <tr class="gradient">
+                      <td class="col2">
+                          11/10/2013
+                      </td>
+                      <td class="col3">
+                          Edwards, Miguel
+                      </td>
+                      <td class="col4">
+                          HO
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          Complete
+                      </td>
+                        <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+                  <tr>
+                      <td class="col2">
+                          11/06/2013
+                      </td>
+                      <td class="col3">
+                          Wadas, Thomas
+                      </td>
+                      <td class="col4">
+                          Pet Health Insurance
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          In Progress
+                      </td>
+                        <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+                  <tr class="last">
+                      <td class="col2">
+                          11/06/2013
+                      </td>
+                      <td class="col3">
+                          Hoogland, Carolyn
+                      </td>
+                      <td class="col4">
+                          HO
+                      </td>
+                      <td class="col5">
+                          (888)312-4234
+                      </td>
+                      <td class="col5a">
+                        jkd-sdf-sd
+                      </td>
+                      <td class="col6">
+                          In Progress
+                        </td>
+                        <td class="col7 copyDel"><a href="">Copy</a> <span>I</span> <a href="">Delete</a> </td>
+                  </tr>
+          </tbody>
+        </table>
+
+
+        </div>
+         
+       </div>
 
       </div>
 
@@ -607,7 +727,7 @@
               </div>
             </div>
 
-
+        
         <section class="dialog-action">
           <h2>Please choose your action</h2>
 
@@ -637,11 +757,12 @@
                   </div>
                   <div class="actionItem-elDropdown">
                           <div class="selectSmallRight selectError">
-                             <select id="test" name="test" class="">
-                              <option value="SelectBoxIt is:">SelectBoxIt is:</option>
-                              <option value="a jQuery Plugin">a jQuery Plugin</option>
-                              <option value="a Select Box Replacement">a Select Box Replacement</option>
-                              <option value="a Stateful UI Widget">a Stateful UI Widget</option>
+                            <select class="e1">
+                                <option value="AL">Alabama</option>
+                                <option value="Am">Amalapuram</option>
+                                <option value="An">Anakapalli</option>
+                                <option value="Ak">Akkayapalem</option>
+                                <option value="WY">Wyoming</option>
                             </select>
                           </div>
                   </div>
