@@ -140,7 +140,7 @@ jQuery(document).ready(function($) {
     });
 
     //delete or add block on formControls
-    $('.blockOfchars').on('click', '.formControl-but.butRem', function() {
+    $('#blockContainer').on('click', '.formControl-but.butRem', function() {
         /* Act on the event */
         $(this).closest('.blockOfchars').remove();
     });
@@ -177,7 +177,7 @@ jQuery(document).ready(function($) {
         ' <span class="formBlock-reqInfo"></span>' +
         '</div>' +
         '<div class=" ">' +
-        '<select id="test" name="test">' +
+        '<select class="e1New">' +
         ' <option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
         ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
         '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
@@ -209,7 +209,7 @@ jQuery(document).ready(function($) {
         ' <span class="formBlock-reqInfo"></span>' +
         '</div>' +
         '<div class="">' +
-        '<select id="test" name="test">' +
+        '<select class="e1New">' +
         '<option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
         ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
         '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
@@ -223,7 +223,7 @@ jQuery(document).ready(function($) {
         ' <span class="formBlock-reqInfo"></span>' +
         '</div>' +
         '<div class="">' +
-        '<select id="test" name="test">' +
+        '<select class="e1New">' +
         '<option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
         ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
         '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
@@ -237,7 +237,7 @@ jQuery(document).ready(function($) {
         ' <span class="formBlock-reqInfo"></span>' +
         '</div>' +
         '<div class="">' +
-        '<select id="test" name="test">' +
+        '<select class="e1New">' +
         '<option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
         ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
         '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
@@ -271,11 +271,11 @@ jQuery(document).ready(function($) {
 
     $('.formControl-but.butAdd').click(function(event) {
         /* Act on the event */
-        event.preventDefault();
         $('#targetPrependChars').append(addBlock);
-        $("select").selectBoxIt({
-            aggressiveChange: true
-        });
+        $("select.e1New").select2({
+            minimumResultsForSearch: -1,
+        }); 
+ 
     });
 
 });

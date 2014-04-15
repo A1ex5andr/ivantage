@@ -1132,13 +1132,14 @@ textarea,
     -webkit-box-shadow: 0 2px 12px 0px #9E9E9E;
     box-shadow: 0 2px 12px 0px #9E9E9E;
     display: block;
-    width: 868px;
+    width: 850px;
     border: 1px solid #BEBEBE;
     left: -20px;
     margin-top: -2px;
     padding-left: 19px;
     border-radius: 6px;
     position: relative;
+    padding-right: 22px;
 }
 .quotes table tbody tr:hover td {
     border-bottom: 1px solid transparent;
@@ -1330,22 +1331,49 @@ textarea,
             width: 84px;
         }*/
 
+/* manageCustQuotesTable */
+.manageCustQuotesTable th,
+.manageCustQuotesTable td {
+   /* padding: 13px 10px!important;*/
+}
+.manageCustQuotesTable .col2{
+    width: 12%!important;
+}
+.manageCustQuotesTable .col3{
+    width: 18%!important;
+}
+.manageCustQuotesTable .col4{
+    width: 10%!important;
+}
+.manageCustQuotesTable .col5{
+    width: 10%!important;
+}
+.manageCustQuotesTable .col5a{
+    width: 10%!important;
+}
+.manageCustQuotesTable .col6{
+    width: 12%!important;
+}
+.manageCustQuotesTable .col7{
+    width: 14%!important;
+}
+
 /* quote table */ 
 .personalQuotesTable {}
 .personalQuotesTable .col2  {
     width: 90px!important;
 }
 .personalQuotesTable .col3 {
-    width: 144px!important;
+    width: 160px!important;
 }
 .personalQuotesTable .col4 {
-    width: 136px!important;
+    width: 186px!important;
 }
 .personalQuotesTable .col7 {
-    width: 69px!important;
+    width: 89px!important;
 }
 .personalQuotesTable .col5a {
-    width: 70px;
+    width: 90px;
 }
 
 
