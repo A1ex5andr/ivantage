@@ -111,14 +111,22 @@ jQuery(document).ready(function($) {
     });
 
     // custom select box with options
-    // $("select").selectBoxIt({
-    //     aggressiveChange: true
-    // });
     $(function(){ 
         $(".e1").select2({
             minimumResultsForSearch: -1,
         }); 
     });
+    // custom select box including images
+    function format(state) {
+	    if (!state.id) return state.text; // optgroup
+	    return "<img class='specSelectImg' src='img/selectImg/" + state.id.toLowerCase() + ".png'/>" + state.text;
+	}
+	$(".specsSelect").select2({
+        minimumResultsForSearch: -1,
+	    formatResult: format,
+	    formatSelection: format,
+	    escapeMarkup: function(m) { return m; }
+	});
 
     //dropdown arrow on open state for select
     $("select").bind({
@@ -132,7 +140,7 @@ jQuery(document).ready(function($) {
     });
 
     //focus if internal formBlock active
-    $(".pageInfo-wrapper").on('click', '.formBlock-input', function(event) {
+    $("#blockContainer").on('click', '.formBlock-input', function(event) {
         event.preventDefault();
         /* Act on the event */
         $('.pageInfo-wrapper').removeClass('pageInfo-wrapperActive');

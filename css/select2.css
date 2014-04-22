@@ -682,6 +682,14 @@ html[dir="rtl"] .select2-search-choice-close {
     overflow: scroll;
 }
 
+img.specSelectImg {
+	top: 5px;
+	position: relative;
+	margin-top: -4px;
+	margin-right: 7px;
+	margin-bottom: 2px;
+}
+
 /* Retina-ize icons */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 2dppx)  {
