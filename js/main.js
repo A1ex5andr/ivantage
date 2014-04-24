@@ -111,22 +111,24 @@ jQuery(document).ready(function($) {
     });
 
     // custom select box with options
-    $(function(){ 
+    $(function() {
         $(".e1").select2({
             minimumResultsForSearch: -1,
-        }); 
+        });
     });
     // custom select box including images
     function format(state) {
-	    if (!state.id) return state.text; // optgroup
-	    return "<img class='specSelectImg' src='img/selectImg/" + state.id.toLowerCase() + ".png'/>" + state.text;
-	}
-	$(".specsSelect").select2({
+        if (!state.id) return state.text; // optgroup
+        return "<img class='specSelectImg' src='img/selectImg/" + state.id.toLowerCase() + ".png'/>" + state.text;
+    }
+    $(".specsSelect").select2({
         minimumResultsForSearch: -1,
-	    formatResult: format,
-	    formatSelection: format,
-	    escapeMarkup: function(m) { return m; }
-	});
+        formatResult: format,
+        formatSelection: format,
+        escapeMarkup: function(m) {
+            return m;
+        }
+    });
 
     //dropdown arrow on open state for select
     $("select").bind({
@@ -175,8 +177,13 @@ jQuery(document).ready(function($) {
         'Breed Type' +
         ' <span class="formBlock-reqInfo"></span>' +
         '</div>' +
-        ' <div class="formBlock-input inputResponsive">' +
-        '  <input class="formBlock-input input-normal" placeholder=" ">' +
+        '<div class=" ">' +
+        '<select class="e1New">' +
+        ' <option value="SelectBoxIt is:">SelectBoxIt is:</option>' +
+        ' <option value="a jQuery Plugin">a jQuery Plugin</option>' +
+        '  <option value="a Select Box Replacement">a Select Box Replacement</option>' +
+        '   <option value="a Stateful UI Widget">a Stateful UI Widget</option>' +
+        '  </select>' +
         ' </div>' +
         '</div>' +
         '<div class="formBlock">' +
@@ -282,8 +289,8 @@ jQuery(document).ready(function($) {
         $('#targetPrependChars').append(addBlock);
         $("select.e1New").select2({
             minimumResultsForSearch: -1,
-        }); 
- 
+        });
+
     });
 
 });

@@ -3409,7 +3409,7 @@ top: 10px;
 }
 
 .formBlock-input.input-normal {
-    /* width: 240px; */
+    width: 240px;
 }
 .formBlock-input.input-disable {
     background: #e7e7e8;
@@ -3609,6 +3609,7 @@ margin-right: auto;
     padding: 0;
     margin: 0 10px 10px 10px;
     border-radius: 6px;
+    position: relative;
     padding-bottom: 20px;
 }
  
@@ -3624,9 +3625,12 @@ margin-right: auto;
     
         float: left;
         position: relative;
+}    
+    .carrierAccess-box.boxType03 .boxForm {
+        padding-top: 20px;
 }
 
-        .carrierAccess-box .boxForm .boxForm-input {
+    .carrierAccess-box .boxForm .boxForm-input {
     float: left;
         
     width: 490px;
@@ -3661,8 +3665,11 @@ margin-right: auto;
             font-size: 12px;
         
             position: relative;
-            top: 4px;
+            top: 11px;
 }
+        .carrierAccess-box .boxForm .boxForm-input .formBlock .formBlock-edit {
+           top: 0;
+        }
         .carrierAccess-box .boxForm .boxForm-input .formBlock .formBlock-edit  {
             display: inline-block;
         }
@@ -3696,16 +3703,21 @@ margin-right: auto;
             line-height: 33px;
         
             position: relative;
-            top: 80px;
+            top: 120px;
         
-            right: -35px;
+            right: -30px;
 }
-
+    .carrierAccess-box.boxType01 .boxForm .boxForm-button {
+        top: 90px;
+    }
+    .carrierAccess-box.boxType02 .boxForm .boxForm-button.btnIn-reg{
+        top: 60px;
+    }
         /* type 02 */
         .carrierAccess-box.boxType02 .formBlock-enroll {
             margin-left: 0!important;
         
-            padding-top: 20px;
+            padding-top: 0;
         }
         .carrierAccess-box.boxInner .boxForm-buttonGray {
             top: 55px;
@@ -3754,11 +3766,11 @@ margin-right: auto;
         }
         /* type 04 */
         .carrierAccess-box.boxType04 .boxForm-button {
-            top: 120px;
+            /* top: 120px; */
         }
         /* type 05 */
         .carrierAccess-box.boxType05 .boxForm-button {
-            top: 120px;
+            /* top: 120px; */
         }
         /* type 06 */
         .carrierAccess-box.boxType06 .boxForm-button {
@@ -3773,7 +3785,7 @@ margin-right: auto;
 .carrierAccess-box .boxImage_02  {
     background: url(../img/carrierAccess/02.png) no-repeat;
     background-position: center center;
-    height: 160px;
+    height: 170px;
 }
 .carrierAccess-box .boxImage_03  {
     background: url(../img/carrierAccess/03.png) no-repeat;
@@ -3844,6 +3856,18 @@ margin-right: auto;
     background: url(../img/carrierAccess/16.png) no-repeat;
     background-position: center center;
     height: 150px;
+}
+
+.carrierAccess-box.boxInner .boxForm .boxForm-input .formBlock-enroll {
+    top: -3px;
+
+    left: 90px;
+    margin-right: 150px;
+    padding-top: 10px;
+}
+
+.boxType02 .formBlock-enroll {
+    
 }
 
 /*-----  End of Carrier Access page  ------*/
