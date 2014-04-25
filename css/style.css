@@ -2326,10 +2326,16 @@ line-height: 20px;
     margin: 0;
     padding: 0;
     height: 68px;
-	width: 103px;
-	font-size: 14px;
+	
+    width: 100px;
+	
+    font-size: 14px;
 	position: relative;
-	top: -18px;
+	
+    top: -18px;
+    word-break: normal;
+    text-align: center;
+    left: 14px;
 }
 /*.wizBar_1 {
     background-image: url(../img/wiz/wizard_01.png);
@@ -2381,10 +2387,10 @@ line-height: 20px;
     height: 16px;
     border-radius: 10px;
     background: #0b77c2;
-    top: 33px;
+    top: 25px;
     display: inline-block;
     position: absolute;
-    display: none;
+    left: 43px;
 }
  
 /*.wizard a.wizBar_2.past span {
@@ -2418,29 +2424,32 @@ position: absolute!important;
 background: url(../img/wiz/activeWiz.png) no-repeat!important;
 }*/
 
-/*.wizard a.active {
+.wizard a.active {
     color: #0b77c2;
     font-weight: bold;
 }
-.wizard a.wizBar_4.active span {
+.wizard a.active .wizDot {
     display: inline-block;
     position: absolute;
-    background-image: url(../img/wiz/activeWiz.png);
-    width: 66px;
-    height: 68px;
-    left: 14px;
+    background: url(../img/wiz/activeWiz.png) no-repeat;
+    width: 64px;
+    height: 56px;
+    left: 17px;
     z-index: 99;
-}*/
+    background-color: transparent;
+    top: -7px;
+}
 
 .wizard .wizBar-line {
     position: absolute;
-    height: 3px;
-    width: 360px;
+    height: 4px;
+    width: 378px;
     background: #0b77c2;
     top: 30px;
-    left: 14px;
+    left: 3px;
     z-index: 10;
-    visibility: hidden;			
+ 		
+    border-radius: 12px;
 }
 /* Required Information */
 .reqInfo {
