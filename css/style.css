@@ -1500,7 +1500,7 @@ textarea,
 }
 .mess-quote a {
     color: #fff;
-    padding: 19px 15px;
+    padding: 18px 15px;
     display: block;
     text-decoration: none;
     font-size: 26px;
@@ -2566,6 +2566,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     float: right;
     width: 250px;
     text-align: center;
+    height: 68px;
 }
 .chars-bottomControl .saveCont   a {
     /*
@@ -2630,7 +2631,7 @@ font-size: 28px;
     height: 0;
 }
 .formBlock .formBlock-title {
-    padding: 0 10px 0 0;
+    /* padding: 0 10px 0 0; */
     margin: 0 0 0 18px;
     color: #6e6e6f;
     font-size: 14px;
@@ -2641,10 +2642,18 @@ font-size: 28px;
     line-height: 21px;
     position: relative;
     float: left;
+    top: 4px;
 }
     /* customized field */
     .appInfo .formBlock .formBlock-title {
-        width: 140px;
+        width: 160px;
+        padding-right: 14px;
+    }
+    .appInfo .formBlock.blockHead  .formBlock-title {
+        width: 400px;
+    }
+    .appInfo .formBlock.formPolicy  .formBlock-title {
+        width: 600px;
     }
 
 .formWrap .mapLink a {
@@ -2670,6 +2679,39 @@ font-size: 28px;
 .bottomContor-nav span {
     padding: 0 20px;
 }
+
+/* inner general block */
+.innerInclude h4 {
+    clear: both;
+    font-size: 14px;
+    font-weight: bold; color: #0b77c2; padding: 0; 
+    margin-left: 26px;
+    margin-bottom: 0;
+}
+.innerInclude .formBlock .formBlock-title {
+    width: 274px;
+}
+.boxInnerBlock {
+    border: 1px solid #d7d7d9;
+    border-radius: 6px;
+    clear: both;
+    margin: 10px auto;
+    width: 96%;
+    padding: 10px 0;
+}
+.boxInnerBlock .formBlock {
+}
+.boxInnerBlock .leftInner .formBlock .formBlock-title {
+    width: 250px;
+}
+.boxInnerBlock .rightInner .formBlock .formBlock-title {
+    width: 250px;
+}
+
+
+
+
+
 
 /* --- custom select dropdown */
 /*
@@ -2981,7 +3023,7 @@ height: 10px;
 display: inline-block;
 position: absolute;
 right: 4px;
-top: 11px;
+top: 8px;
 }
 
 /*responsive form input */
@@ -2991,10 +3033,11 @@ top: 11px;
 }
 .formBlock .formBlock-input.inputResponsive {
     display: inline-block;
-    /* width: 262px; */
+    width: 262px;
     margin: 0;
     padding: 0;
     color: #929292;
+
 }
 .formBlock input {
     padding: 0 10px;
@@ -3010,6 +3053,15 @@ top: 11px;
     background: #fff;
     color: #929292;
 }
+.formBlock .ui-autocomplete-input {
+    /* padding: 0 13px; */
+     
+    /* padding: 0px 13px; */  
+    width: 238px;
+       
+    box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;        -moz-box-sizing: padding-box;          box-sizing: padding-box;
+}
 
 /* Hard "outline" with box-shadow: */
 .formBlock-input.input-normal:focus {
@@ -3023,14 +3075,15 @@ top: 11px;
     width: 73px;
 }
 .formBlock .inpitResp-year {
-    width: 130px;
+    width: 133px;
+    margin-right: -10px;
 }
 
 /* radio and check */
 .radioBlWrap {
     position: relative;
 /*    left: -16px;*/
-    top: 2px;
+    top: 4px;
     float: left;
 }
 
@@ -3044,8 +3097,10 @@ top: 11px;
     clear: both;
     position: relative;
     height: 27px;
-/*    left: -16px;*/
+
+    /* left: -16px; */
 top: 10px;
+    line-height: 24px;
 }
 .formType-radio input[type="radio"],
 .formType-checkbox input[type="checkbox"]  {
@@ -3078,6 +3133,7 @@ top: 10px;
     background: url('../img/radioDef.png') no-repeat;
     width: 30px;
     height: 24px;
+    /* z-index: 1111; */
     display: inline-block;
 }
 .formType-radio label.errRadio {background: url('../img/radioDefErr.png') no-repeat;}
@@ -3185,8 +3241,10 @@ top: 10px;
 
 .setOfchkecks-chBox .checkboxLable {
     width: 100px;
-   /* margin-right: -15px;*/
+   
+    /* margin-right: -15px; */
     display: inline-block;
+    line-height: 12px;
 }
 
 .setOfchkecks-chBox .formType-checkbox label {
@@ -3240,6 +3298,11 @@ top: 10px;
     background-position: 95px 5px;
     background-repeat: no-repeat;
 }
+.formBlock.blockHead .formBlock-calendar .datepicker {
+    width: 200px;
+    background-position: 190px 5px;
+}
+
 .ui-widget-content {
     background: #fff;
 }
@@ -3426,8 +3489,11 @@ top: 10px;
 }
  
 /* tooltip */ 
+.toolExample {
+    margin-left: 14px;    
+}
+
 .toolTip {
-    margin-left: 14px;
     position: relative;
     display: block;
     text-align: center;
@@ -3467,7 +3533,36 @@ margin-right: auto;
         right: 126px;
         z-index: 1;
     }
- 
+
+
+.toolTip:hover .toolNote-img,
+.toolTip:hover .toolNote-mess
+{
+    visibility: visible;
+}
+
+.qTip span {
+    background: url('../img/toolTip.png') no-repeat;
+    padding: 0px 8px 8px 8px;
+}
+.iTip span {
+    background: url('../img/toolTip2.png') no-repeat;
+    padding: 0px 8px 8px 8px;
+}
+
+.iTip:hover span {
+    background:url('../img/toolTip2Hover.png') no-repeat;
+}
+.qTip:hover span {
+    background:url('../img/toolTipHover.png') no-repeat;
+}
+
+.formBlock .toolTip {
+    right: -21px;
+}
+.formBlock .toolTip.iTip {
+    right: -3px;
+}
 
 /* clerfix */
 .clearfix:after {
@@ -3512,7 +3607,11 @@ margin-right: auto;
     clear: none;
     margin: 28px 19px 10px 0;
 }
-
+.pageInfo.appInfo .headerInput .formBlock.blockHead,
+.appInfo .formBlock.formPolicy  {
+ float: left;
+ width: 100%;
+}
 .pageInfo-wrapper {
  
 }
@@ -3562,6 +3661,32 @@ margin-right: auto;
 .formBlock :-moz-placeholder { /* Firefox 18- */
    
 }
+
+/*===================================
+=            Policy Page            =
+===================================*/
+.policyWarn {
+    float: left;
+
+    padding: 10px 5px 40px 5px;
+}
+.policyInfo {
+    padding: 10px 0px 10px 0px;
+
+}
+.policyInfo * {
+    color: #6e6e6f;
+    font-size: 13px;
+    float: none;
+}
+
+.policyInfo .formType-checkbox {
+    line-height: 24px;
+}
+
+/*-----  End of Policy Page  ------*/
+
+
 
 
 /*===========================================

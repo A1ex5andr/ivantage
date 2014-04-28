@@ -66,6 +66,7 @@ jQuery(document).ready(function($) {
 
     // this runs calendar
     $(function() {
+        $("#datepickerHead").datepicker();
         $("#datepicker").datepicker();
         $("#datepicker2").datepicker();
         $("#datepicker3").datepicker();
@@ -104,11 +105,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-    //tolltip
-    $('.tip').hover(function() {
-        $('.toolNote-img').toggleClass('showTip');
-        $('.toolNote-mess').toggleClass('showTip');
-    });
 
     // custom select box with options
     $(function() {
@@ -142,8 +138,7 @@ jQuery(document).ready(function($) {
     });
 
     //focus if internal formBlock active
-    $("#blockContainer").on('click', '.formBlock-input', function(event) {
-        event.preventDefault();
+    $("#blockContainer").on('click', '.formBlock', function(event) {
         /* Act on the event */
         $('.pageInfo-wrapper').removeClass('pageInfo-wrapperActive');
         $(this).closest('.pageInfo-wrapper').addClass('pageInfo-wrapperActive');
