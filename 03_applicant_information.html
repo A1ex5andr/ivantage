@@ -190,7 +190,7 @@
         <h2>Quote For Joan Customer</h2>
         <nav>
           <ul>
-            <li><span class="charsMail"></span><a href="">Email</a></li>
+            <li id="popUpMail"><span class="charsMail"></span><a href="">Email</a></li>
             <li><span class="charsDet"></span><a href="">Details</a></li>
             <li><span class="charsTask"></span><a href="">Tasks</a></li>
             <li><span class="charsEdit"></span><a href="">Lock Edit</a></li>
@@ -541,6 +541,703 @@
         <div class="contorlForm">
           <span class="cntrl-confirm"><h5>Confirm</h5></span>
           <span class="cntrl-cancel"><h5>Cancel</h5></span>
+        </div>
+
+      </div>
+    </aside>
+
+    <aside class="popUpEmail">
+      <div class="popUpEmail-bg"></div>
+      <div class="dialog">
+        <h1>E-mail your customer</h1>
+        <span class="cntrl-discard smallDiscard">
+            <img src="img/close.png" alt="">
+        </span>
+        <div class="dialogEmail">
+          <div class="formBlock">
+            <div class="formBlock-title">
+               Type:
+            </div>
+            <div class="">
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
+              </select>
+            </div>
+          </div>
+          <div class="formBlock">
+            <div class="formBlock-title">
+              To:
+            </div>
+            <div class="formBlock-input inputResponsive">
+              <input class="formBlock-input input-normal errorBlockMark" placeholder="type here">  
+            </div>
+          </div>
+          <div class="formBlock">
+            <div class="formBlock-title">
+              Subject:
+            </div>
+            <div class="formBlock-input inputResponsive">
+              <input class="formBlock-input input-normal" placeholder="type here">  
+            </div>
+          </div>
+          <div class="mailToSend">
+            <div class="mailToSend-textEdit">
+              <span class="textBold">B</span>
+              <span class="textItal">I</span>
+              <div class="textCtrl">
+                <select class="e1 textFont">
+                    <option value="AL">Font</option>
+                    <option value="Am">Arial</option>
+                    <option value="An">Myriad</option>
+                    <option value="Ak">Times</option>
+                </select>
+              </div>
+              <div class="textCtrl">
+                  <select class="e1 textSize">
+                      <option value="AL">12</option>
+                      <option value="Am">13</option>
+                      <option value="An">14</option>
+                      <option value="Ak">15</option>
+                      <option value="WY">16</option>
+                  </select>
+              </div>
+            </div>
+            <div class="mailToSend-input">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="mailOptions">
+            <div class="incProducts">
+              <h3>Include Products</h3>
+              <div class="moveOptUp"><span></span></div>
+              <nav class="allMailOptions">
+                <div class="mailOpt" id="mailOpt_1">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">Homeowners</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt" id="mailOpt_2">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">Dwelling Fire</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt" id="mailOpt_3">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">Flood</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt" id="mailOpt_4">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">Events Insurance</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt" id="mailOpt_5">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">General liability and business property</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt" id="mailOpt_6">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">Pet Health Insurance</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt hide" id="mailOpt_7">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">Events Insurance</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt hide" id="mailOpt_8">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">General liability and business property</span>
+                  <span class="optMarked"></span>
+                </div>
+                <div class="mailOpt hide" id="mailOpt_9">
+                  <span class="optWithMarks"></span>
+                  <span class="mailOptName">Pet Health Insurance</span>
+                  <span class="optMarked"></span>
+                </div>
+              </nav>
+              <div class="moveOptDown"><span></span></div>
+            </div>
+            <div class="incQuotes">
+              <h3>Include Quotes</h3>
+              <section class="allIncQuotes hide" id="checkBl_1">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1">
+                    <label for="1" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2">
+                    <label for="2" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3">
+                    <label for="3" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4">
+                    <label for="4" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5">
+                    <label for="5" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6">
+                    <label for="6" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7">
+                    <label for="7" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8">
+                    <label for="8" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9">
+                    <label for="9" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10">
+                    <label for="10" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_2">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1a">
+                    <label for="1a" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2a">
+                    <label for="2a" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3a">
+                    <label for="3a" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4a">
+                    <label for="4a" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5a">
+                    <label for="5a" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6a">
+                    <label for="6a" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7a">
+                    <label for="7a" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8a">
+                    <label for="8a" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9a">
+                    <label for="9a" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10a">
+                    <label for="10a " class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_3">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1b">
+                    <label for="1b" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2b">
+                    <label for="2b" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3b">
+                    <label for="3b" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4b">
+                    <label for="4b" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5b">
+                    <label for="5b" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6b">
+                    <label for="6b" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7b">
+                    <label for="7b" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8b">
+                    <label for="8b" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9b">
+                    <label for="9b" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10b">
+                    <label for="10b" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_4">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1с">
+                    <label for="1с" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2с">
+                    <label for="2с" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3с">
+                    <label for="3с" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4с">
+                    <label for="4с" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5с">
+                    <label for="5с" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6с">
+                    <label for="6с" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7с">
+                    <label for="7с" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8с">
+                    <label for="8с" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9с">
+                    <label for="9с" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10с">
+                    <label for="10с" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_5">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1d">
+                    <label for="1d" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2d">
+                    <label for="2d" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3d">
+                    <label for="3d" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4d">
+                    <label for="4d" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5d">
+                    <label for="5d" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6d">
+                    <label for="6d" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7d">
+                    <label for="7d" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8d">
+                    <label for="8d" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9d">
+                    <label for="9d" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10d">
+                    <label for="10d" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_6">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1e">
+                    <label for="1e" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2e">
+                    <label for="2e" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3e">
+                    <label for="3e" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4e">
+                    <label for="4e" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5e">
+                    <label for="5e" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6e">
+                    <label for="6e" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7e">
+                    <label for="7e" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8e">
+                    <label for="8e" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9e">
+                    <label for="9e" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10e">
+                    <label for="10e" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_7">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1f">
+                    <label for="1f" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2f">
+                    <label for="2f" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3f">
+                    <label for="3f" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4f">
+                    <label for="4f" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5f">
+                    <label for="5f" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6f">
+                    <label for="6f" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7f">
+                    <label for="7f" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8f">
+                    <label for="8f" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9f">
+                    <label for="9f" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10f">
+                    <label for="10" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_8">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1g">
+                    <label for="1g" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2g">
+                    <label for="2g" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3g">
+                    <label for="3g" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4g">
+                    <label for="4g" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5g">
+                    <label for="5g" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6g">
+                    <label for="6g" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7g">
+                    <label for="7g" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8g">
+                    <label for="8g" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9g">
+                    <label for="9g" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10g">
+                    <label for="10g" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+              <section class="allIncQuotes hide" id="checkBl_9">
+                <div class="formType-checkbox" id="check_1">
+                    <input type="checkbox" name="protection" value="#1" id="1h">
+                    <label for="1h" class=""></label>
+                    <span class="checkboxLable">CNA </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_2">
+                    <input type="checkbox" name="protection" value="#2" id="2h">
+                    <label for="2h" class=""></label>
+                    <span class="checkboxLable">All State </span>
+                    <span class="checkboxPrice">600$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_3">
+                    <input type="checkbox" name="protection" value="#3" id="3h">
+                    <label for="3h" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_4">
+                    <input type="checkbox" name="protection" value="#4" id="4h">
+                    <label for="4h" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_5">
+                    <input type="checkbox" name="protection" value="#5" id="5h">
+                    <label for="5h" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_6">
+                    <input type="checkbox" name="protection" value="#6" id="6h">
+                    <label for="6h" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_7">
+                    <input type="checkbox" name="protection" value="#7" id="7h">
+                    <label for="7h" class=""></label>
+                    <span class="checkboxLable">American Modern </span>
+                    <span class="checkboxPrice">450$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_8">
+                    <input type="checkbox" name="protection" value="#8" id="8h">
+                    <label for="8h" class=""></label>
+                    <span class="checkboxLable">St.Johns </span>
+                    <span class="checkboxPrice">490$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_9">
+                    <input type="checkbox" name="protection" value="#9" id="9h">
+                    <label for="9h" class=""></label>
+                    <span class="checkboxLable">Hagerty </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+                <div class="formType-checkbox" id="check_10">
+                    <input type="checkbox" name="protection" value="#10" id="10h">
+                    <label for="10h" class=""></label>
+                    <span class="checkboxLable">Sagesure </span>
+                    <span class="checkboxPrice">500$ </span>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="mailAttach">
+            <span class="mailAttachCntrl">
+              <img src="img/attach.png" alt="">Add attachment
+            </span>
+            <p>*The quote proposal letter will automatically be attached to the email.</p>
+          </div>
+        </div>
+
+        <div class="contorlForm">
+          <span class="cntrl-send"><h5>Send</h5></span>
+          <span class="cntrl-discard"><h5>Discard</h5></span>
+          <span class="cntrl-view"><h5>View Proposal</h5></span>
+          <span class="cntrl-preview"><h5>Preview E-mail</h5></span>
         </div>
 
       </div>

@@ -2099,59 +2099,40 @@ footer {
 }
 
 .contorlForm span {
-    float: right;
-    width: 108px;
-    height: 49px;
-    background: #0b77c2;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    top: 16px;
-    right: 2px;
-    line-height: 49px;
+	float: right;
+	width: 108px;
+	height: 49px;
+	background: #0b77c2;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	border-radius: 8px;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	top: 16px;
+	right: 2px;
+	line-height: 49px;
 }
-
 .contorlForm span h5 {
     margin: 0;
     letter-spacing: 1px;
     font-size: 20px;
     letter-spacing: 0.5px;
-    font-weight: 100;
 }
 
-.contorlForm .cntrl-discard,
 .contorlForm .cntrl-cancel {
     color: #0b77c2;
-    margin-right: 10px;
     background: transparent;
+    margin-right: 10px;
     border-color: transparent;
 }
-.contorlForm .cntrl-discard:hover,
 .contorlForm .cntrl-cancel:hover {
     text-decoration: none;
 }
-.contorlForm .cntrl-send:hover,
 .contorlForm .cntrl-confirm:hover {
 	-webkit-box-shadow: inset 1px 1px 6px 0 #222222;
 	box-shadow: inset 1px 1px 6px 0 #222222;
-}
-
-.contorlForm  .cntrl-preview,
-.contorlForm  .cntrl-view {
-    float: left!important;
-    background: transparent!important;
-    border-color: transparent!important;
-    width: 180px!important;
-        color: #0b77c2;
-}
-
-.smallDiscard {
-    position: absolute;
-    
 }
 
 /*-----  End of popUp dialog box  ------*/
@@ -2166,7 +2147,7 @@ footer {
     position: absolute;
     top: 0px;
     z-index: 9999;
-    display: none;
+    /*display: none;*/
 }
 .popUpEmail-bg {
     width: 100%;
@@ -2388,23 +2369,11 @@ footer {
 
 }
 .mailAttach {
-    margin: 12px 0 0 15px;
-    color: #0b77c2;
-    z-index: 555;
-    position: relative;
-}
-.mailAttach .mailAttachCntrl {
-    cursor: pointer;
-}
-.mailAttach img {
-    padding-right: 6px;
+
 }
 .mailAttach p {
     color: #818182;
     
-    font-size: 14px;
-    margin-top: 6px;
-    margin-bottom: 0;
 }
 /*-----  End of PopUp Email  ------*/
 

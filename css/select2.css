@@ -189,9 +189,9 @@ Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
 }
 
 .select2-drop-active {
-    border: none;
+    border: 1px solid #eeeff0;
     width: auto;
-    min-width: 262px;
+    /*min-width: 262px;*/
 }
 .setOfchkecks-input .select2-drop-active {
     min-width: 136px!important;

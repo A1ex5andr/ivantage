@@ -62,6 +62,101 @@ jQuery(document).ready(function($) {
         $('.popUp').removeClass('show');
     });
 
+    //popUp Email
+    $('#popUpMail ').click(function(e) {
+        event.preventDefault();
+        //$('#popUp').removeClass('hide');
+        $('.popUpEmail').addClass('show');
+    });
+
+    $('.cntrl-discard').click(function() {
+        $('.popUpEmail').removeClass('show');
+    });
+
+    $('.mailOpt').click(function() {
+        var id = ($(this).attr('id'));
+        var idCheckBox = id.split("_");
+        var idCheckBox = idCheckBox[1];
+
+        $('.mailOpt').removeClass('activeOpt');
+        $(this).addClass('activeOpt');
+
+        $('.allIncQuotes').addClass('hide');
+        $('#checkBl_' + idCheckBox).removeClass('hide');
+    });
+
+    var targetOptTop = 1;
+    var targetOptDown = 7;
+    var targetOptLast = ($(".allMailOptions").children().length);
+
+    // function scrollMail(position) {
+    //     console.log(targetOptTop);
+    //     console.log(targetOptDown);
+
+    //     if (targetOptTop >= 0 && targetOptDown < targetOptLast) {
+    //         $('.mailOpt:nth-child(' + targetOptTop + ')').addClass('hide');
+    //         $('.mailOpt:nth-child(' + targetOptDown + ')').removeClass('hide');
+    //         targetOptTop += position;
+    //         targetOptDown += position;
+    //     } else {
+    //         return;
+    //     }
+
+    //     // $('.mailOpt:not(.hide):first');
+    //     //target.addClass('hide');
+    //     //console.log
+    //     //targetOptTop > 0 ? targetOptTop++ : return;
+    // };
+
+    function scrollMailDown(position) {
+        console.log(targetOptTop);
+        console.log(targetOptDown);
+
+        if (targetOptDown < targetOptLast) {
+            $('.mailOpt:nth-child(' + targetOptTop + ')').addClass('hide');
+            $('.mailOpt:nth-child(' + targetOptDown + ')').removeClass('hide');
+            targetOptTop += position;
+            targetOptDown += position;
+        };
+    };
+
+    function scrollMailUp(position) {
+        console.log(targetOptTop);
+        console.log(targetOptDown);
+
+        if (targetOptTop >= 1) {
+            $('.mailOpt:nth-child(' + targetOptTop + ')').removeClass('hide');
+            $('.mailOpt:nth-child(' + targetOptDown + ')').addClass('hide');
+            targetOptTop += position;
+            targetOptDown += position;
+        };
+    };
+
+    $('.moveOptDown').click(function() {
+        scrollMailDown(+1);
+    });
+
+    $('.moveOptUp').click(function() {
+        scrollMailUp(-1);
+    });
+
+    //if checkbox clicked update status for "Include Products"
+    $('.incQuotes').find("input").click(function() {
+        var parentId = ($(this).parents('.allIncQuotes').attr('id'));
+        var idTag = parentId.split('_');
+        var mailOptId = $('#mailOpt_' + idTag[1]);
+        var checkBox = $('#checkBl_' + idTag[1]).find("input:checked").length;
+
+        if (checkBox >= 1) {
+            console.log(checkBox);
+            mailOptId.find('.optWithMarks').addClass('makeVisual');
+            mailOptId.find('.optMarked').text('(' + checkBox + ')');
+        } else {
+            mailOptId.find('.optWithMarks').removeClass('makeVisual');
+            mailOptId.find('.optMarked').empty(checkBox);
+        };
+
+    });
 
 
     // this runs calendar
@@ -287,5 +382,6 @@ jQuery(document).ready(function($) {
         });
 
     });
+
 
 });
