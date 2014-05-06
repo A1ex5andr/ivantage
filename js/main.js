@@ -53,7 +53,6 @@ jQuery(document).ready(function($) {
 
     //popup controls show/hide
     $('.head-logo').click(function() {
-        //$('#popUp').removeClass('hide');
         $('.popUp').addClass('show');
 
     });
@@ -65,7 +64,6 @@ jQuery(document).ready(function($) {
     //popUp Email
     $('#popUpMail ').click(function(e) {
         event.preventDefault();
-        //$('#popUp').removeClass('hide');
         $('.popUpEmail').addClass('show');
     });
 
@@ -89,48 +87,28 @@ jQuery(document).ready(function($) {
     var targetOptDown = 7;
     var targetOptLast = ($(".allMailOptions").children().length);
 
-    // function scrollMail(position) {
-    //     console.log(targetOptTop);
-    //     console.log(targetOptDown);
-
-    //     if (targetOptTop >= 0 && targetOptDown < targetOptLast) {
-    //         $('.mailOpt:nth-child(' + targetOptTop + ')').addClass('hide');
-    //         $('.mailOpt:nth-child(' + targetOptDown + ')').removeClass('hide');
-    //         targetOptTop += position;
-    //         targetOptDown += position;
-    //     } else {
-    //         return;
-    //     }
-
-    //     // $('.mailOpt:not(.hide):first');
-    //     //target.addClass('hide');
-    //     //console.log
-    //     //targetOptTop > 0 ? targetOptTop++ : return;
-    // };
+    function scrollMailUp(position) {
+        console.log(targetOptTop);
+        console.log(targetOptDown);
+        if (targetOptTop > 1) {
+            targetOptTop--;
+            targetOptDown--;
+            $('.mailOpt:nth-child(' + targetOptTop + ')').removeClass('hide');
+            $('.mailOpt:nth-child(' + targetOptDown + ')').addClass('hide');
+        };
+    };
 
     function scrollMailDown(position) {
         console.log(targetOptTop);
         console.log(targetOptDown);
-
-        if (targetOptDown < targetOptLast) {
+        if (targetOptDown < targetOptLast + 1) {
             $('.mailOpt:nth-child(' + targetOptTop + ')').addClass('hide');
             $('.mailOpt:nth-child(' + targetOptDown + ')').removeClass('hide');
-            targetOptTop += position;
-            targetOptDown += position;
+            targetOptTop++;
+            targetOptDown++;
         };
     };
 
-    function scrollMailUp(position) {
-        console.log(targetOptTop);
-        console.log(targetOptDown);
-
-        if (targetOptTop >= 1) {
-            $('.mailOpt:nth-child(' + targetOptTop + ')').removeClass('hide');
-            $('.mailOpt:nth-child(' + targetOptDown + ')').addClass('hide');
-            targetOptTop += position;
-            targetOptDown += position;
-        };
-    };
 
     $('.moveOptDown').click(function() {
         scrollMailDown(+1);
@@ -157,6 +135,33 @@ jQuery(document).ready(function($) {
         };
 
     });
+
+    // if checkbox active make background colored   
+    $('.formType-checkbox').click(function() {
+        if ($(this).find("input:checked").length == 1) {
+            $(this).css("background-color", "#c2e6ff");
+            console.log($(this).attr('id'));
+        } else if ($(this).find("input:checked").length != 1) {
+            $(this).css("background-color", "transparent");
+        }
+    });
+
+    // expand and collaps table rows on a result page
+    $('.togBtn').click(function() {
+        $(this).toggleClass('togBtnExt');
+        $('.resultBl-toToggle').slideToggle();
+    });
+
+    // result tabs to show/hide clicked category
+    // as example HOME or PET
+    $('.resultNavBtn').click(function() {
+        var idBtn = $(this).attr('id');
+        console.log(idBtn);
+        $('.resultNavBtn').removeClass('activeResNav');
+        $(this).addClass('activeResNav');
+        $('.resultBl>span').removeClass('resultBl-vissible');
+        $('.resultBl>span#' + idBtn).addClass('resultBl-vissible');
+    })
 
 
     // this runs calendar
