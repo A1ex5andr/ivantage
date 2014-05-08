@@ -4632,6 +4632,41 @@ margin-right: auto;
 /*-----  End of Carrier Access page  ------*/
 
 
+/*=======================================
+=            404 error pages            =
+=======================================*/
+.pageError {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    overflow: hidden;
+}
+
+.pageError-noNav {
+    margin-top: 240px;
+}
+
+.pageError-img {
+    float: left;
+    width: 400px;
+}
+
+.pageError-title {
+    display: inline-block;
+    width: 700px;
+    margin-top: 70px;
+    color: #7b7b7c;
+}
+
+.pageError-title h1 {
+    font-size: 40px;
+}
+
+.pageError-title h2 {
+    font-size: 24px;
+}
+
+/*-----  End of 404 error pages  ------*/
+
 
 
 
