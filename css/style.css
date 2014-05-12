@@ -1037,6 +1037,9 @@ textarea,
     padding-right: 40px;
     position: relative;
 }
+.homeQuotes {
+    margin-top: 74px;
+}
 .quotes > a {
     color: #6fa2d3;
     float: right;
@@ -1438,13 +1441,16 @@ textarea,
 
 .message.quoteMessageBl {
     float: right;
-    margin-top: 108px;
+    /* margin-top: 92px; */
+}
+.message.faqMessageBl {
+     margin-top: 92px; 
 }
 
 /* messages */
 .message {
     float: right;
-    margin-top: 142px;
+    margin-top: 140px;
 }
 .mess-cent {
     background: url('../img/mess.png') no-repeat;
@@ -1853,6 +1859,63 @@ textarea,
     width: 170px;
     background-size: cover;
 }
+
+/*====================================
+=            help and faq            =
+====================================*/
+.slideBlock {
+    margin: 3px;
+    
+}
+.slideBlock span.slideBlArrow {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    background-image: url(../img/slideBlClosed.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    vertical-align: middle;
+}
+.slideBlockActive span.slideBlArrow {
+    background-image: url(../img/slideBlOpen.png);
+}
+.slideBlock header {
+    background: #e6e7e9;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.slideBlock header h1 {
+    color: #0b77c2;
+    font-size: 17px;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-weight: 100;
+}
+.slideBlockActive  header h1 {
+    font-weight: 800;
+}
+
+.slideBlock p {
+    font-size: 14px;
+    color: #6e6e6f;
+    margin: 0;
+    padding: 6px 50px;
+    font-weight: 400;
+    display: none;
+}
+.slideBlockActive p {
+    display: block;
+}
+
+/*-----  End of help and faq  ------*/
+
+
 
 
 /* footer */
@@ -4322,6 +4385,7 @@ margin-right: auto;
     padding-right: 40px;
     position: relative;
     margin-bottom: 60px;
+    margin-top: 64px;
 }
 .carrierAccess hr.clear {
     border: transparent;

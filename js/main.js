@@ -250,6 +250,14 @@ jQuery(document).ready(function($) {
         $(this).closest('.blockOfchars').remove();
     });
 
+    //help and faq slide Blocks
+    $('.slideBlock').on('click', 'header', function() {
+        $(this).parent().toggleClass('slideBlockActive');
+        //$('.slideBlock').removeClass('slideBlockActive');
+        //$(this).addClass('slideBlockActive');
+    })
+
+
 
     // what we add as a block of charachteristics
     var addBlock = '<span class="blockOfchars">' +
