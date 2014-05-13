@@ -263,8 +263,7 @@ jQuery(document).ready(function($) {
     //help and faq slide Blocks
     $('.slideBlock').on('click', 'header', function() {
         $(this).parent().toggleClass('slideBlockActive');
-        //$('.slideBlock').removeClass('slideBlockActive');
-        //$(this).addClass('slideBlockActive');
+        $(this).next('p').slideToggle();
     })
 
 
