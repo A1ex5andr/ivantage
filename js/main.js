@@ -61,8 +61,18 @@ jQuery(document).ready(function($) {
         $('.popUp').removeClass('show');
     });
 
+    //popupAccaunt controls show/hide
+    $('#popUpAcc').click(function(event) {
+        event.preventDefault();
+        $('.popUpAcc').addClass('show');
+    });
+
+    $('.cancelPopUpAcc').click(function() {
+        $('.popUpAcc').removeClass('show');
+    });
+
     //popUp Email
-    $('#popUpMail ').click(function(e) {
+    $('#popUpMail ').click(function(event) {
         event.preventDefault();
         $('.popUpEmail').addClass('show');
     });
