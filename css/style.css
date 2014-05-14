@@ -4875,6 +4875,150 @@ margin-right: auto;
 
 /*-----  End of 404 error pages  ------*/
 
+/*==================================
+=            Page Login            =
+==================================*/
+.pageLogin {
+        clear: both; 
+    width: 660px; background: #f7f7f8; border: 1px solid #e4e5e6; border-radius: 4px;
+    
+    margin: 70px auto 160px;
+    padding: 40px 80px;
+    position: relative;
+        overflow: auto;
+}
+.pageLogin-header {
+    
+}
+.pageLogin h1 {
+    font-size: 39px;
+    
+    color: #0b77c2;
+    font-weight: 400;
+    float: left;
+}
+
+.pageLogin .loginAllert {
+    width: 520px;
+    float: right;
+    margin-top: 10px;
+}
+
+.logInForm {
+    background: #e1e2e4;
+width: 600px;
+margin: 0 auto;
+height: 220px;
+padding: 20px 30px;
+
+    position: relative;
+z-index: 1111;
+}
+
+.logInForm img {
+    top: -26px;
+
+    position: relative;
+    float: left;
+}
+.logInForm .formBlock {}
+.logInForm .formBlock  {
+    width: 380px;
+    float: right;
+    clear: none;
+}
+.logInForm .formBlock-title {
+    width: 100px;
+}
+.logInForm .formBlock-input {
+    width: 210px;
+}
+.logInFormContainer {
+    padding: 20px 110px 0 0;
+    
+    position: relative;
+    height: 100%;
+}
+.logInFormContainer .contorlForm  {
+    top: 155px;
+    position: absolute;
+    right: 30px;
+}
+.logInFormContainer .contorlForm span {
+    height: 34px;
+
+    line-height: 34px;
+    width: 80px;
+}
+.logInFormContainer .contorlForm span:hover {
+-webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+box-shadow: inset 1px 1px 6px 0 #222222;
+}
+.logInFormContainer .contorlForm h5 {
+}
+/*-----  End of Page Login  ------*/
+
+
+
+/*===================================
+=            Page Logout            =
+===================================*/
+.pageLogout {
+    clear: both; 
+    width: 660px; background: #f7f7f8; border: 1px solid #e4e5e6; border-radius: 4px;
+    
+    margin: 70px auto 160px;
+    padding: 40px 80px;
+    position: relative;
+}
+.pageLogout h1 {
+    font-size: 39px;
+    
+    color: #0b77c2;
+    font-weight: 400;
+}
+.pageLogout .pageLogout-alert  {
+    background: #e1e2e4;
+    width: 600px;
+    margin: 0 auto;
+    height: 220px;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1111;
+}
+.pageLogout .pageLogout-alert img {
+    float: left;
+}
+.pageLogout .pageLogout-alert p {
+    color: #6e6e6f;
+    font-size: 24px;
+    padding: 10px 120px 10px 110px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.pageLogout .pageLogout-alert p a {
+    text-decoration: none;
+    color: #1e81c7;
+}
+.pageLogoutBg,
+.pageLogInBg {
+    display: inline-block;
+    background-image: url(../img/logOutShad.png);
+    background-repeat: no-repeat;
+    background-size: 690px 20px;
+    width: 670px;
+    height: 20px;
+    position: absolute;
+    bottom: 26px;
+    z-index: 1;
+    margin: 0 auto;
+    left: 73px;
+}
+
+/*-----  End of Page Logout  ------*/
+
+
+
 
 
 
