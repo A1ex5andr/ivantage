@@ -2525,7 +2525,7 @@ footer {
     position: fixed;
     top: 0;
     z-index: 9999;
-    display: none;
+    /* display: none; */
 }
 .popUpAcc .dialog {
     width: 988px;
@@ -2544,7 +2544,7 @@ footer {
     border-bottom: 2px solid rgb(207, 206, 206);
 }
 .popUpAcc .dialog-action  {
-    padding: 0 50px;
+    padding: 0 38px;
     margin-bottom: 16px;
 }
 
@@ -2552,9 +2552,24 @@ footer {
 .popUpAcc table{
     font-size: 16px;
     margin: 4px;
-    width: 99%;
 }
- 
+.popUpAcc table .accTable_01 {
+    width: 160px;
+    
+}
+.popUpAcc table .accTable_02 {
+    width: 210px;
+    
+}
+.popUpAcc table .accTable_03 {
+    width: 140px;
+    
+}
+.popUpAcc table .accTable_04 {
+}
+.popUpAcc table .accTable_05 {
+    
+}
 
 .popUpAcc table thead {
     color: #0b77c2;
@@ -2567,16 +2582,65 @@ footer {
     background: #e6e7e9;
 }
 .popUpAcc table thead tr td {
-    padding: 14px 10px 10px 10px;
+    padding: 14px 0px 10px 10px;
 }
 
 .popUpAcc table tr {
     border-bottom: 1px solid #d2d2d2;
+    display: block;
+    width: 894px;
 }
 .popUpAcc table tr:last-child {
  border: 0;
 }
+.popUpAcc table tr.accHover {
+background: #bfe5ff;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #bfe5ff 0%, #a0d8ef 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfe5ff), color-stop(100%,#a0d8ef));
+background: -webkit-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: -o-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: -ms-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: linear-gradient(to bottom, #bfe5ff 0%,#a0d8ef 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe5ff', endColorstr='#a0d8ef',GradientType=0 );
+-webkit-box-shadow: 0 2px 12px 0px #9E9E9E;
+box-shadow: 0 2px 12px 0px #9E9E9E;
+display: block;
+width: 880px;
+border: 1px solid #BEBEBE;
+left: -5px;
+margin-top: -2px;
+padding-left: 0;
+border-radius: 6px;
+position: relative;
+padding-right: 22px;
+}
 
+.popUpAcc table tr.accClick {
+    background: #bfe5ff;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #bfe5ff 0%, #a0d8ef 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfe5ff), color-stop(100%,#a0d8ef));
+background: -webkit-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: -o-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: -ms-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: linear-gradient(to bottom, #bfe5ff 0%,#a0d8ef 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe5ff', endColorstr='#a0d8ef',GradientType=0 );
+
+
+display: block;
+width: 880px;
+border: 1px solid #BEBEBE;
+left: -5px;
+margin-top: -2px;
+padding-left: 0;
+
+    border-radius: 4px;
+position: relative;
+padding-right: 22px;
+    -webkit-box-shadow: inset 1px 1px 4px -1px #222222; 
+    box-shadow: inset 1px 1px 4px -1px #222222;
+}
 
 .popUpAcc table td{
     font-size: 15px;
