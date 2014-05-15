@@ -2519,149 +2519,145 @@ footer {
 =            PopUp account            =
 =====================================*/
 .popUpAcc {
-    display: none;
-    z-index: 9999;
-    position: fixed;
-    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(17,17,17,0.58);
+    background: rgba(17, 17, 17, 0.58);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    /* display: none; */
 }
-
 .popUpAcc .dialog {
     width: 988px;
 }
 
 .popUpAcc .formBlock {
-    width: 97%;
     margin: 0 auto;
     padding: 0;
+    width: 97%;
 }
-
 .popUpAcc .dialog-action .dialogForm {
     height: auto;
-    padding: 0 0 4px 0;
-    border-bottom: 2px solid rgb(207,206,206);
+
+    padding: 0 0px 4px 0px;
     border-color: #DDDDDD;
+    border-bottom: 2px solid rgb(207, 206, 206);
 }
-
-.popUpAcc .dialog-action {
-    margin-bottom: 16px;
+.popUpAcc .dialog-action  {
     padding: 0 38px;
+    margin-bottom: 16px;
 }
 
-.popUpAcc table {
-    margin: 4px;
+
+.popUpAcc table{
     font-size: 16px;
+    margin: 4px;
 }
-
 .popUpAcc table .accTable_01 {
     width: 160px;
+    
 }
-
 .popUpAcc table .accTable_02 {
     width: 210px;
+    
 }
-
 .popUpAcc table .accTable_03 {
     width: 140px;
+    
 }
-
 .popUpAcc table .accTable_04 {
-    width: 190px;
 }
-
 .popUpAcc table .accTable_05 {
-    visibility: hidden;
-    color: #0b77c2;
-    cursor: pointer;
+    
 }
 
 .popUpAcc table thead {
     color: #0b77c2;
+    /* background: #e6e7e9; */
 }
-
 .popUpAcc table tbody {
     color: #6e6e6f;
 }
-
 .popUpAcc table thead tr {
     background: #e6e7e9;
 }
-
 .popUpAcc table thead tr td {
-    padding: 14px 0 10px 10px;
+    padding: 14px 0px 10px 10px;
 }
 
 .popUpAcc table tr {
+    border-bottom: 1px solid #d2d2d2;
     display: block;
     width: 894px;
-    border-bottom: 1px solid #d2d2d2;
-    cursor: pointer;
 }
-
 .popUpAcc table tr:last-child {
-    border: 0;
+ border: 0;
 }
-
-.popUpAcc table tbody tr:hover {
-    display: block;
-    position: relative;
-    left: -5px;
-    width: 880px;
-    margin-bottom: -1px;
-    padding-right: 22px;
-    padding-left: 0;
-    border: 1px solid #BEBEBE;
-    border-radius: 8px;
-    background: #bfe5ff;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,#bfe5ff 0,#a0d8ef 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#bfe5ff), color-stop(100%,#a0d8ef) );
-    background: -webkit-linear-gradient(top,#bfe5ff 0,#a0d8ef 100%);
-    background: -o-linear-gradient(top,#bfe5ff 0,#a0d8ef 100%);
-    background: -ms-linear-gradient(top,#bfe5ff 0,#a0d8ef 100%);
-    background: linear-gradient(to bottom,#bfe5ff 0,#a0d8ef 100%);
-    -webkit-box-shadow: 0 2px 12px 0 #9E9E9E;
-    box-shadow: 0 2px 12px 0 #9E9E9E;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe5ff', endColorstr='#a0d8ef',GradientType=0 );
+.popUpAcc table tr.accHover {
+background: #bfe5ff;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, #bfe5ff 0%, #a0d8ef 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfe5ff), color-stop(100%,#a0d8ef));
+background: -webkit-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: -o-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: -ms-linear-gradient(top, #bfe5ff 0%,#a0d8ef 100%);
+background: linear-gradient(to bottom, #bfe5ff 0%,#a0d8ef 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe5ff', endColorstr='#a0d8ef',GradientType=0 );
+-webkit-box-shadow: 0 2px 12px 0px #9E9E9E;
+box-shadow: 0 2px 12px 0px #9E9E9E;
+display: block;
+width: 880px;
+border: 1px solid #BEBEBE;
+left: -5px;
+margin-top: -2px;
+padding-left: 0;
+border-radius: 6px;
+position: relative;
+padding-right: 22px;
 }
 
 .popUpAcc table tr.accClick {
-    display: block;
-    position: relative;
-    left: -5px;
-    width: 880px;
-    margin-top: 0;
-    padding-right: 22px;
-    padding-left: 0;
-    border: 1px solid #BEBEBE;
-    border-radius: 4px;
     background: #bfe5ff;
-    -webkit-box-shadow: inset 1px 1px 4px -1px #222222;
+
+
+
+
+
+
+
+
+
+
+display: block;
+width: 880px;
+border: 1px solid #BEBEBE;
+left: -5px;
+margin-top: -2px;
+padding-left: 0;
+
+    border-radius: 4px;
+position: relative;
+padding-right: 22px;
+    -webkit-box-shadow: inset 1px 1px 4px -1px #222222; 
     box-shadow: inset 1px 1px 4px -1px #222222;
 }
 
-.popUpAcc table td {
-    padding: 10px 0 10px 10px;
+.popUpAcc table td{
     font-size: 15px;
+    padding: 10px 0 10px 10px;
 }
-
 .popUpAcc .contorlForm {
     right: 50px;
 }
-
 .popUpAcc .cancelPopUpAcc {
-    margin-right: 10px;
-    border-color: transparent;
     color: #0b77c2;
+    margin-right: 10px;
     background: transparent;
+    border-color: transparent;
 }
+ 
 
-.popUpAcc table tbody tr:hover .accTable_05,
-.accTable_05_SHOW {
-    visibility: visible!important;
-}
+
 
 /*-----  End of PopUp account  ------*/
 
@@ -4883,155 +4879,154 @@ margin-right: auto;
 =            Page Login            =
 ==================================*/
 .pageLogin {
+<<<<<<< HEAD
     clear: both;
     position: relative;
     width: 660px;
     margin: 200px auto 240px;
+=======
+        clear: both; 
+    width: 660px; background: #f7f7f8; border: 1px solid #e4e5e6; border-radius: 4px;
+    
+    margin: 70px auto 160px;
+>>>>>>> parent of f44875b... 10_ popUpAcc rebuild
     padding: 40px 80px;
-    border: 1px solid #e4e5e6;
-    border-radius: 4px;
-    overflow: auto;
-    background: #f7f7f8;
+    position: relative;
+        overflow: auto;
 }
-
 .pageLogin-header {
+    
 }
-
 .pageLogin h1 {
-    float: left;
     font-size: 39px;
-    font-weight: 400;
+    
     color: #0b77c2;
+    font-weight: 400;
+    float: left;
 }
 
 .pageLogin .loginAllert {
-    float: right;
     width: 520px;
+    float: right;
     margin-top: 10px;
 }
 
 .logInForm {
-    z-index: 1111;
-    position: relative;
-    width: 600px;
-    height: 220px;
-    margin: 0 auto;
-    padding: 20px 30px;
     background: #e1e2e4;
+width: 600px;
+margin: 0 auto;
+height: 220px;
+padding: 20px 30px;
+
+    position: relative;
+z-index: 1111;
 }
 
 .logInForm img {
-    float: left;
-    position: relative;
     top: -26px;
-}
 
-.logInForm .formBlock {
+    position: relative;
+    float: left;
 }
-
-.logInForm .formBlock {
+.logInForm .formBlock {}
+.logInForm .formBlock  {
+    width: 380px;
     float: right;
     clear: none;
-    width: 380px;
 }
-
 .logInForm .formBlock-title {
     width: 100px;
 }
-
 .logInForm .formBlock-input {
     width: 210px;
 }
-
 .logInFormContainer {
+    padding: 20px 110px 0 0;
+    
     position: relative;
     height: 100%;
-    padding: 20px 110px 0 0;
 }
-
-.logInFormContainer .contorlForm {
-    position: absolute;
+.logInFormContainer .contorlForm  {
     top: 155px;
+    position: absolute;
     right: 30px;
 }
-
 .logInFormContainer .contorlForm span {
-    width: 80px;
     height: 34px;
+
     line-height: 34px;
+    width: 80px;
 }
-
 .logInFormContainer .contorlForm span:hover {
-    -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
-    box-shadow: inset 1px 1px 6px 0 #222222;
+-webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+box-shadow: inset 1px 1px 6px 0 #222222;
 }
-
 .logInFormContainer .contorlForm h5 {
 }
-
 /*-----  End of Page Login  ------*/
+
+
 
 /*===================================
 =            Page Logout            =
 ===================================*/
-
 .pageLogout {
+<<<<<<< HEAD
     clear: both;
     position: relative;
     width: 660px;
     margin: 200px auto 240px;
+=======
+    clear: both; 
+    width: 660px; background: #f7f7f8; border: 1px solid #e4e5e6; border-radius: 4px;
+    
+    margin: 70px auto 160px;
+>>>>>>> parent of f44875b... 10_ popUpAcc rebuild
     padding: 40px 80px;
-    border: 1px solid #e4e5e6;
-    border-radius: 4px;
-    background: #f7f7f8;
+    position: relative;
 }
-
 .pageLogout h1 {
     font-size: 39px;
-    font-weight: 400;
+    
     color: #0b77c2;
+    font-weight: 400;
 }
-
-.pageLogout .pageLogout-alert {
-    z-index: 1111;
-    position: relative;
-    width: 600px;
-    height: 220px;
-    margin: 0 auto;
-    padding: 20px 30px;
+.pageLogout .pageLogout-alert  {
     background: #e1e2e4;
+    width: 600px;
+    margin: 0 auto;
+    height: 220px;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1111;
 }
-
 .pageLogout .pageLogout-alert img {
     float: left;
 }
-
 .pageLogout .pageLogout-alert p {
-    padding: 10px 120px 10px 110px;
+    color: #6e6e6f;
     font-size: 24px;
+    padding: 10px 120px 10px 110px;
     font-weight: 400;
     line-height: 36px;
-    color: #6e6e6f;
 }
-
 .pageLogout .pageLogout-alert p a {
     text-decoration: none;
     color: #1e81c7;
 }
-
 .pageLogoutBg,
 .pageLogInBg {
     display: inline-block;
-    z-index: 1;
-    position: absolute;
-    bottom: 26px;
-    left: 73px;
-    width: 670px;
-    height: 20px;
-    margin: 0 auto;
     background-image: url(../img/logOutShad.png);
     background-repeat: no-repeat;
     background-size: 690px 20px;
+    width: 670px;
+    height: 20px;
+    position: absolute;
+    bottom: 26px;
+    z-index: 1;
+    margin: 0 auto;
+    left: 73px;
 }
 
 /*-----  End of Page Logout  ------*/

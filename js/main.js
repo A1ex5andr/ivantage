@@ -71,15 +71,6 @@ jQuery(document).ready(function($) {
         $('.popUpAcc').removeClass('show');
     });
 
-    //popupAccaunt table click
-    var popUpTR = '.popUpAcc table tbody tr';
-    $(popUpTR).click(function() {
-        $(popUpTR).removeClass('accClick');
-        $(this).addClass('accClick');
-        $('.accTable_05').removeClass('accTable_05_SHOW');
-        $(this).children('.accTable_05').addClass('accTable_05_SHOW');
-    });
-
     //popUp Email
     $('#popUpMail ').click(function(event) {
         event.preventDefault();
