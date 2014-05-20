@@ -1096,6 +1096,7 @@ textarea,
 
 .quotes table tr {
     display: block;
+    cursor: pointer;
 }
 .quotes table tr td {
     border-bottom: 1px solid #d2d2d2;
@@ -2902,12 +2903,13 @@ line-height: 20px;
 }*/
 
 .wizard a.past,
-.wizard a.previous {
+.wizard a:hover {
     color: #0b77c2;
 }
 .wizard a.previous {
     font-weight: bold;
 }
+
 
 .wizard a.wizBar_1 .wizDot,
 .wizard a.wizBar_2 .wizDot,
@@ -2916,6 +2918,19 @@ line-height: 20px;
 .wizard a.wizBar_5 .wizDot,
 .wizard a.wizBar_6 .wizDot,
 .wizard a.wizBar_7 .wizDot {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background: #0b77c2;
+    top: 25px;
+    display: inline-block;
+    position: absolute;
+    left: 43px;
+}
+
+.wizard a:not(.active):hover .wizDot {
+    background-image: url(../img/wiz/wizHover.png)!important;;
+    z-index: 9999;
     width: 16px;
     height: 16px;
     border-radius: 10px;
@@ -2983,6 +2998,7 @@ background: url(../img/wiz/activeWiz.png) no-repeat!important;
     z-index: 10;
  		
     border-radius: 12px;
+    z-index: 8888;
 }
 /* Required Information */
 .reqInfo {
