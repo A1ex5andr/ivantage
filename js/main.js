@@ -275,7 +275,10 @@ jQuery(document).ready(function($) {
         $(this).next('p').slideToggle();
     })
 
-
+    // change wizard dot oh link hover
+    $('.wizardLink a').hover(function() {
+        $(this).children('.wizardBl-dotPast').toggleClass('wizardBl-HOVER');
+    });
 
     // what we add as a block of charachteristics
     var addBlock = '<span class="blockOfchars">' +
