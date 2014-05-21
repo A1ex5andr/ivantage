@@ -2886,8 +2886,8 @@ line-height: 20px;
 .wizard .wizardBl .wizardLink a {
     display: table-cell;
     z-index: 9999;
-    position: relative;
-    top: -14px;
+    position: absolute;
+    top: -8px;
     right: 0;
     left: 0;
     margin: 0;
@@ -2909,7 +2909,7 @@ line-height: 20px;
     display: inline-block;
     z-index: 1;
     position: absolute;
-    top: 37px;
+    top: 32px;
     left: 49px;
     width: 16px;
     height: 16px;
@@ -2933,6 +2933,7 @@ line-height: 20px;
     height: 50px;
     background: url(../img/wiz/activeWiz.png) no-repeat;
     background-position: center center;
+    top: 8px;
 }
 
 .wizard .wizardBl-HOVER {
