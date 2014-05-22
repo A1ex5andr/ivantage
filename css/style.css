@@ -2942,6 +2942,7 @@ line-height: 20px;
 
 .wizard .wizardBlNext a {
     color: #6e6e6f!important;
+    font-weight: normal!important;
 }
 
 .wizard .wizardBlPast .wizardLine {
@@ -3420,6 +3421,258 @@ font-size: 28px;
 }
 
 /*-----  End of Result page  ------*/
+
+/*=====================================
+=            Products Page            =
+=====================================*/
+.products {
+}
+
+.products > h2 {
+    margin-bottom: 4px;
+    font-size: 24px;
+    color: #0b77c2;
+}
+
+.products .productsSet {
+    clear: both;
+    width: 100%;
+    border: 1px solid #e4e5e6;
+    border-radius: 4px;
+    background: #f7f7f8;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.products .productsSet h3,
+.products .productsSet h4 {
+    text-align: center;
+    color: #595959;
+}
+
+.products .productsSet h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.products .productsSet h4 {
+    margin-top: 0;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.products .productsSet .prodCheckWrap {
+    width: 160px;
+    height: 160px;
+    padding: 20px 0;
+    float: left;
+}
+
+.products .productsSet .prodCheck {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"] {
+    display: none;
+    z-index: -1;
+    position: relative;
+}
+
+.products .productsSet .prodCheck label {
+    float: none;
+    position: relative;
+    top: 0;
+    display: block;
+    width: 140px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0;
+    cursor: pointer;
+}
+
+.products .productsSet .prodCheck label.pet {
+    background: url('../img/products/pet.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.pet {
+    background: url('../img/products/pet_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.event {
+    background: url('../img/products/event.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.event {
+    background: url('../img/products/event_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.homeowners {
+    background: url('../img/products/homeowners.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.homeowners {
+    background: url('../img/products/homeowners_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.fire {
+    background: url('../img/products/fire.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.fire {
+    background: url('../img/products/fire_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.renters {
+    background: url('../img/products/renters.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.renters {
+    background: url('../img/products/renters_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.manufactured {
+    background: url('../img/products/manufactured.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.manufactured {
+    background: url('../img/products/manufactured_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.flood {
+    background: url('../img/products/flood.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.flood {
+    background: url('../img/products/flood_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.excess-flood {
+    background: url('../img/products/excess-flood.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.excess-flood {
+    background: url('../img/products/excess-flood_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.high-value {
+    background: url('../img/products/high-value.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.high-value {
+    background: url('../img/products/high-value_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.motorcycle {
+    background: url('../img/products/motorcycle.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.motorcycle {
+    background: url('../img/products/motorcycle_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.boat {
+    background: url('../img/products/boat.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.boat {
+    background: url('../img/products/boat_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.watercrafts {
+    background: url('../img/products/watercrafts.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.watercrafts {
+    background: url('../img/products/watercrafts_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.auto {
+    background: url('../img/products/auto.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.auto {
+    background: url('../img/products/auto_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.liability {
+    background: url('../img/products/liability.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.liability {
+    background: url('../img/products/liability_s.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.umbrella {
+    background: url('../img/products/umbrella.png') no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked+label.umbrella {
+    background: url('../img/products/umbrella_s.png') no-repeat;
+}
+
+/* Disabled */
+.products .productsSet .prodCheck label.petDisabled {
+    background: url('../img/products/pet_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.eventDisabled {
+    background: url('../img/products/event_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.homeownersDisabled {
+    background: url('../img/products/homeowners_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.fireDisabled {
+    background: url('../img/products/fire_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.rentersDisabled {
+    background: url('../img/products/renters_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.manufacturedDisabled {
+    background: url('../img/products/manufactured_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.floodDisabled {
+    background: url('../img/products/flood_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.excess-floodDisabled {
+    background: url('../img/products/excess-flood_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.high-valueDisabled {
+    background: url('../img/products/high-value_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.motorcycleDisabled {
+    background: url('../img/products/motorcycle_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.boatDisabled {
+    background: url('../img/products/boat_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.watercraftsDisabled {
+    background: url('../img/products/watercrafts_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.autoDisabled {
+    background: url('../img/products/auto_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.liabilityDisabled {
+    background: url('../img/products/liability_d.png') no-repeat;
+}
+
+.products .productsSet .prodCheck label.umbrellaDisabled {
+    background: url('../img/products/umbrella_d.png') no-repeat;
+}
+
+/*-----  End of Products Page  ------*/
 
 
 
