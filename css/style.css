@@ -3187,7 +3187,7 @@ font-size: 28px;
     float: left;
 }
 .resultLogo {
-    width: 149px;
+    width: 146px;
     height: 158px;
     background: #e1e2e4;
     float: left;
@@ -3354,7 +3354,8 @@ font-size: 28px;
 
 
 .resultBl-unlisted {
-    background: transparent; position: relative; left: -170px;
+    background: transparent; position: relative; 
+    left: -170px;
     
     margin-bottom: 20px;
 }
@@ -3419,7 +3420,79 @@ font-size: 28px;
     display: inline-block;
     text-indent: 0;
 }
+.resultAlert{
+    margin-left: 190px;
+    margin-top: 30px;
+}
+.resultAlert-pic {
+    display: inline-block;
+    
+    float: left;
+    margin-right: 10px;
+}
+.resultAlert-pic  img {}
+.resultAlert-text {
+    display: table;
+    background: #e1e2e4;
+    width: 590px;
+    height: 56px;
+    padding: 0px;
+    border-radius: 4px;
+}
+.resultAlert-text p {
+    width: 430px;
+    margin: 0 auto;
+    height: 56px;
+    padding-top: 20px;
+    color: #6B6963;
+}
+.resultAlert-text p a {
+    color: #0977c2;
+}
 
+/* result warning page */
+
+
+.resultWarn {
+    background: #e1e2e4;
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 4px;
+}
+.resultWarn h3{
+    font-size: 15px;
+color: #6e6e6f;
+
+    font-weight: 800;
+margin: 0 0 0px 10px;
+}
+.resultWarn h4{
+    font-size: 15px;
+color: #6e6e6f;
+font-weight: 100;
+margin: 0 0 0px 10px;
+}
+.resultWarn a{
+    text-decoration: none;
+color: #0977c2;
+font-size: 14px;
+}
+
+.resultWarn .toToggleButton{
+    right: -20px;
+}
+.resultWarn .togBg{}
+.resultWarn .togBtn{
+    visibility: hidden;
+}
+.resultWarn-List{
+    width: 100%;
+    left: 0;
+    padding: 5px;
+}
+.resultWarn-List .resultLogo {
+    margin-top: 6px;
+}
 /*-----  End of Result page  ------*/
 
 /*=====================================
