@@ -615,8 +615,8 @@ textarea,
 .head .head-client .chat {
     background: url('../img/chat_but.png') no-repeat;
     display: inline-block;
-    height: 30px;
-    width: 130px;
+    height: 10px;
+    width: 110px;
     top: 10px;
     position: relative;
 }
