@@ -3415,6 +3415,8 @@ text-indent: 29px;
  background-image: url('../img/resBl-moreQuotes.png');  
  width: 133px; 
  display: inline-block; height: 22px; text-align: center; line-height: 20px;
+ position: relative;
+ z-index: 9999;
 }
 .resultBl .toolTip.iTip {
     position: relative;
