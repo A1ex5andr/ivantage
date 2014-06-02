@@ -198,16 +198,79 @@
           </ul>
         </nav>
       </header>
+
       <div class="wizard">
-        <a href="" class="wizBar_1 past"><span class="wizLable">Applicant</span> <span class="wizDot"></span></a>
-        <a href="" class="wizBar_2 past"><span class="wizLable">Product</span> <span class="wizDot"></span></a>
-        <a href="" class="wizBar_3 previous"><span class="wizLable">Policy</span> <span class="wizDot"></span></a>
-        <a href="" class="wizBar_4 active"><span class="wizLable">Home</span> <span class="wizDot"></span></a>
-        <a href="" class="wizBar_5"><span class="wizLable">Pet</span> <!-- <span class="wizDot"> --></span></a>
-        <a href="" class="wizBar_6"><span class="wizLable">Flood</span> <!-- <span class="wizDot"> --></span></a>
-        <a href="" class="wizBar_7"><span class="wizLable">Review &amp; Purchase</span> <!-- <span class="wizDot"> --></a>
-        <div class="wizBar-line"></div>
+        <div class="wizard-start wizardBlPast">
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizardBl wizardBlPast">
+          <span class="wizardLink">
+            <a href="">Applicant
+              <span class="wizardBl-dotPast"></span>
+            </a>
+          </span>
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizardBl wizardBlPast">
+          <span class="wizardLink">
+            <a href="">Product
+              <span class="wizardBl-dotPast"></span>
+            </a>
+          </span>
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizardBl wizardBlPast">
+          <span class="wizardLink">
+            <a href="">Policy
+              <span class="wizardBl-dotPast"></span>
+            </a>
+          </span>
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizardBl wizardBlActive">
+          <span class="wizardLink">
+            <a href="">Home
+              <span class="wizardBl-dot"></span>
+            </a>
+          </span>
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizardBl wizardBlNext">
+          <span class="wizardLink">
+            <a href="">Pet
+              <span class="wizardBl-dot"></span>
+            </a>
+          </span>
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizardBl wizardBlNext">
+          <span class="wizardLink">
+            <a href="">Flood
+              <span class="wizardBl-dot"></span>
+            </a>
+          </span>
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizardBl wizardBlNext">
+          <span class="wizardLink">
+            <a href="">Review &amp; Purchase
+              <span class="wizardBl-dot"></span>
+            </a>
+          </span>
+          <span class="wizardLine"></span>
+        </div>
+
+        <div class="wizard-end"></div>
+
       </div>
+
       <section class="pageChars">
         <header>
           <h1>Home Characteristics</h1>
@@ -307,6 +370,22 @@
                       <div class="formType-radio">
                           <input type="radio" name="homeState" value="#1" id="homeState2">
                           <label for="homeState2" class="homeState2"></label>
+                      </div><span class="radioLable">No</span>
+                    </div>
+                  </div>
+
+                <div class="formBlock">
+                  <div class="formBlock-title">
+                    Is the home on the Moon?
+                  </div>
+                    <div class="radioBlWrap">
+                        <div class="formType-radio">
+                          <input type="radio" name="moonState" value="#1" id="moonState" disabled>
+                          <label for="moonState" class="moonState radioDisabled"></label>
+                      </div><span class="radioLable">Yes</span>
+                      <div class="formType-radio">
+                          <input type="radio" name="moonState" value="#1" id="moonState2" disabled>
+                          <label for="moonState2" class="moonState2 radioDisabled"></label>
                       </div><span class="radioLable">No</span>
                     </div>
                   </div>
@@ -420,6 +499,11 @@
                           <input type="checkbox" name="protection" value="#1" id="prot4">
                           <label for="prot4" class="prot4"></label>
                           <span class="checkboxLable">Sprinkler System</span>
+                      </div>
+                      <div class="formType-checkbox">
+                          <input type="checkbox" name="protection" value="#1" id="prot5" disabled>
+                          <label for="prot5" class="prot5 checkboxDisabled"></label>
+                          <span class="checkboxLable">Neptun System</span>
                       </div>
                     </div>
                   </div>

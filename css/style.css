@@ -2885,7 +2885,7 @@ line-height: 20px;
 
 .wizard .wizardBl .wizardLink a {
     display: table-cell;
-    z-index: 9999;
+    z-index: 9955;
     position: absolute;
     top: -8px;
     right: 0;
@@ -2926,7 +2926,7 @@ line-height: 20px;
 
 .wizard .wizardBlActive .wizardBl-dot {
     display: inline-block;
-    z-index: 9999;
+    z-index: 9955;
     position: absolute;
     left: 40px;
     width: 30px;
@@ -3164,6 +3164,7 @@ font-size: 28px;
 .resultFull {
     width: 1060px;
     float: right;
+    overflow: visible!important;
 }
 .resultFull h5 {
     font-size: 15px;
@@ -3177,12 +3178,14 @@ font-size: 28px;
     background: transparent;
     position: relative;
     left: -170px;
+    width: 1230px;
+    margin-bottom: 80px;
 }
 .resultBl-visible {
     clear: both;
 }
 .blankLogo {
-    width: 184px;
+    width: 174px;
     height: 158px;
     float: left;
 }
@@ -3208,15 +3211,14 @@ font-size: 28px;
     position: relative;
 }
 .resultBl-title {
-    width: 150px;
-
+    width: 176px;
     font-weight: bold;
     margin-right: 40px;
+    margin: 0;
 }
 .resultBl-data {
-    width: 152px;
-
-    text-indent: 28px;
+width: 146px;
+text-indent: 29px;
 }
 .resultBl-data ul {
     margin: 0;
@@ -3249,7 +3251,7 @@ font-size: 28px;
     
     width: 1060px;
     position: relative;
-    right: -170px;
+    right: 0;
     text-align: center;
     margin: 0 auto; 
     border-radius: 8px;
@@ -3398,7 +3400,7 @@ font-size: 28px;
 .resBl-moreQuotes {
     position: absolute;
     
-    right: -150px;
+    right: 9px;
     top: 2px;
 }
 .resBl-moreQuotes span {
@@ -4266,6 +4268,7 @@ top: 10px;
     font-weight: bold;
     margin-right: 10px;
 }
+.pageInfo .formType-checkbox {background: transparent!important;}
 .formBlock .checkboxLable {
     position: relative;
     top: 3px;
@@ -4273,7 +4276,6 @@ top: 10px;
     font-size: 14px;
     font-weight: 100;
     vertical-align: top;
-
 }
 .formType-radio label {
     background: url('../img/radioDef.png') no-repeat;
@@ -4283,6 +4285,7 @@ top: 10px;
     display: inline-block;
 }
 .formType-radio label.errRadio {background: url('../img/radioDefErr.png') no-repeat;}
+.formType-radio label.radioDisabled { cursor: not-allowed; background: url('../img/radioDisabled.png') no-repeat;}
 
 .formType-radio input[type="radio"]:checked+label {
     background: url('../img/radioCh.png') no-repeat;
@@ -4300,6 +4303,10 @@ top: 10px;
 }
 .formType-checkbox input[type="checkbox"]:checked+label {
     background: url('../img/cheCh.png') no-repeat;
+}
+.formType-checkbox label.checkboxDisabled {
+    cursor: not-allowed;
+    background: url('../img/cheChDisabled.png') no-repeat;
 }
 
 .formType-dist {
