@@ -182,6 +182,24 @@ jQuery(document).ready(function($) {
         $('.resultBl>span#' + idBtn).addClass('resultBl-vissible');
     })
 
+    // 02 Results blocks toggle
+    $('.resultsAfter').click(function(event) {
+        event.preventDefault();
+        $('.resultsBefor').removeClass('activeBeforResult');
+        $('.resultsAfter').addClass('activeAfterResult');
+        $('.resultArr').hide();
+        $('.resultRow-1, .resultRow-2, .resultRow-3, .resultRow-4, .resultRow-5, .resultRow-6, .resultRow-7').hide();
+        $('.resultRow-8, .resultRow-9').show();
+    })
+    $('.resultsBefor').click(function(event) {
+        event.preventDefault();
+        $('.resultsBefor').addClass('activeBeforResult');
+        $('.resultsAfter').removeClass('activeAfterResult');
+        $('.resultArr').show();
+        $('.resultRow-1, .resultRow-2, .resultRow-3, .resultRow-4, .resultRow-5, .resultRow-6, .resultRow-7').show();
+        $('.resultRow-8, .resultRow-9').hide();
+    })
+
 
     // this runs calendar
     $(function() {

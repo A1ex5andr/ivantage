@@ -2083,7 +2083,9 @@ footer {
 .dialog-action input[type="radio"]:checked+label {
     background: url('../img/radioCh.png') no-repeat;
 }
-
+.dialog-action input[type="radio"]:checked+label.errRadio {
+    background: url('../img/radioDefChErr.png') no-repeat;
+}
 
 .dialog-action .email {
     width: 240px;
@@ -3399,24 +3401,41 @@ text-indent: 29px;
 }
 .resBl-moreQuotes {
     position: absolute;
-    
     right: 9px;
     top: 2px;
 }
-.resBl-moreQuotes span {
+.resBl-moreQuotes a.resultsBefor {
     font-size: 16px;
- color: #6e6e6f;
-    
+    color: #6e6e6f;
+    background: transparent;
+    width: auto;
+    padding-right: 10px;
+     position: relative;
+     z-index: 9999;
+     text-decoration: none;
 }
-.resBl-moreQuotes a {
- font-size: 12px;
- color: #0b77c2;
- text-decoration: none;
- background-image: url('../img/resBl-moreQuotes.png');  
- width: 133px; 
- display: inline-block; height: 22px; text-align: center; line-height: 20px;
- position: relative;
- z-index: 9999;
+.resBl-moreQuotes a.resultsBefor.activeBeforResult span {
+    color: #0b77c2;
+}
+
+.resultArr{}
+.resultRow-8,
+.resultRow-9 {
+    display: none;
+}
+
+.resBl-moreQuotes a.resultsAfter {
+    font-size: 12px;
+    color: #6e6e6f;
+    text-decoration: none;
+    background-image: url('../img/resBl-moreQuotes.png');  
+    width: 133px; 
+    display: inline-block; height: 22px; text-align: center; line-height: 20px;
+    position: relative;
+    z-index: 9999;
+}
+.resBl-moreQuotes a.activeAfterResult {
+    color: #0b77c2;
 }
 .resultBl .toolTip.iTip {
     position: relative;
