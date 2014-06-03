@@ -4314,6 +4314,9 @@ top: 10px;
 .formType-radio input[type="radio"]:checked+label.errRadio {
     background: url('../img/radioDefChErr.png') no-repeat;
 }
+.formType-radio input[type="radio"]:checked+label.radioDisabled {
+    background: url('../img/radioDisabledActive.png') no-repeat;
+}
 .formType-checkbox label {
     background: url('../img/cheDef.png') no-repeat;
     width: 30px;
@@ -4328,6 +4331,10 @@ top: 10px;
 .formType-checkbox label.checkboxDisabled {
     cursor: not-allowed;
     background: url('../img/cheChDisabled.png') no-repeat;
+}
+.formType-checkbox input[type="checkbox"]:checked+label.checkboxDisabled {
+    cursor: not-allowed;
+    background: url('../img/cheChDisabledActive.png') no-repeat;
 }
 
 .formType-dist {
