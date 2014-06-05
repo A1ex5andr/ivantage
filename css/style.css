@@ -6369,6 +6369,74 @@ font-size: 28px;
 
 /*-----     End of Admin Producer      ------*/
 /*=============================================
+=            Section   MSB   block            =
+=============================================*/
+.dataFill .df-nav {
+  overflow: hidden;
+  background: #e6e7e9;
+  margin: 2px 2px 0 2px;
+  border-bottom: 1px #f6f6f7 solid;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.dataFill .df-nav > div {
+  display: inline-block;
+  width: 98px;
+  height: 61px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.dataFill .df-nav .formBlock .formBlock-title {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  padding: 0;
+  margin: 2px 0 4px 0;
+  color: #0b77c2;
+  font-weight: 400;
+  line-height: 12px;
+}
+.dataFill .df-nav .df-padd {
+  float: left;
+  width: 138px;
+  display: table;
+}
+.dataFill .df-row {
+  border-top: 1px #e6e7e9 solid;
+  border-bottom: 1px #f6f6f7 solid;
+  margin: 0 2px;
+}
+.dataFill .df-row .formBlock {
+  width: 98px;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+}
+.dataFill .df-row .formBlock .inRowBox {
+  top: 0;
+}
+.dataFill .df-row .formBlock.df-row-title {
+  background: #e6e7e9;
+  color: #0b77c2;
+  width: 138px;
+  padding: 10px 0 0 0;
+  margin: 0;
+  text-align: left;
+  float: left;
+}
+.dataFill .df-row .formBlock.df-row-title .formBlock-title {
+  padding: 0;
+  margin: 0 0 0 4px;
+  width: 100px;
+  color: #0b77c2;
+  font-weight: 400;
+}
+
+/*-----  End of Section   MSB   block  ------*/
+/*=============================================
 =            Responsive up to 1024            =
 =============================================*/
 @media (max-width: 1024px) {
