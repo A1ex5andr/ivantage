@@ -187,7 +187,8 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $('.resultsBefor').removeClass('activeBeforResult');
         $('.resultsAfter').addClass('activeAfterResult');
-        $('.resultArr').hide();
+        $('.resultsBefor>span').addClass('textBlue');
+        $('.resultArr').show();
         $('.resultRow-1, .resultRow-2, .resultRow-3, .resultRow-4, .resultRow-5, .resultRow-6, .resultRow-7').hide();
         $('.resultRow-8, .resultRow-9').show();
     })
@@ -195,7 +196,8 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $('.resultsBefor').addClass('activeBeforResult');
         $('.resultsAfter').removeClass('activeAfterResult');
-        $('.resultArr').show();
+        $('.resultsBefor>span').removeClass('textBlue');
+        $('.resultArr').hide();
         $('.resultRow-1, .resultRow-2, .resultRow-3, .resultRow-4, .resultRow-5, .resultRow-6, .resultRow-7').show();
         $('.resultRow-8, .resultRow-9').hide();
     })
