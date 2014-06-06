@@ -6437,6 +6437,179 @@ font-size: 28px;
 
 /*-----  End of Section   MSB   block  ------*/
 /*=============================================
+=            Preset Profile  block            =
+=============================================*/
+.preProf > h2 {
+  color: #0b77c2;
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.preProf > p {
+  color: #6e6e6f;
+  font-size: 15px;
+  margin: 0;
+}
+.preProf .notifyOk,
+.preProf .error {
+  margin: 0 0 10px 0;
+  width: 370px;
+  clear: both;
+}
+.preProf .pageChars h1 {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.preProf .pageChars h3 {
+  top: 20px;
+}
+.preProf .pageInfo > p {
+  color: #6e6e6f;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.preProf .pageInfo .stateDetails {
+  overflow: hidden;
+}
+.preProf .pageInfo .stateDetails .formBlock {
+  clear: none;
+  float: left;
+  width: auto;
+  min-width: 310px;
+}
+.preProf .pageInfo .stateDetails .formBlock .select2-container a {
+  width: 200px;
+}
+.preProf .pageInfo .stateDetails .formBlock-title {
+  width: auto;
+  font-weight: 400;
+  padding-right: 10px;
+}
+.preProf .pageInfo .stateDetails .formBlock.disabledFrom .select2-container > a {
+  background: #f4f4f4 !important;
+  cursor: not-allowed;
+}
+.preProf .pageInfo .stateDetails .formBlock.disabledFrom .select2-container .select2-choice .select2-arrow b {
+  background: url("select2disabled.png") no-repeat 0 1px;
+}
+.preProf .pageInfo .stateDetails .formBlock.disabledFrom .select2-container.select2-container-disabled .select2-choice .select2-arrow {
+  background-color: transparent;
+}
+.preProf .pageInfo .buttonView {
+  float: left;
+  width: 71px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  background: #0b77c2;
+  width: 65px;
+  margin: 8px;
+}
+.preProf .pageInfo .buttonView:hover {
+  -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+  box-shadow: inset 1px 1px 6px 0 #222222;
+  cursor: pointer;
+}
+.preProf .pageInfo .buttonView.disabledBtn {
+  background: #6e6e6f;
+  color: #d9dada;
+}
+.preProf .pageInfo .pageInfo-wrapper {
+  overflow: hidden;
+}
+.preProf .pageInfo .pageInfo-wrapper > div {
+  width: 400px;
+  float: left;
+}
+.preProf .pageInfo .pageInfo-wrapper .formBlock {
+  clear: none;
+  width: auto;
+  min-width: 310px;
+}
+.preProf .pageInfo .pageInfo-wrapper .formBlock .formBlock-input {
+  width: 160px;
+  font-size: 13px;
+  color: #6e6e6f;
+  font-weight: 100;
+}
+.preProf .pageInfo .pageInfo-wrapper .formBlock-title {
+  width: 150px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+.preProf .preProf-navi {
+  width: 860px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.preProf .preProf-navi > div {
+  display: inline-block;
+  float: right;
+}
+.preProf .preProf-navi .preProfNav-save {
+  float: left;
+  width: 71px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  background: #0b77c2;
+  float: right;
+  width: 68px;
+}
+.preProf .preProf-navi .preProfNav-save:hover {
+  -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+  box-shadow: inset 1px 1px 6px 0 #222222;
+  cursor: pointer;
+}
+.preProf .preProf-navi .preProfNav-clear,
+.preProf .preProf-navi .preProfNav-cancel {
+  width: 72px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #0b77c2;
+  cursor: pointer;
+}
+.preProf .preProf-navi .preProfNav-div {
+  color: #6e6e6f;
+  height: 25px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 26px;
+}
+
+/*-----  End of Preset Profile  block  ------*/
+.notifyOk {
+  width: 98%;
+  margin: 12px;
+  font-size: 14px;
+  color: #0a780a;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.notifyOk .notifyOk-warn {
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  background: url(../img/greenOk.png) no-repeat;
+  background-position: 6px 8px;
+}
+
+/*=============================================
 =            Responsive up to 1024            =
 =============================================*/
 @media (max-width: 1024px) {
