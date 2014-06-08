@@ -3958,6 +3958,22 @@ font-size: 28px;
   background: url("../img/products/umbrella_s.png") no-repeat;
 }
 
+.products .productsSet .prodCheck label.earthquake {
+  background: url("../img/products/earthquake.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.earthquake {
+  background: url("../img/products/earthquake_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck label.condo {
+  background: url("../img/products/condo.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.condo {
+  background: url("../img/products/condo_s.png") no-repeat;
+}
+
 /* Disabled */
 .products .productsSet .prodCheck label.petDisabled {
   background: url("../img/products/pet_d.png") no-repeat;
@@ -4017,6 +4033,30 @@ font-size: 28px;
 
 .products .productsSet .prodCheck label.umbrellaDisabled {
   background: url("../img/products/umbrella_d.png") no-repeat;
+}
+
+.products .productsSet .prodCheck label.earthquakeDisabled {
+  background: url("../img/products/earthquake_d.png") no-repeat;
+}
+
+.products .productsSet .prodCheck label.condoDisabled {
+  background: url("../img/products/condo_d.png") no-repeat;
+}
+
+.prodCheckWrap a {
+  font-size: 12px;
+  color: #1e81c7;
+  text-align: center;
+}
+
+.restR {
+  font-size: 14px;
+  color: #6e6e6f;
+}
+
+.restR a {
+  color: #1e81c7;
+  text-decoration: none;
 }
 
 /*-----  End of Products Page  ------*/
