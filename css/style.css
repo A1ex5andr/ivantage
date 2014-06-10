@@ -700,6 +700,10 @@ textarea,
   background: #f15194;
 }
 
+.navi-eye a {
+  background: #f13b47;
+}
+
 .navi-task a {
   background: #ffb400;
 }
@@ -710,6 +714,10 @@ textarea,
 
 .navi-age a {
   background: #ff7f3f;
+}
+
+.navi-edu a {
+  background: #cc519f;
 }
 
 .navi-more a {
@@ -758,8 +766,16 @@ textarea,
   border-top: 20px solid  #64bdc3;
 }
 
+.navi-eye .arrow-down {
+  border-top: 20px solid #f13b47;
+}
+
 .navi-age .arrow-down {
   border-top: 20px solid  #ff7f3f;
+}
+
+.navi-edu .arrow-down {
+  border-top: 20px solid  #cc519f;
 }
 
 .arrow-down {
@@ -6632,6 +6648,167 @@ font-size: 28px;
 }
 
 /*-----  End of Preset Profile  block  ------*/
+/*=============================================
+=            Education and Training           =
+=============================================*/
+.education > h2 {
+  color: #0b77c2;
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.education > p {
+  color: #6e6e6f;
+  font-size: 15px;
+  margin: 0;
+}
+.education .edu-detail {
+  margin: 12px 0;
+  position: relative;
+  overflow: hidden;
+}
+.education .edu-detail .eduDetHead div {
+  width: 162px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #0b77c1;
+  color: #fff;
+  text-align: center;
+  float: left;
+  margin: 0 6px 0 0;
+  cursor: pointer;
+}
+.education .edu-detail .eduDetHead div span {
+  color: #ecedef;
+  font-size: 23px;
+  line-height: 46px;
+}
+.education .edu-detail .eduDetHead .eduDet-active {
+  height: 56px;
+  border: 1px solid rgba(213, 214, 216, 0.63);
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 333;
+  border-bottom: 0;
+}
+.education .edu-detail .eduDetHead .eduDet-active span {
+  color: #0b77c2;
+}
+.education .edu-detail .eduData {
+  clear: both;
+  border: 1px solid rgba(213, 214, 216, 0.63);
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  width: 834px;
+  position: relative;
+  top: -2px;
+  display: none;
+}
+.education .edu-detail .eduData.eduDataActive {
+  display: block;
+}
+.education .edu-detail .eduData > div {
+  float: left;
+  color: #0b77c2;
+  font-size: 15px;
+}
+.education .edu-detail .eduData > p {
+  color: #0b77c2;
+  padding: 20px;
+}
+.education .edu-detail .eduData .eduData-l1 {
+  width: 270px;
+  padding: 10px 10px 10px 40px;
+}
+.education .edu-detail .eduData .eduData-l1 p {
+  margin: 6px 0;
+  cursor: pointer;
+}
+.education .edu-detail .eduData .eduData-l1 .edu-prop {
+  display: block;
+  padding: 0 10px;
+  font-size: 13px;
+  position: relative;
+  display: none;
+}
+.education .edu-detail .eduData .eduData-l2 {
+  width: 220px;
+  padding: 10px;
+}
+.education .edu-detail .eduData .eduData-l2 p {
+  margin: 6px 0;
+  cursor: pointer;
+}
+.education .edu-detail .eduData .eduProp-active {
+  font-weight: 800;
+  position: relative;
+  cursor: pointer;
+}
+.education .edu-detail .eduData .eduProp-active .arr-l1 {
+  background: transparent url("../img/arr_l1.png") center no-repeat;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 3px;
+}
+.education .edu-detail .eduDataShad {
+  background-image: url(../img/eduShad.png);
+  background-repeat: no-repeat;
+  width: 837px;
+  height: 10px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 0;
+  background-position: top;
+  z-index: 111;
+  background-size: 100%;
+}
+.education .edu-show > h3 {
+  font-size: 30px;
+  color: #0b77c2;
+  font-weight: 100;
+}
+.education .edu-show .edu-show-l1 {
+  width: 460px;
+  float: left;
+}
+.education .edu-show .edu-show-l1 h4 {
+  font-size: 23px;
+  color: #6e6e6f;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.education .edu-show .edu-show-l1 p {
+  color: #6e6e6f;
+  line-height: 24px;
+  font-weight: 100;
+  padding-right: 42px;
+  font-size: 16px;
+}
+.education .edu-show .edu-show-l1 a {
+  color: #0b77c2;
+  display: block;
+  text-decoration: none;
+  padding-top: 5px;
+}
+.education .edu-show .edu-show-l2 {
+  padding-top: 30px;
+  float: right;
+  width: 454px;
+}
+.education .edu-compCov {
+  display: none;
+}
+.education .showBlocks {
+  min-height: 550px;
+}
+
+/*-----  End of Education and Training ------*/
 .notifyOk {
   width: 98%;
   margin: 12px;
@@ -6647,6 +6824,101 @@ font-size: 28px;
   height: 21px;
   background: url(../img/greenOk.png) no-repeat;
   background-position: 6px 8px;
+}
+
+.jcarousel-wrapper {
+  position: relative;
+  width: 374px;
+}
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 310px;
+  margin: 0 auto;
+  color: #0b77c2;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  width: 103px !important;
+  float: left;
+  border: 1px solid #fff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.jcarousel img {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+  border-radius: 5px;
+}
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 30px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.jcarousel-control-prev {
+  left: 0;
+  background: url(../img/slide_L.png) no-repeat;
+}
+
+.jcarousel-control-next {
+  right: -15px;
+  background: url(../img/slide_R.png) no-repeat;
+}
+
+/** Carousel Pagination **/
+.jcarousel-pagination {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  margin: 0;
+  display: none !important;
+}
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 10px;
+  text-indent: -9999px;
+  margin-right: 7px;
+  box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+  background: #4E443C;
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 0 2px #F0EFE7;
 }
 
 /*=============================================

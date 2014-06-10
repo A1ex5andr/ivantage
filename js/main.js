@@ -437,5 +437,84 @@ jQuery(document).ready(function($) {
 
     });
 
+    //education tab switch
+    $('.eduDetHead > div').on('click', function() {
+        var id = $(this).attr('id');
+        //console.log(id);
+        $('.eduDetHead > div').removeClass('eduDet-active');
+        $(this).addClass('eduDet-active');
+        $('.eduData').removeClass('eduDataActive');
+        $('.eduData_' + id).addClass('eduDataActive');
+
+    })
+    // education dropDown list
+    // $('.eduProp-title').on('click', function() {
+    //     $(this).siblings('.edu-prop').toggle();
+    //     $('.arr-l2').toggle();
+    // });
+
+    //education link activation
+    $('.eduData-links > p').on('click', function() {
+        $('.eduData-links > p').removeClass('eduProp-active');
+        $(this).addClass('eduProp-active');
+        $('.showBlocks > div').hide();
+    });
+
+    // show if edu-compCov
+    $('#edu-compCov').on('click', function() {
+        $('.edu-compCov').show();
+    });
+
+
+
+    // education slider
+    (function($) {
+        $(function() {
+            var jcarousel = $('.jcarousel');
+
+            jcarousel
+                .on('jcarousel:reload jcarousel:create', function() {
+                    var width = jcarousel.innerWidth();
+
+                    if (width >= 600) {
+                        width = width / 3;
+                    } else if (width >= 350) {
+                        width = width / 2;
+                    }
+
+                    jcarousel.jcarousel('items').css('width', width + 'px');
+                })
+                .jcarousel({
+                    wrap: 'circular'
+                });
+
+            $('.jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+
+            $('.jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+
+            $('.jcarousel-pagination')
+                .on('jcarouselpagination:active', 'a', function() {
+                    $(this).addClass('active');
+                })
+                .on('jcarouselpagination:inactive', 'a', function() {
+                    $(this).removeClass('active');
+                })
+                .on('click', function(e) {
+                    e.preventDefault();
+                })
+                .jcarouselPagination({
+                    perPage: 1,
+                    item: function(page) {
+                        return '<a href="#' + page + '">' + page + '</a>';
+                    }
+                });
+        });
+    })(jQuery);
 
 });
