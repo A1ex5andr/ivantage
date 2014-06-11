@@ -476,11 +476,11 @@ jQuery(document).ready(function($) {
                 .on('jcarousel:reload jcarousel:create', function() {
                     var width = jcarousel.innerWidth();
 
-                    if (width >= 600) {
-                        width = width / 3;
-                    } else if (width >= 350) {
-                        width = width / 2;
-                    }
+                    // if (width >= 600) {
+                    //     width = width / 3;
+                    // } else if (width >= 350) {
+                    //     width = width / 2;
+                    // }
 
                     jcarousel.jcarousel('items').css('width', width + 'px');
                 })
@@ -516,5 +516,62 @@ jQuery(document).ready(function($) {
                 });
         });
     })(jQuery);
+
+    // spin color blocks
+    function spinBlocks() {
+        $('.spGrBl-01').fadeToggle('500', 'linear', function() {
+            $('.spGrBl-02').fadeToggle('500', 'linear', function() {
+                $('.spGrBl-03').fadeToggle('500', 'linear', function() {
+                    $('.spGrBl-04').fadeToggle('500', 'linear', function() {
+                        $('.spGrBl-05').fadeToggle('500', 'linear', function() {
+                            $('.spGrBl-06').fadeToggle('500', 'linear', function() {
+                                $('.spGrBl-07').fadeToggle('500', 'linear', function() {
+                                    $('.spGrBl-08').fadeToggle('500', 'linear', function() {
+                                        $('.spGrBl-09').fadeToggle('500', 'linear', function() {
+                                            $('.spGrBl-10').fadeToggle('500', 'linear', function() {
+                                                $('.spGrBl-11').fadeToggle('500', 'linear', function() {
+                                                    $('.spGrBl-12').fadeToggle('500', 'linear', function() {
+                                                        $('.spGrBl-13').fadeToggle('500', 'linear', function() {
+                                                            $('.spGrBl-14').fadeToggle('500', 'linear', function() {
+                                                                //final
+                                                                spinBlocks();
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    };
+
+
+
+    //popup controls show/hide
+    $('.eduDet-item_05').click(function() {
+        $('.spinner').addClass('show');
+        // slide spinner images 
+        $('.directorySlider').directorySlider({
+            animation: 'fade',
+            filebase: 'slide_',
+            directory: 'img/spinner/',
+            extension: 'png',
+            numslides: 6,
+            speed: 1000,
+            timeout: 1000,
+        });
+        //start spinner
+        spinBlocks();
+
+    });
+
+
+
 
 });
