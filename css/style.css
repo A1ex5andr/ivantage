@@ -6948,6 +6948,52 @@ font-size: 28px;
 }
 
 /*-----  End of Spinner for img + colBl -----*/
+/*=============================================
+=            Section hard stop                =
+=============================================*/
+.hardStop {
+  margin-top: 70px;
+}
+.hardStop .hsLeft {
+  width: 410px;
+  padding-left: 80px;
+  float: left;
+}
+.hardStop .hsRight h1 {
+  font-size: 38px;
+  color: #0b77c2;
+  font-weight: 400;
+}
+.hardStop .hsRight p {
+  color: #6e6e6f;
+  font-size: 21px;
+  line-height: 30px;
+  padding-right: 80px;
+}
+.hardStop .hsRight .buttonBlue {
+  float: left;
+  width: 71px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  background: #0b77c2;
+  width: 79px;
+  height: 34px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.hardStop .hsRight .buttonBlue:hover {
+  -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+  box-shadow: inset 1px 1px 6px 0 #222222;
+  cursor: pointer;
+}
+
+/*-----  End of Section hard stop      ------*/
 .notifyOk {
   width: 98%;
   margin: 12px;
