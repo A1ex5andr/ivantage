@@ -1969,6 +1969,10 @@ textarea,
   background: url("../img/21.png") no-repeat;
 }
 
+.carrLogo_22 {
+  background: url("../img/22.png") no-repeat;
+}
+
 .carAcc {
   visibility: hidden;
   width: 100%;
@@ -4671,6 +4675,14 @@ font-size: 28px;
 .formType-checkbox input[type="checkbox"]:checked + label.checkboxDisabled {
   cursor: not-allowed;
   background: url("../img/cheChDisabledActive.png") no-repeat;
+}
+
+.formType-checkbox label.checkboxError {
+  background: url("../img/cheChError.png") no-repeat;
+}
+
+.formType-checkbox input[type="checkbox"]:checked + label.checkboxError {
+  background: url("../img/cheChErrorActive.png") no-repeat;
 }
 
 .formType-dist {
