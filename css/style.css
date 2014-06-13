@@ -6467,6 +6467,12 @@ font-size: 28px;
   font-weight: 400;
   line-height: 12px;
 }
+.dataFill .df-nav .formBlock .formType-checkbox label {
+  background: url("../img/cheDef-df.png") no-repeat;
+}
+.dataFill .df-nav .formBlock .formType-checkbox input[type="checkbox"]:checked + label {
+  background: url("../img/cheCh-df.png") no-repeat;
+}
 .dataFill .df-nav .df-padd {
   float: left;
   width: 138px;
@@ -6495,12 +6501,18 @@ font-size: 28px;
   text-align: left;
   float: left;
 }
+.dataFill .df-row .formBlock.df-row-title .formType-checkbox label {
+  background: url("../img/cheDef-df.png") no-repeat;
+}
 .dataFill .df-row .formBlock.df-row-title .formBlock-title {
   padding: 0;
   margin: 0 0 0 4px;
   width: 100px;
   color: #0b77c2;
   font-weight: 400;
+}
+.dataFill .df-row .formBlock .formType-checkbox input[type="checkbox"]:checked + label {
+  background: url("../img/cheCh-df.png") no-repeat;
 }
 
 /*-----  End of Section   MSB   block  ------*/
