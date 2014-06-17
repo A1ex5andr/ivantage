@@ -1194,6 +1194,7 @@ textarea,
   padding: 13px 10px;
 }
 
+.activeTr,
 .quotes table tbody tr:hover {
   background: #bfe5ff;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -1280,6 +1281,7 @@ textarea,
   padding-top: 10px;
   clear: both;
   height: 42px;
+  position: relative;
 }
 
 .quoteFlWrap {
@@ -1292,7 +1294,7 @@ textarea,
 
 .quoteFilter h4 {
   color: #6e6e6f;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0 !important;
   padding: 0 0 0 0 !important;
   font-weight: 100 !important;
@@ -4797,12 +4799,14 @@ font-size: 28px;
   width: 30px;
   height: 30px;
   background: #0b77c2;
-  color: #fff;
+  color: white !important;
   font-size: 20px;
   border-radius: 6px;
   text-align: center;
   line-height: 30px;
   display: inline-block;
+  z-index: 1;
+  position: relative;
 }
 
 .formControl .formControl-name {
@@ -7052,6 +7056,336 @@ font-size: 28px;
 }
 
 /*-----  End of Quote History section  ------*/
+/*=============================================
+=            Message Center Block             =
+=============================================*/
+.messCenter .quoteFilter .quoteFilter-location {
+  margin-right: 0;
+}
+.messCenter .quoteFilter .select2-container .select2-choice {
+  width: 147px;
+}
+.messCenter .quoteFilter-search,
+.messCenter .quoteFilter-export {
+  float: left;
+  width: 71px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  background: #0b77c2;
+  display: inline-block;
+  top: 7px;
+  position: relative;
+  float: none;
+  width: 52px;
+}
+.messCenter .quoteFilter-search:hover,
+.messCenter .quoteFilter-export:hover {
+  -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+  box-shadow: inset 1px 1px 6px 0 #222222;
+  cursor: pointer;
+}
+.messCenter .quoteFilter-search a,
+.messCenter .quoteFilter-export a {
+  color: #fff;
+  text-decoration: none;
+}
+.messCenter .addMessNew {
+  float: right;
+  top: 4px;
+  position: relative;
+  display: inline-block;
+}
+.messCenter .addMessNew .butAddMess {
+  float: left;
+  width: 71px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #fff;
+  background: #0b77c2;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  z-index: 1;
+  top: 6px;
+}
+.messCenter .addMessNew .butAddMess:hover {
+  -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+  box-shadow: inset 1px 1px 6px 0 #222222;
+  cursor: pointer;
+}
+.messCenter .addMessNew .butAddMess span {
+  position: relative;
+  z-index: 1111;
+  color: white !important;
+  font-size: 20px;
+  font-weight: 800;
+}
+.messCenter .addMessNew .formControl-name {
+  position: relative;
+  top: 11px;
+  margin-left: 10px;
+}
+.messCenter .messCent-table table thead th {
+  background: #e6e7e9;
+  text-align: left;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 100;
+}
+.messCenter .messCent-table table thead td {
+  border-bottom: 1px solid #d2d2d2;
+  color: #6e6e6f;
+  padding: 13px 10px;
+}
+.messCenter .messCent-table .mC-col1 {
+  width: 170px;
+}
+.messCenter .messCent-table .mC-col2 {
+  width: 80px;
+}
+.messCenter .messCent-table .mC-col3 {
+  width: 110px;
+}
+.messCenter .messCent-table .mC-col4,
+.messCenter .messCent-table .mC-col5 {
+  width: 100px;
+}
+.messCenter .messCent-table .mC-col6 {
+  width: 110px;
+}
+.messCenter .messCent-table .mC-col7 {
+  width: 60px;
+}
+.messCenter .messCent-table .mC-col-edit {
+  color: #0b77c2;
+  text-decoration: none;
+  color: #0b77c2;
+  font-size: 12px;
+  visibility: hidden;
+}
+.messCenter .messCent-table .mC-col-edit_show,
+.messCenter .messCent-table tr:hover .mC-col-edit {
+  visibility: visible;
+}
+.messCenter .messCent-table tr.last td {
+  border: 0;
+}
+.messCenter .messCent-table tbody tr:hover,
+.messCenter .messCent-table .activeTr {
+  left: -12px;
+  margin-top: -2px;
+  padding-left: 9px;
+  border-radius: 6px;
+  position: relative;
+  padding-right: 14px;
+}
+.messCenter .messCent-table .rwDataWrap {
+  width: auto;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.messCenter .messCent-table .rowBlockData {
+  cursor: auto;
+}
+.messCenter .messCent-table .rowBlockData, .messCenter .messCent-table .rowBlockData:hover {
+  background: #f0f0f1;
+  padding: 0;
+  margin: 0;
+  position: static;
+  box-shadow: none;
+  border: 0;
+}
+.messCenter .messCent-table .rowBlockData td {
+  border: 0;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.messCenter .messCent-table .rowBlockData .rwData-col1 {
+  float: left;
+  width: 470px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.messCenter .messCent-table .rowBlockData .rwData-col1 > h3 {
+  font-size: 13px;
+  margin: 10px 17px 20px;
+}
+.messCenter .messCent-table .rowBlockData .rwData-col2 {
+  float: left;
+  width: 280px;
+  overflow: visible;
+}
+.messCenter .messCent-table .rowBlockData .rwData-col2 > h3 {
+  font-size: 13px;
+  margin: 10px 0 20px;
+}
+.messCenter .messCent-table .rowBlockData .rwData-col2 h4 {
+  font-size: 13px;
+  font-weight: 100;
+  margin: 0;
+  display: inline-block;
+  top: 4px;
+  position: relative;
+  padding-right: 10px;
+}
+.messCenter .messCent-table .rowBlockData .rwData-col2 .formBlock {
+  width: 280px;
+  margin-bottom: -10px;
+}
+.messCenter .messCent-table .rowBlockData .rwData-col2 .formBlock > p {
+  color: #0b77c2;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.messCenter .messCent-table .rowBlockData .formBlock .formBlock-title {
+  width: 80px;
+}
+.messCenter .messCent-table .rowBlockData .mC-preview {
+  width: 288px;
+  padding: 10px;
+  background: #fff;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+/*-----  End of Message Center Block   ------*/
+/*=============================================
+=             DropDown Checklist              =
+=============================================*/
+.dropCheckList {
+  width: 260px !important;
+}
+
+.dropdown dd, .dropdown dt {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 5555;
+  overflow: visible;
+  margin-top: 2px;
+}
+
+.dropdown ul {
+  margin: -1px 0 0 0;
+}
+
+.dropdown dd {
+  position: relative;
+}
+
+.dropdown a,
+.dropdown a:visited {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  font-size: 12px;
+}
+
+.dropdown dt a {
+  text-decoration: none;
+  background-clip: padding-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  width: 240px;
+  height: auto;
+  min-height: 31px;
+  margin: 0;
+  padding: 0 15px 0 5px;
+  border: 1px solid #CFCFCF;
+  border-radius: 8px;
+  background: #fff;
+  line-height: 31px;
+  outline: 0;
+  -webkit-box-shadow: inset 1px 1px 0 0 #E6E6E6;
+  box-shadow: inset 1px 1px 0 0 #E6E6E6;
+  position: relative;
+  cursor: pointer;
+  color: #929292;
+}
+
+.dropdown dt p {
+  color: #0b77c2;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.dropdown dt > a {
+  background-image: url(../img/select.png);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: 238px 14px;
+}
+
+.dropDownArrow {
+  background-image: url(../img/selectUp.png) !important;
+}
+
+.dropdown dt a span, .multiSel span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 6px 0px 0;
+  margin: 0;
+}
+
+.dropdown dd ul {
+  display: none;
+  overflow: visible;
+  height: auto;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  min-width: 100%;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: left;
+  width: auto;
+  padding: 0 0 14px 10px;
+  /* margin-top: 3px; */
+  -webkit-box-shadow: inset 1px 2px 0 0 #E6E6E6;
+  box-shadow: inset 1px 2px 0 0 #E6E6E6;
+  border: 1px solid #DDDDDD;
+  border-top: 0;
+  background: #fff;
+}
+
+.dropdown span.value {
+  display: none;
+}
+
+.dropdown dd ul li a {
+  padding: 5px;
+  display: block;
+}
+
+.dropdown dd ul li a:hover {
+  background-color: #fff;
+}
+
+/*-----   End of DropDown Checklist    ------*/
 .notifyOk {
   width: 98%;
   margin: 12px;

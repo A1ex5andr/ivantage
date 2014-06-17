@@ -156,7 +156,7 @@ jQuery(document).ready(function($) {
     });
 
     // if checkbox active make background colored   
-    $('.formType-checkbox').click(function() {
+    $('.incQuotes .formType-checkbox').click(function() {
         if ($(this).find("input:checked").length == 1) {
             $(this).css("background-color", "#c2e6ff");
             console.log($(this).attr('id'));
@@ -210,6 +210,8 @@ jQuery(document).ready(function($) {
         $("#datepicker2").datepicker();
         $("#datepicker3").datepicker();
         $("#datepicker4").datepicker();
+        $("#datepicker11").datepicker();
+        $("#datepicker22").datepicker();
     });
     //$("#datepicker").datepicker().datepicker("setDate", new Date());//todays date in datepicker on start
 
@@ -571,7 +573,69 @@ jQuery(document).ready(function($) {
 
     });
 
+    // message comments block
+    // if clicked make table row active
+
+    $('.messCent-table').on('click', '.mC-col-edit', function() {
+        var id = $(this).attr('id');
+        var el = $(this);
+
+        el.text() == el.data("text-swap") ? el.text(el.data("text-original")) : el.text(el.data("text-swap"));
+
+        $(this).toggleClass('mC-col-edit_show');
+        $(this).parent().parent().toggleClass('activeTr');
+        $('.rowToShow_' + id).slideToggle('slow');
+        // $('.rowToShow_' + id).slideToggle('slow', function() {
+        //     $(this).toggleClass('show');
+        // });
+    })
+
+    /*
+    Dropdown with Multiple checkbox select with jQuery - May 27, 2013
+    (c) 2013 @ElmahdiMahmoud
+    license: http://www.opensource.org/licenses/mit-license.php
+    */
+
+    $(".dropdown dt a").on('click', function(event) {
+        event.preventDefault();
+        $(".dropdown dd ul").slideToggle('fast');
+    });
+
+    $(".dropdown dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $(".dropdown dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+    });
 
 
+    $('.mutliSelect input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('.dropdown dt a').append(ret);
+
+        }
+    });
+
+    //.dropdown dt > a arrow toggle
+    $('.messCenter').on('click', '.dropdown dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
 
 });
