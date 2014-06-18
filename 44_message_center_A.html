@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>    <html class="no-js lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>Ivantage</title>
+
+    <!-- jQuery  -->
+      <script src="js/jquery_1_10_2.js"></script>
+    <!-- jQuery UI -->
+      <script src="js/jQueryUI-1.10.4.js"></script>
+    <!-- Cusom Select  -->
+      <script src="js/select2.js"></script>
+    <!-- Main JS  -->
+      <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- UI Style -->
+    <link href="css/ui/jquery.ui.base.css" rel="stylesheet">
+    <link href="css/ui/jquery.ui.theme.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header class="head gradient">
+      <div class="container">
+        <img src="img/logo.png" alt="" class="head-logo">
+        <h1 class="head-title">Platform Name</h1>
+        <div class="head-client">
+          <p  class="hello">
+            Hello, <span class="name">Allstate Agent</span> <span class="logOutWrap">(</span><a href="">logout</a><span class="logOutWrap">)</span>
+          </p>
+        <p>
+            For assistance, please call 855-435-7255, or:
+            <a href="">
+              <span class="chat"></span>
+            </a>
+        </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="main container">
+      <div class="left-side">
+
+        <nav class="navi">
+          <ul>
+            <li class="navi-home navi-link">
+              <a href="">
+                <img src="img/home.png" alt="">
+                <h2>Home</h2>
+              </a>
+              <span class="navi-shad">
+                <span class="arrow-down"></span>
+              </span>
+            </li>
+            <li class="navi-quote navi-link">
+              <a href="">
+                <img src="img/quote.png" alt="">
+                <h2>View Quotes</h2>
+              </a>
+              <span class="navi-shad">
+                <span class="arrow-down"></span>
+              </span>
+            </li>
+            <li class="navi-man navi-link">
+              <a href="">
+                <img src="img/man.png" alt="">
+                <h2>Manage <br> Customers</h2>
+              </a>
+              <span class="navi-shad">
+                <span class="arrow-down"></span>
+              </span>
+            </li>
+            <li class="navi-admin">
+              <a href="">
+                <img src="img/adminClosed.png" alt="">
+                <h2>
+                  <span class="naviAdminTitle">
+                    Admin
+                  </span>
+                  <span class="naviAdminArr"></span>
+                </h2>
+              </a>
+              <span class="navi-shad"></span>
+                <ul class="drop">
+                  <li class="drop-first"><a href="" class="prod"><span></span>Producers</a></li>
+                  <li><a href="" class="poli"><span></span>Policies</a></li>
+                  <li><a href="" class="hvh"><span></span>HVH</a></li>
+                  <li><a href="" class="mescent"><span></span>Message Center</a></li>
+                  <li class="drop-last"><a href="" class="msb"><span></span>MSB</a></li>
+                </ul>
+            </li>
+            <li class="navi-cred navi-link">
+              <a href="">
+                <img src="img/carr.png" alt="">
+                <h2>Manage Carrier <br> Credentials </h2>
+              </a>
+              <span class="navi-shad">
+                <span class="arrow-down"></span>
+              </span>
+            </li>
+            <li class="navi-age navi-link">
+              <a href="">
+                <img src="img/age.png" alt="">
+                <h2>Set Agency <br> Default</h2>
+              </a>
+              <span class="navi-shad">
+                <span class="arrow-down"></span>
+              </span>
+            </li>
+            <li class="navi-more ">
+              <a href="">
+                <img src="img/more.png" alt="">
+                <h2>
+                  <span class="naviMoreTitle">
+                    More
+                  </span>
+                  <span class="naviMoreArr"></span>
+                </h2>
+              </a>
+              <span class="navi-shad"></span>
+                <ul class="drop">
+                  <li><a href="" class="hom"><span></span>Home</a></li>
+                  <li><a href="" class="quot"><span></span>View Quotes</a></li>
+                  <li class="drop-last"><a href="" class="adm"><span></span>Manage Customers</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+
+       <div class="quotes messCenter">
+        <h2>Personal Quotes</h2>
+        <div class="quoteFilter">
+          <div class="quoteFlWrap quoteSmallFilter">
+            <h4>State</h4>
+            <div class="quoteFilter-location">
+              <select class="e1">
+                  <option value="AL">Alabama</option>
+                  <option value="Am">Amalapuram</option>
+                  <option value="An">Anakapalli</option>
+                  <option value="Ak">Akkayapalem</option>
+                  <option value="WY">Wyoming</option>
+              </select>
+            </div>
+          </div>
+          <div class="quoteFlWrap quoteDatepick">
+            <h4>Start Date</h4>
+                <div class="formBlock quoteFilter-stDate">
+                  <div class="formBlock-calendar">
+                    <input type="text" id="datepicker3" class="datepicker"> 
+                  </div>
+                </div>
+          </div>
+          <div class="quoteFlWrap quoteDatepick">
+            <h4>End Date</h4>
+                <div class="formBlock quoteFilter-stDate">
+                  <div class="formBlock-calendar">
+                    <input type="text" id="datepicker2" class="datepicker"> 
+                  </div>
+                </div>
+          </div>
+          <span class="quoteFilter-search"><a href="">Search</a></span>
+          <span class="quoteFilter-export"><a href="">Apply</a></span>
+          <div class="formControl addMessNew">
+              <div class="butAddMess" id="00" data-text-swap="-" data-text-original="+">
+                +
+              </div>
+              <div class="formControl-name">New Message</div>
+            </div>
+        </div>
+        <div class="tableWrap messCent-table">
+          <table class="personalQuotesTable">
+            <thead>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_00">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_00" id="dropdown_00"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_00"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_00">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="00protection" value="FrontEnd" id="00prot4">
+                                                <label for="00prot4" class="00prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="00protection" value="html 5" id="00prot3">
+                                                <label for="00prot3" class="00prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="00protection" value="css 3" id="00prot2">
+                                                <label for="00prot2" class="00prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="00protection" value="Sass/SCSS" id="00prot1">
+                                                <label for="00prot1" class="00prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="00protection" value="jQuery" id="00prot">
+                                                <label for="00prot" class="00prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker01" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker02" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th class="mC-col1"> <!-- tableSorter -->
+                   Message Text Title
+                <!--    <span class="sortArrow"></span> -->
+                </th>
+                <th class="mC-col2">
+                  <a href="">
+                    State
+                  </a>
+                </th>
+                <th class="mC-col3">
+                  <a href="">
+                     Created by
+                  </a>
+                </th>
+                <th class="mC-col4">
+                  <a href="">
+                    Start Date
+                  </a>
+                </th>
+                <th class="mC-col5">
+                  <a href="">
+                    End Date
+                  </a>
+                </th>
+                <th class="mC-col6">
+                  <a href="">
+                    Status
+                  </a>
+                </th>
+                <th class="mC-col7"></span>
+                  
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mC-col1">Lorem.</td>
+                <td class="mC-col2">ST</td>
+                <td class="mC-col3">Beatae?</td>
+                <td class="mC-col4">01/01/15</td>
+                <td class="mC-col5">03/03/14</td>
+                <td class="mC-col6">Ea.</td>
+                <td class="mC-col7">
+                  <span class="mC-col-edit" id="01" data-text-swap="Edit v" data-text-original="Edit >">
+                    Edit >
+                </span>
+              </td>
+              </tr>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_01">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_01" id="dropdown_01"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_01"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_01">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="01_protection" value="FrontEnd" id="01_prot4">
+                                                <label for="01_prot4" class="01_prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="01_protection" value="html 5" id="01_prot3">
+                                                <label for="01_prot3" class="01_prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="01_protection" value="css 3" id="01_prot2">
+                                                <label for="01_prot2" class="01_prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="01_protection" value="Sass/SCSS" id="01_prot1">
+                                                <label for="01_prot1" class="01_prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="01_protection" value="jQuery" id="01_prot">
+                                                <label for="01_prot" class="01_prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker11" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker22" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="mC-col1">Lorem.</td>
+                <td class="mC-col2">ST</td>
+                <td class="mC-col3">Vitae.</td>
+                <td class="mC-col4">01/01/15</td>
+                <td class="mC-col5">03/03/14</td>
+                <td class="mC-col6">Nam.</td>
+                <td class="mC-col7"><span class="mC-col-edit" id="02" data-text-swap="Edit v" data-text-original="Edit >">Edit ></span></td>
+              </tr>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_02">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_02" id="dropdown_02"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_02"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_02">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="02_protection" value="FrontEnd" id="02_prot4">
+                                                <label for="02_prot4" class="02_prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="02_protection" value="html 5" id="02_prot3">
+                                                <label for="02_prot3" class="02_prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="02_protection" value="css 3" id="02_prot2">
+                                                <label for="02_prot2" class="02_prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="02_protection" value="Sass/SCSS" id="02_prot1">
+                                                <label for="02_prot1" class="02_prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="02_protection" value="jQuery" id="02_prot">
+                                                <label for="02_prot" class="02_prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker33" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker44" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="mC-col1">Lorem.</td>
+                <td class="mC-col2">ST</td>
+                <td class="mC-col3">A.</td>
+                <td class="mC-col4">01/01/15</td>
+                <td class="mC-col5">03/03/14</td>
+                <td class="mC-col6">Vero!</td>
+                <td class="mC-col7"><span class="mC-col-edit" id="03" data-text-swap="Edit v" data-text-original="Edit >">Edit ></span></td>
+              </tr>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_03">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_03" id="dropdown_03"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_03"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_03">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="03_protection" value="FrontEnd" id="03_prot4">
+                                                <label for="03_prot4" class="03_prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="03_protection" value="html 5" id="03_prot3">
+                                                <label for="03_prot3" class="03_prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="03_protection" value="css 3" id="03_prot2">
+                                                <label for="03_prot2" class="03_prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="03_protection" value="Sass/SCSS" id="03_prot1">
+                                                <label for="03_prot1" class="03_prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="03_protection" value="jQuery" id="03_prot">
+                                                <label for="03_prot" class="03_prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker55" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker66" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="mC-col1">Lorem.</td>
+                <td class="mC-col2">ST</td>
+                <td class="mC-col3">Tenetur.</td>
+                <td class="mC-col4">01/01/15</td>
+                <td class="mC-col5">03/03/14</td>
+                <td class="mC-col6">Numquam.</td>
+                <td class="mC-col7"><span class="mC-col-edit" id="04" data-text-swap="Edit v" data-text-original="Edit >">Edit ></span></td>
+              </tr>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_04">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_04" id="dropdown_04"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_04"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_04">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="04_protection" value="FrontEnd" id="04_prot4">
+                                                <label for="04_prot4" class="04_prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="04_protection" value="html 5" id="04_prot3">
+                                                <label for="04_prot3" class="04_prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="04_protection" value="css 3" id="04_prot2">
+                                                <label for="04_prot2" class="04_prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="04_protection" value="Sass/SCSS" id="04_prot1">
+                                                <label for="04_prot1" class="04_prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="04_protection" value="jQuery" id="04_prot">
+                                                <label for="04_prot" class="04_prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker77" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker88" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="mC-col1">Lorem.</td>
+                <td class="mC-col2">ST</td>
+                <td class="mC-col3">Cum!</td>
+                <td class="mC-col4">01/01/15</td>
+                <td class="mC-col5">03/03/14</td>
+                <td class="mC-col6">Delectus!</td>
+                <td class="mC-col7"><span class="mC-col-edit" id="05" data-text-swap="Edit v" data-text-original="Edit >">Edit ></span></td>
+              </tr>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_05">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_05" id="dropdown_05"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_05"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_05">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="05_protection" value="FrontEnd" id="05_prot4">
+                                                <label for="05_prot4" class="05_prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="05_protection" value="html 5" id="05_prot3">
+                                                <label for="05_prot3" class="05_prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="05_protection" value="css 3" id="05_prot2">
+                                                <label for="05_prot2" class="05_prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="05_protection" value="Sass/SCSS" id="05_prot1">
+                                                <label for="05_prot1" class="05_prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="05_protection" value="jQuery" id="05_prot">
+                                                <label for="05_prot" class="05_prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker99" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker111" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="mC-col1">Lorem.</td>
+                <td class="mC-col2">ST</td>
+                <td class="mC-col3">Odio.</td>
+                <td class="mC-col4">01/01/15</td>
+                <td class="mC-col5">03/03/14</td>
+                <td class="mC-col6">Ipsam.</td>
+                <td class="mC-col7"><span class="mC-col-edit" id="06" data-text-swap="Edit v" data-text-original="Edit >">Edit ></span></td>
+              </tr>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_06">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_06" id="dropdown_06"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_06"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_06">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="06_protection" value="FrontEnd" id="06_prot4">
+                                                <label for="06_prot4" class="06_prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="06_protection" value="html 5" id="06_prot3">
+                                                <label for="06_prot3" class="06_prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="06_protection" value="css 3" id="06_prot2">
+                                                <label for="06_prot2" class="06_prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="06_protection" value="Sass/SCSS" id="06_prot1">
+                                                <label for="06_prot1" class="06_prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="06_protection" value="jQuery" id="06_prot">
+                                                <label for="06_prot" class="06_prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker222" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker333" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="last">
+                <td class="mC-col1">Lorem.</td>
+                <td class="mC-col2">ST</td>
+                <td class="mC-col3">Quam.</td>
+                <td class="mC-col4">01/01/15</td>
+                <td class="mC-col5">03/03/14</td>
+                <td class="mC-col6">Facere.</td>
+                <td class="mC-col7"><span class="mC-col-edit" id="07" data-text-swap="Edit v" data-text-original="Edit >">Edit ></span></td>
+              </tr>
+              <tr class="rowBlockData" width="100%" border="0" cellspacing="0" cellpadding="0">
+                <td>
+                  <div class="rwDataWrap rowToShow_07">
+                    <div class="rwData-col1">
+                      <h3>Design Your Message</h3>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Title
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="type here">  
+                        </div>
+                        <!-- <div class="toolTip iTip">
+                            <div class="toolNote-mess">
+                              Tool tip text goes here
+                            </div>
+                          <img class="toolNote-img" src="img/toolTipArr.png" alt=""> 
+                          <a class="tip" href="">
+                            <span class=""></span>
+                          </a>
+                        </div> -->
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Description
+                        </div>
+                        <div class="formBlock-input">
+                          <textarea rows="4" cols="20" wrap="hard" class="formBlock-input inputResponsive formBlock-textArea"></textarea>  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          URL
+                        </div>
+                        <div class="formBlock-input inputResponsive">
+                          <input class="formBlock-input input-normal" placeholder="">  
+                        </div>
+                      </div>
+                      <div class="formBlock">
+                        <div class="formBlock-title">
+                          Preview
+                        </div>
+                        <div class="formBlock-input inputResponsive mC-preview">
+                          
+                          <div class="mess-cent">
+                            <h2>Message Center</h2>
+                            <h3>Welcome to Ivantage</h3>
+                            <p>Pet Insurance is <br>
+                              now available </p>
+                            <nav>
+                              <a href="">&lt;</a>
+                              <span>2/10</span>
+                              <a href="">&gt;</a>
+                            </nav>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rwData-col2">
+                      <h3>Choose State</h3>
+                      <div class="formBlock dropCheckList">
+                          <dl class="dropdown dp_07" id="dropdown_07"> 
+                            
+                              <dt>
+                              <a href="#">
+                                <span class="hida">Select</span>    
+                                <p class="multiSel_07"></p>  
+                              </a>
+                              </dt>
+                            
+                              <dd>
+                                  <div class="mutliSelect_07">
+                                      <ul>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="07_protection" value="FrontEnd" id="07_prot4">
+                                                <label for="07_prot4" class="07_prot4"></label>
+                                                <span class="checkboxLable">FrontEnd</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="07_protection" value="html 5" id="07_prot3">
+                                                <label for="07_prot3" class="07_prot3"></label>
+                                                <span class="checkboxLable">html 5</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="07_protection" value="css 3" id="07_prot2">
+                                                <label for="07_prot2" class="07_prot2"></label>
+                                                <span class="checkboxLable">css 3</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="07_protection" value="Sass/SCSS" id="07_prot1">
+                                                <label for="07_prot1" class="07_prot1"></label>
+                                                <span class="checkboxLable">Sass/SCSS</span>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <div class="formType-checkbox">
+                                                <input type="checkbox" name="07_protection" value="jQuery" id="07_prot">
+                                                <label for="07_prot" class="07_prot"></label>
+                                                <span class="checkboxLable">jQuery</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </dd>
+                            <!-- <button>Filter</button> -->
+                          </dl>
+                      </div>
+                      <div class="formBlock">
+                        <p>Your Choice: NY, AL, AR</p>
+                      </div>
+                        <h3>Date Range</h3>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>Start Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker444" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                        <div class="quoteFlWrap quoteDatepick">
+                          <h4>End Date</h4>
+                              <div class="formBlock quoteFilter-stDate">
+                                <div class="formBlock-calendar">
+                                  <input type="text" id="datepicker555" class="datepicker"> 
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+       </div>
+
+      </div>
+
+      <div class="right-side">
+        <div class="search">
+          <input type="text" placeholder="Search" >
+          <button><span class="mag"></span></button>
+        </div>
+        <div class="advSearch">
+           <span class="advSearch-btn">Advanced Search</span>
+          <div class="advSearch-container">
+            <div class="col left">
+              <h3>Customer</h3>
+              <form action="">
+                <label><h4>First Name</h4> <input type="text"> </label>
+                <label><h4>Last Name</h4> <input type="text"> </label>
+                <label><h4>Email</h4> <input type="text"> </label>
+                <label><h4>Phone</h4> <input type="text"> </label>
+              </form>
+            </div>
+            <div class="col central">
+              <h3>Address</h3>
+              <form action="">
+                <label><h4>Adsress</h4> <input type="text"> </label>
+                <label><h4>City</h4> <input type="text"> </label>
+                <label><h4>State</h4> <input type="text"> </label>
+                <label><h4>Zip</h4> <input type="text"> </label>
+              </form>
+            </div>
+            <div class="col right">
+              <h3>Other</h3>
+               <form action="">
+                <label><h4>Policy</h4> <input type="text"> </label>
+                <label><h4>App ID</h4> <input type="text"> </label>
+                <label><h4>Quote</h4> <input type="text"> </label>
+                <label><h4></h4> <input type="text"> </label>
+              </form>
+            </div>
+          <div class="advSearch-control">
+            <button class="canc">Cancel</button>
+            <button class="srch">Search</button>
+          </div>
+          </div>
+        </div>
+
+        <aside class="message quoteMessageBl">
+          <div class="mess-cent">
+            <h2>Message Center</h2>
+            <h3>Welcome to Ivantage</h3>
+            <p>Pet Insurance is <br>
+              now available </p>
+            <nav>
+              <a href="">&#60;</a>
+              <span>2/10</span>
+              <a href="">&#62;</a>
+            </nav>
+          </div>
+          <div class="mess-quote">
+            <a href="">Start New Quote <span></span></a>
+            <span class="quote-shad"></span>
+          </div>
+          <div class="mess-help">
+            <h2>Helpful Tools</h2>
+              <a href="">Export Customers for eAgent <span>&#62;</span></a>
+              <a href="">Product availability tool<span>&#62;</span></a>
+              <a href="">User manual <span>&#62;</span></a>
+              <a href="">FAQ’s<span>&#62;</span></a>
+          </div>
+          <div class="mess-tasks">
+            <h2>Tasks </h2> <a href="">View All<span>&#62;</span></a>
+            <p><span></span> Send application to Arendt, Neill</p>
+            <p><span></span>  Send application to Martin, Christopher</p>
+            <p><span></span>  Send application to Boland, Tom</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <aside class="charRules container">
+    </aside>
+
+    <footer class="head gradient">
+      <div class="foot container">
+        <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>&#183;</li>
+          <li><a href="">FAQ</a></li>
+          <li>&#183;</li>
+          <li><a href="">User Manual</a></li>
+          <li>&#183;</li>
+          <li>For assistance call 1-800-300-300</li>
+        </ul>
+        </nav>
+        <p class="copyR">Platform powered by <span></span></p>
+      </div>
+    </footer>
+
+    <aside class="popUp">
+      <div class="dialog">
+        <h1><span></span> Important Compliance Reminder</h1>
+        <article>
+          <p>
+              The “Program Notice” and Privacy Statement must be provided to the customer before proceeding. You have the option of emailing to the customer or downloading to print-and-share with the customer.
+          </p>
+          <p>
+              By selecting an option, you acknowledge that the customer will receive the Program Notice and Privacy Statement. <br>
+              You also knowledge that you will explain the purpose of the Program Notice and Privacy Statement to the customer, including the fact that this is a non-Allstate policy being considered for purchase.
+          </p>
+        </article>
+
+            <div class="error ">
+              <div class="error-1">
+                <span class="error-warn"></span>
+                Please enter your first name
+              </div>
+              <div class="error-2">
+                <span class="error-warn"></span>
+                Please enter your valid email
+              </div>
+            </div>
+
+        
+        <section class="dialog-action">
+          <h2>Please choose your action</h2>
+
+          <div class="dialogForm">
+
+            <div class="actionItem">
+              <div class="actionItem-el">
+                <input type="radio" name="color" value="#0000ff" id="print"/>
+                <label for="print" class="print"></label>
+              </div>
+              <span>Download and Print</span>
+            </div>
+
+            <div class="actionItem">
+              <div class="actionItem-el">
+                <input type="radio" name="color" value="#00ffff" id="mail"/>
+                <label for="mail" class="mail errRadio"></label>
+              </div>
+              <span class="">Email to</span>
+              <input type="text" class="email errorBlockMark">
+            </div>
+
+            <div class="actionItem">
+                <div class="formBlock">
+                  <div class="actionItem-el-title">
+                     Form Type
+                  </div>
+                  <div class="actionItem-elDropdown">
+                          <div class="selectSmallRight selectError">
+                            <select class="e1">
+                                <option value="AL">Alabama</option>
+                                <option value="Am">Amalapuram</option>
+                                <option value="An">Anakapalli</option>
+                                <option value="Ak">Akkayapalem</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                          </div>
+                  </div>
+                </div>
+            </div>
+
+         </div>
+
+
+        </section>
+
+        <div class="contorlForm">
+          <span class="cntrl-confirm"><h5>Confirm</h5></span>
+          <span class="cntrl-cancel"><h5>Cancel</h5></span>
+        </div>
+
+      </div>
+    </aside>
+
+  </body>
+</html>

@@ -7119,18 +7119,16 @@ font-size: 28px;
   position: relative;
   z-index: 1;
   top: 6px;
-}
-.messCenter .addMessNew .butAddMess:hover {
-  -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
-  box-shadow: inset 1px 1px 6px 0 #222222;
-  cursor: pointer;
-}
-.messCenter .addMessNew .butAddMess span {
   position: relative;
   z-index: 1111;
   color: white !important;
   font-size: 20px;
   font-weight: 800;
+}
+.messCenter .addMessNew .butAddMess:hover {
+  -webkit-box-shadow: inset 1px 1px 6px 0 #222222;
+  box-shadow: inset 1px 1px 6px 0 #222222;
+  cursor: pointer;
 }
 .messCenter .addMessNew .formControl-name {
   position: relative;
@@ -7173,7 +7171,7 @@ font-size: 28px;
   text-decoration: none;
   color: #0b77c2;
   font-size: 12px;
-  visibility: hidden;
+  visibility: visible;
 }
 .messCenter .messCent-table .mC-col-edit_show,
 .messCenter .messCent-table tr:hover .mC-col-edit {
@@ -7250,9 +7248,8 @@ font-size: 28px;
 .messCenter .messCent-table .rowBlockData .rwData-col2 .formBlock > p {
   color: #0b77c2;
   padding: 0;
-  margin: 0;
+  margin: 0px 0px 6px;
   font-size: 13px;
-  margin-bottom: 6px;
 }
 .messCenter .messCent-table .rowBlockData .formBlock .formBlock-title {
   width: 80px;
@@ -7271,6 +7268,13 @@ font-size: 28px;
 =============================================*/
 .dropCheckList {
   width: 260px !important;
+}
+
+.dropdown .formType-checkbox {
+  width: 240px;
+  padding: 3px 0px 0px 4px;
+  margin: 2px 0;
+  border-radius: 4px;
 }
 
 .dropdown dd, .dropdown dt {
@@ -7364,7 +7368,7 @@ font-size: 28px;
   border-radius: 6px;
   text-align: left;
   width: auto;
-  padding: 0 0 14px 10px;
+  padding: 0 0 19px 7px;
   /* margin-top: 3px; */
   -webkit-box-shadow: inset 1px 2px 0 0 #E6E6E6;
   box-shadow: inset 1px 2px 0 0 #E6E6E6;

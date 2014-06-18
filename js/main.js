@@ -210,8 +210,22 @@ jQuery(document).ready(function($) {
         $("#datepicker2").datepicker();
         $("#datepicker3").datepicker();
         $("#datepicker4").datepicker();
+        $("#datepicker01").datepicker();
+        $("#datepicker02").datepicker();
         $("#datepicker11").datepicker();
         $("#datepicker22").datepicker();
+        $("#datepicker33").datepicker();
+        $("#datepicker44").datepicker();
+        $("#datepicker55").datepicker();
+        $("#datepicker66").datepicker();
+        $("#datepicker77").datepicker();
+        $("#datepicker88").datepicker();
+        $("#datepicker99").datepicker();
+        $("#datepicker111").datepicker();
+        $("#datepicker222").datepicker();
+        $("#datepicker333").datepicker();
+        $("#datepicker444").datepicker();
+        $("#datepicker555").datepicker();
     });
     //$("#datepicker").datepicker().datepicker("setDate", new Date());//todays date in datepicker on start
 
@@ -574,6 +588,17 @@ jQuery(document).ready(function($) {
     });
 
     // message comments block
+
+    //add new message
+    $('.butAddMess').on('click', function() {
+        var id = $(this).attr('id');
+        var el = $(this);
+
+        el.text() == el.data("text-swap") ? el.text(el.data("text-original")) : el.text(el.data("text-swap"));
+
+        $('.rowToShow_' + id).slideToggle('slow');
+    })
+
     // if clicked make table row active
 
     $('.messCent-table').on('click', '.mC-col-edit', function() {
@@ -591,19 +616,17 @@ jQuery(document).ready(function($) {
     })
 
     /*
-    Dropdown with Multiple checkbox select with jQuery - May 27, 2013
-    (c) 2013 @ElmahdiMahmoud
-    license: http://www.opensource.org/licenses/mit-license.php
+        #dropdown_00 with Multiple checkbox select
     */
 
-    $(".dropdown dt a").on('click', function(event) {
+    $("#dropdown_00 dt a").on('click', function(event) {
         event.preventDefault();
-        $(".dropdown dd ul").slideToggle('fast');
+        $("#dropdown_00 dd ul").slideToggle('fast');
     });
 
-    $(".dropdown dd ul li a").on('click', function(event) {
+    $("#dropdown_00 dd ul li a").on('click', function(event) {
         event.preventDefault();
-        $(".dropdown dd ul").hide();
+        $("#dropdown_00 dd ul").hide();
     });
 
     function getSelectedValue(id) {
@@ -612,30 +635,379 @@ jQuery(document).ready(function($) {
 
     $(document).bind('click', function(e) {
         var $clicked = $(e.target);
-        if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+        if (!$clicked.parents().hasClass("dp_00")) $("#dropdown_00 dd ul").hide();
     });
 
 
-    $('.mutliSelect input[type="checkbox"]').on('click', function() {
+    $('.mutliSelect_00 input[type="checkbox"]').on('click', function() {
 
-        var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+        var title = $(this).closest('.mutliSelect_00').find('input[type="checkbox"]').val(),
             title = $(this).val() + ",";
 
         if ($(this).is(':checked')) {
             var html = '<span title="' + title + '">' + title + '</span>';
-            $('.multiSel').append(html);
+            $('.multiSel_00').append(html);
             $(".hida").hide();
         } else {
             $('span[title="' + title + '"]').remove();
             var ret = $(".hida");
-            $('.dropdown dt a').append(ret);
+            $('#dropdown_00 dt a').append(ret);
 
         }
     });
 
-    //.dropdown dt > a arrow toggle
-    $('.messCenter').on('click', '.dropdown dt > a', function() {
+    //#dropdown_00 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_00 dt > a', function() {
         $(this).toggleClass('dropDownArrow');
     });
+
+    /* #dropdown_00 end*/
+
+    /*
+        #dropdown_01 with Multiple checkbox select
+    */
+
+    $("#dropdown_01 dt a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_01 dd ul").slideToggle('fast');
+    });
+
+    $("#dropdown_01 dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_01 dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dp_01")) $("#dropdown_01 dd ul").hide();
+    });
+
+
+    $('.mutliSelect_01 input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect_01').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel_01').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('#dropdown_01 dt a').append(ret);
+
+        }
+    });
+
+    //#dropdown_01 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_01 dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
+
+    /* #dropdown_01 end*/
+
+    /*
+        #dropdown_02 with Multiple checkbox select
+    */
+
+    $("#dropdown_02 dt a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_02 dd ul").slideToggle('fast');
+    });
+
+    $("#dropdown_02 dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_02 dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dp_02")) $("#dropdown_02 dd ul").hide();
+    });
+
+
+    $('.mutliSelect_02 input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect_02').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel_02').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('#dropdown_02 dt a').append(ret);
+
+        }
+    });
+
+    //#dropdown_02 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_02 dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
+
+    /* #dropdown_02 end*/
+
+    /*
+        #dropdown_03 with Multiple checkbox select
+    */
+
+    $("#dropdown_03 dt a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_03 dd ul").slideToggle('fast');
+    });
+
+    $("#dropdown_03 dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_03 dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dp_03")) $("#dropdown_03 dd ul").hide();
+    });
+
+
+    $('.mutliSelect_03 input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect_03').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel_03').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('#dropdown_03 dt a').append(ret);
+
+        }
+    });
+
+    //#dropdown_03 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_03 dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
+
+    /* #dropdown_03 end*/
+
+    /*
+        #dropdown_04 with Multiple checkbox select
+    */
+
+    $("#dropdown_04 dt a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_04 dd ul").slideToggle('fast');
+    });
+
+    $("#dropdown_04 dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_04 dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dp_04")) $("#dropdown_04 dd ul").hide();
+    });
+
+
+    $('.mutliSelect_04 input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect_04').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel_04').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('#dropdown_04 dt a').append(ret);
+
+        }
+    });
+
+    //#dropdown_04 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_04 dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
+
+    /* #dropdown_04 end*/
+
+    /*
+        #dropdown_05 with Multiple checkbox select
+    */
+
+    $("#dropdown_05 dt a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_05 dd ul").slideToggle('fast');
+    });
+
+    $("#dropdown_05 dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_05 dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dp_05")) $("#dropdown_05 dd ul").hide();
+    });
+
+
+    $('.mutliSelect_05 input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect_05').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel_05').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('#dropdown_05 dt a').append(ret);
+
+        }
+    });
+
+    //#dropdown_05 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_05 dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
+
+    /* #dropdown_05 end*/
+
+    /*
+        #dropdown_06 with Multiple checkbox select
+    */
+
+    $("#dropdown_06 dt a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_06 dd ul").slideToggle('fast');
+    });
+
+    $("#dropdown_06 dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_06 dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dp_06")) $("#dropdown_06 dd ul").hide();
+    });
+
+
+    $('.mutliSelect_06 input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect_06').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel_06').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('#dropdown_06 dt a').append(ret);
+
+        }
+    });
+
+    //#dropdown_06 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_06 dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
+
+    /* #dropdown_06 end*/
+
+    /*
+        #dropdown_07 with Multiple checkbox select
+    */
+
+    $("#dropdown_07 dt a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_07 dd ul").slideToggle('fast');
+    });
+
+    $("#dropdown_07 dd ul li a").on('click', function(event) {
+        event.preventDefault();
+        $("#dropdown_07 dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function(e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dp_07")) $("#dropdown_07 dd ul").hide();
+    });
+
+
+    $('.mutliSelect_07 input[type="checkbox"]').on('click', function() {
+
+        var title = $(this).closest('.mutliSelect_07').find('input[type="checkbox"]').val(),
+            title = $(this).val() + ",";
+
+        if ($(this).is(':checked')) {
+            var html = '<span title="' + title + '">' + title + '</span>';
+            $('.multiSel_07').append(html);
+            $(".hida").hide();
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+            $('#dropdown_07 dt a').append(ret);
+
+        }
+    });
+
+    //#dropdown_07 dt > a arrow toggle
+    $('.messCenter').on('click', '#dropdown_07 dt > a', function() {
+        $(this).toggleClass('dropDownArrow');
+    });
+
+    /* #dropdown_07 end*/
+
+    // if checkbox active make background colored   
+    $('.dropdown .formType-checkbox').click(function() {
+        if ($(this).find("input:checked").length == 1) {
+            $(this).css("background-color", "#c2e6ff");
+            console.log($(this).attr('id'));
+        } else if ($(this).find("input:checked").length != 1) {
+            $(this).css("background-color", "transparent");
+        }
+    });
+
 
 });
