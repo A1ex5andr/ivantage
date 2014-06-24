@@ -72,6 +72,8 @@ html {
  */
 body {
   margin: 0;
+  min-width: 1350px;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -4713,6 +4715,10 @@ font-size: 28px;
   background: url("../img/radioDisabled.png") no-repeat;
 }
 
+.formType-radio label.radioFocus {
+  background: url("../img/radioFocus.png") no-repeat;
+}
+
 .formType-radio input[type="radio"]:checked + label {
   background: url("../img/radioCh.png") no-repeat;
 }
@@ -4735,6 +4741,10 @@ font-size: 28px;
 
 .formType-checkbox input[type="checkbox"]:checked + label {
   background: url("../img/cheCh.png") no-repeat;
+}
+
+.formType-checkbox.checkFocus label {
+  background: url("../img/cheFocus.png") no-repeat;
 }
 
 .formType-checkbox label.checkboxDisabled {
@@ -7569,115 +7579,3 @@ font-size: 28px;
   opacity: 1;
   box-shadow: 0 0 2px #F0EFE7;
 }
-
-/*=============================================
-=            Responsive up to 1024            =
-=============================================*/
-@media (max-width: 1024px) {
-  .container {
-    width: 890px;
-  }
-
-  .navi ul li {
-    z-index: 9999;
-  }
-
-  .right-side {
-    width: 872px;
-    float: right;
-  }
-
-  .search {
-    float: left;
-    position: relative;
-    margin: 0;
-  }
-
-  .advSearch-container {
-    display: none;
-    position: absolute;
-    background: url("../img/advSearchS.png") no-repeat;
-    width: 904px;
-    height: 268px;
-    right: -24px;
-    top: 0;
-    /*background-size: 886px;*/
-    z-index: 9;
-  }
-
-  .advSearch .advSearch-btn {
-    font-size: 13px;
-  }
-
-  .advSearch-container .col input {
-    width: 160px;
-    height: 22px;
-    outline: 0;
-    border: 0;
-    border-radius: 4px;
-  }
-
-  .advSearch-control {
-    position: absolute;
-    right: 42px;
-    top: 208px;
-  }
-
-  .message {
-    float: right;
-    margin-top: 20px;
-    clear: both;
-  }
-
-  .mess-cent,
-  .mess-quote,
-  .mess-help,
-  .mess-tasks {
-    clear: both;
-    float: right;
-  }
-
-  .carrBl {
-    background: #f7f7f8;
-    border: 1px solid #e4e5e6;
-    width: 870px;
-    height: 276px;
-    border-radius: 6px;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .carrBl .carrBl-item {
-    margin: 0 30px;
-  }
-
-  /* home chars*/
-  .map img {
-    width: 400px;
-    height: 270px;
-  }
-
-  /* forms input and select dropdown */
-  .formBlock .formBlock-title {
-    padding: 0 10px 0 0;
-    margin: 0 0 0 18px;
-    color: #6e6e6f;
-    font-size: 14px;
-    font-weight: 100;
-    display: inline-block;
-    width: 128px;
-  }
-
-  .formBlock-input.inputDropdown.setOfchkecks-input {
-    right: 167px;
-  }
-
-  .mess-quote.saveCont {
-    clear: none;
-  }
-
-  .charRules {
-    padding: 150px 0px 0 20px;
-  }
-}
-/*-----  End of Responsive up to 1024  ------ */
