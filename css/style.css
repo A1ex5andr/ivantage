@@ -4065,6 +4065,74 @@ font-size: 28px;
   background: url("../img/products/condo_d.png") no-repeat;
 }
 
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.petDisabled {
+  background: url("../img/products/pet_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.eventDisabled {
+  background: url("../img/products/event_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.homeownersDisabled {
+  background: url("../img/products/homeowners_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.fireDisabled {
+  background: url("../img/products/fire_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.rentersDisabled {
+  background: url("../img/products/renters_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.manufacturedDisabled {
+  background: url("../img/products/manufactured_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.floodDisabled {
+  background: url("../img/products/flood_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.excess-floodDisabled {
+  background: url("../img/products/excess-flood_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.high-valueDisabled {
+  background: url("../img/products/high-value_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.motorcycleDisabled {
+  background: url("../img/products/motorcycle_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.boatDisabled {
+  background: url("../img/products/boat_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.watercraftsDisabled {
+  background: url("../img/products/watercrafts_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.autoDisabled {
+  background: url("../img/products/auto_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.liabilityDisabled {
+  background: url("../img/products/liability_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.umbrellaDisabled {
+  background: url("../img/products/umbrella_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.earthquakeDisabled {
+  background: url("../img/products/earthquake_d_s.png") no-repeat;
+}
+
+.products .productsSet .prodCheck input[type="checkbox"]:checked + label.condoDisabled {
+  background: url("../img/products/condo_d_s.png") no-repeat;
+}
+
 .prodCheckWrap a {
   font-size: 12px;
   color: #1e81c7;
