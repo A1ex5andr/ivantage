@@ -96,3 +96,64 @@ footer,
     position: relative;
     top: 14px;
 }
+
+/* wizzard */
+.wizard .wizardBl .wizardBl-dotPast {
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    top: 32px;
+    left: 49px;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    background:  url(../img/wizIe.png);
+}
+
+/* select width */ 
+
+.select2-results {
+    min-width: auto;
+}
+
+/* quote filter positioning */
+.quoteFilter .quoteFilter-location {
+    top: -4px;
+}
+
+.messCenter .messCent-table .rowBlockData, 
+.messCenter .messCent-table .rowBlockData:hover,
+.messCenter .messCent-table .rwDataWrap:hover,
+.messCenter .messCent-table .rwDataWrap {
+    background: #f0f0f1!important;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-shadow: none;
+    border: 0;
+    filter: none;
+    width: 850px!important;
+    left: 0;
+
+}
+/* message center new tr adding */ 
+.messCenter .messCent-table .rwDataWrap {
+    width: 850px;
+    background: #f0f0f1;
+}
+
+ 
+.activeTr, 
+.quotes table tbody tr:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe5ff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-8 */
+     background: #bfe5ff; /* Old browsers */
+
+    padding: 0!important;
+    margin: 0!important;
+    position: relative!important;
+    box-shadow: none!important;
+    width: 880px!important;
+    display: block!important;
+}

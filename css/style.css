@@ -7258,7 +7258,7 @@ font-size: 28px;
 .messCenter .messCent-table tr.last td {
   border: 0;
 }
-.messCenter .messCent-table tbody tr:hover,
+.messCenter .messCent-table tbody tr:not(.rowBlockData):hover,
 .messCenter .messCent-table .activeTr {
   left: -12px;
   margin-top: -2px;
@@ -7276,6 +7276,8 @@ font-size: 28px;
 }
 .messCenter .messCent-table .rowBlockData {
   cursor: auto;
+  left: 0;
+  background: #f0f0f1 !important;
 }
 .messCenter .messCent-table .rowBlockData, .messCenter .messCent-table .rowBlockData:hover {
   background: #f0f0f1;
