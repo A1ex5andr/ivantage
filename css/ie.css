@@ -85,7 +85,15 @@ footer,
     left: -3px;
 }
 
+/* 04_products  */
 
+.products .productsSet .prodCheck input[type="checkbox"] {
+    display: block;
+}
+
+.incQuotes .formType-checkbox input[type="checkbox"] {
+    left: -22px;
+}
 /* customers */ 
 .quoteFilter {
     height: 50px!important;
