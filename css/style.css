@@ -4701,7 +4701,7 @@ font-size: 28px;
 .formType-radio label {
   background: url("../img/radioDef.png") no-repeat;
   width: 30px;
-  height: 24px;
+  height: 25px;
   /* z-index: 1111; */
   display: inline-block;
 }
@@ -4731,10 +4731,14 @@ font-size: 28px;
   background: url("../img/radioDisabledActive.png") no-repeat;
 }
 
+.formType-radio input[type="radio"]:checked + label.radioFocus {
+  background: url("../img/radioFocusActive.png") no-repeat;
+}
+
 .formType-checkbox label {
   background: url("../img/cheDef.png") no-repeat;
   width: 30px;
-  height: 24px;
+  height: 25px;
   display: inline-block;
   float: left;
 }
@@ -4744,7 +4748,11 @@ font-size: 28px;
 }
 
 .formType-checkbox.checkFocus label {
-  background: url("../img/cheFocus.png") no-repeat;
+  background: url("../img/cheFocusActive.png") no-repeat;
+}
+
+.formType-checkbox.checkFocus input[type="checkbox"]:checked + label {
+  background: url("../img/cheChDisabledActive.png") no-repeat;
 }
 
 .formType-checkbox label.checkboxDisabled {
