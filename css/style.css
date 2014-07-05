@@ -564,8 +564,10 @@ textarea,
   font-size: 16px;
   font-family: 'MyriadPro-Regular';
   font-weight: 100;
-  position: absolute;
+  position: relative;
   top: 46px;
+  z-index: 9999;
+  float: left;
 }
 
 .head .head-client {
@@ -3080,128 +3082,6 @@ footer {
   width: 1222px;
   margin: 0 0 10px 0;
   border-radius: 4px;
-}
-
-/* wizard */
-.wizard {
-  clear: both;
-  position: relative;
-  height: 60px;
-}
-
-.wizard > div {
-  display: inline-block;
-  position: relative;
-  height: 60px;
-  margin: 0 -2px;
-  padding: 0;
-  text-align: center;
-}
-
-.wizard .wizard-start {
-  width: 34px;
-  background: url(../img/wiz/wizardBlock_start.jpg) no-repeat;
-}
-
-.wizard .wizard-end {
-  width: 34px;
-  background: url(../img/wiz/wizardBlock_end.jpg) no-repeat;
-}
-
-.wizard .wizardBl {
-  width: 110px;
-  background: url(../img/wiz/wizardBlock_item.jpg) no-repeat;
-}
-
-.wizard .wizardBl .wizardLink {
-  display: table;
-  position: absolute;
-  width: 110px;
-  height: 40px;
-}
-
-.wizard .wizardBl .wizardLink a {
-  display: table-cell;
-  z-index: 9955;
-  position: absolute;
-  top: -8px;
-  right: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 12px;
-  word-break: normal;
-  vertical-align: middle;
-  color: #0b77c2;
-}
-
-.wizard .wizardBl .wizardLink a:hover {
-  font-weight: bold;
-}
-
-.wizard .wizardBl .wizardBl-dotPast {
-  display: inline-block;
-  z-index: 1;
-  position: absolute;
-  top: 32px;
-  left: 49px;
-  width: 16px;
-  height: 16px;
-  margin: 0 auto;
-  border-radius: 10px;
-  text-align: center;
-  background: #0b77c2;
-}
-
-.wizard .wizardBlActive a {
-  font-size: 16px !important;
-  font-weight: bold;
-}
-
-.wizard .wizardBlActive .wizardBl-dot {
-  display: inline-block;
-  z-index: 9955;
-  position: absolute;
-  left: 40px;
-  width: 30px;
-  height: 50px;
-  background: url(../img/wiz/activeWiz.png) no-repeat;
-  background-position: center center;
-  top: 8px;
-}
-
-.wizard .wizardBl-HOVER {
-  background-image: url(../img/wiz/wizHover.png) !important;
-}
-
-.wizard .wizardBlNext a {
-  color: #6e6e6f !important;
-  font-weight: normal !important;
-}
-
-.wizard .wizardBlPast .wizardLine {
-  z-index: 8888;
-  position: absolute;
-  top: 30px;
-  left: 4px;
-  width: 110%;
-  height: 4px;
-  border-radius: 12px;
-  background: #0b77c2;
-}
-
-.wizard .wizardBlActive .wizardLine {
-  z-index: 8888;
-  position: absolute;
-  top: 30px;
-  left: 4px;
-  width: 50%;
-  height: 4px;
-  border-radius: 12px;
-  background: #0b77c2;
 }
 
 /* Required Information */
@@ -7478,6 +7358,128 @@ font-size: 28px;
 }
 
 /*-----   End of DropDown Checklist    ------*/
+/* wizard */
+.wizard {
+  clear: both;
+  position: relative;
+  height: 60px;
+}
+
+.wizard > div {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  margin: 0 -2px;
+  padding: 0;
+  text-align: center;
+}
+
+.wizard .wizard-start {
+  width: 34px;
+  background: url(../img/wiz/wizardBlock_start.jpg) no-repeat;
+}
+
+.wizard .wizard-end {
+  width: 34px;
+  background: url(../img/wiz/wizardBlock_end.jpg) no-repeat;
+}
+
+.wizard .wizardBl {
+  width: 110px;
+  background: url(../img/wiz/wizardBlock_item.jpg) no-repeat;
+}
+
+.wizard .wizardBl .wizardLink {
+  display: table;
+  position: absolute;
+  width: 110px;
+  height: 40px;
+}
+
+.wizard .wizardBl .wizardLink a {
+  display: table-cell;
+  z-index: 9955;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 12px;
+  word-break: normal;
+  vertical-align: middle;
+  color: #0b77c2;
+}
+
+.wizard .wizardBl .wizardLink a:hover {
+  font-weight: bold;
+}
+
+.wizard .wizardBl .wizardBl-dotPast {
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 32px;
+  left: 49px;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+  background: #0b77c2;
+}
+
+.wizard .wizardBlActive a {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.wizard .wizardBlActive .wizardBl-dot {
+  display: inline-block;
+  z-index: 9955;
+  position: absolute;
+  left: 40px;
+  width: 30px;
+  height: 50px;
+  background: url(../img/wiz/activeWiz.png) no-repeat;
+  background-position: center center;
+  top: 8px;
+}
+
+.wizard .wizardBl-HOVER {
+  background-image: url(../img/wiz/wizHover.png) !important;
+}
+
+.wizard .wizardBlNext a {
+  color: #6e6e6f !important;
+  font-weight: normal !important;
+}
+
+.wizard .wizardBlPast .wizardLine {
+  z-index: 8888;
+  position: absolute;
+  top: 30px;
+  left: 4px;
+  width: 110%;
+  height: 4px;
+  border-radius: 12px;
+  background: #0b77c2;
+}
+
+.wizard .wizardBlActive .wizardLine {
+  z-index: 8888;
+  position: absolute;
+  top: 30px;
+  left: 4px;
+  width: 50%;
+  height: 4px;
+  border-radius: 12px;
+  background: #0b77c2;
+}
+
 .notifyOk {
   width: 98%;
   margin: 12px;
@@ -7493,99 +7495,4 @@ font-size: 28px;
   height: 21px;
   background: url(../img/greenOk.png) no-repeat;
   background-position: 6px 8px;
-}
-
-.jcarousel-wrapper {
-  position: relative;
-  width: 374px;
-}
-
-/** Carousel **/
-.jcarousel {
-  position: relative;
-  overflow: hidden;
-  width: 310px;
-  margin: 0 auto;
-  color: #0b77c2;
-  text-align: center;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.jcarousel ul {
-  width: 20000em;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0 0 0 48px;
-}
-
-.jcarousel li {
-  width: 103px !important;
-  float: left;
-  border: 1px solid #fff;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.jcarousel img {
-  display: block;
-  max-width: 100%;
-  height: auto !important;
-  border-radius: 5px;
-}
-
-/** Carousel Controls **/
-.jcarousel-control-prev,
-.jcarousel-control-next {
-  position: absolute;
-  top: 50%;
-  margin-top: -30px;
-  width: 30px;
-  height: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.jcarousel-control-prev {
-  left: 0;
-  background: url(../img/slide_L.png) no-repeat;
-}
-
-.jcarousel-control-next {
-  right: -15px;
-  background: url(../img/slide_R.png) no-repeat;
-}
-
-/** Carousel Pagination **/
-.jcarousel-pagination {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  margin: 0;
-  display: none !important;
-}
-
-.jcarousel-pagination a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 11px;
-  height: 10px;
-  width: 10px;
-  line-height: 10px;
-  background: #fff;
-  color: #4E443C;
-  border-radius: 10px;
-  text-indent: -9999px;
-  margin-right: 7px;
-  box-shadow: 0 0 2px #4E443C;
-}
-
-.jcarousel-pagination a.active {
-  background: #4E443C;
-  color: #fff;
-  opacity: 1;
-  box-shadow: 0 0 2px #F0EFE7;
 }
